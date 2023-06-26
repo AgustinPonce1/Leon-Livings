@@ -126,7 +126,7 @@ header .nav{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/media/img4.jpg");
+    ,url("../media/img4.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -173,73 +173,6 @@ header .nav{
     font-weight: inherit;
 }
 
-/* SECCION DE PRODUCTOS */
-
-#nuestros-productos{
-    background-color: rgb(30, 30, 30);
-    color: white;
-    text-align: center;
-}
-
-#nuestros-productos .container{
-    padding: 150px 12px;
-}
-
-#nuestros-productos h2{
-    margin-top: 0;
-    font-size: 3.2em;
-}
-
-#nuestros-productos p{
-    display: none;
-}
-
-#nuestros-productos .carta{
-    background-position: center center;
-    background-size: cover;
-    padding: 50px;
-    margin: 20px;
-    border-radius: 15px;
-}
-
-.carta:first-child{
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/media/somos.jpg");
-}
-
-.carta:nth-child(2){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/media/somos.jpg");
-}
-
-.carta:nth-child(3){
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("/media/somos.jpg");
-}
-
-/* SECCION OPINIONES PROYECTO */
-
-#opiniones .container{
-    text-align: center;
-    padding: 50px 12px;
-}
-
-#opiniones li{
-    margin: 15px 0px;
-}
-
 /* FIN DE PAGINA */
 
 #findepagina{
@@ -254,7 +187,7 @@ header .nav{
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("/media/findepagina.jpg");
+    ,url("../media/findepagina.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -356,7 +289,7 @@ footer .container{
     }
 
     #somos-leonlivings .img-container{
-        background-image: url("/media/equipo.jpg");
+        background-image: url("../media/equipo.jpg");
         background-size: cover;
         background-position: center center;
         height: 400px;
@@ -814,7 +747,7 @@ footer .container{
                 rgba(0,0,0,0.5),
                 rgba(0,0,0,0.5)
             )
-            ,url("/media/img4.jpg");
+            ,url("./media/img4.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
@@ -872,7 +805,7 @@ footer .container{
                 rgba(0,0,0,0.5),
                 rgba(0,0,0,0.5)
             )
-            ,url("/media/img4.jpg");
+            ,url("./media/img4.jpg");
             background-repeat: no-repeat;
             background-size: cover;
         }
