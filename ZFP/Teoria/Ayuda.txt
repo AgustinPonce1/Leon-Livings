@@ -1,0 +1,65 @@
+HTML -- CONTENIDO
+
+PARA DECIRLE AL PROGRAMA QUE VAMOS A USAR HTML 5, USAR EL SIGUIENTE CODIGO:
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Leon Livings</title> -- TITULO DE LA PAGINA
+    <link rel="shortcut icon" href="img/imglogo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+ETIQUETAS:
+
+<h1> a <h6> -- TITULOS Y SUBTITULOS (style = cambiar propiedades del texto dentro del h)
+<p> -- PARRAFO (id = seleccion de parrafo en concreto(1 solo), class = sirve para cambiar varios parrafos en concreto)
+<br> -- TEXTO ABAJO
+<hr> -- SEPARA EL CONTENIDO CON UNA LINEA HORIZONTAL
+<a> -- ENLACES (href = atributo, ahi va la direccion) target = _blank -> El link se abre en una nueva pestaña.
+<img> -- SUBIR UNA IMAGEN A LA PAGINA (ALT = ATRIBUTO PARA DESCRIBIR LA IMAGEN)
+<div> -- PONER VARIOS ELEMENTOS ADENTRO
+<main> -- PONER VARIOS ELEMENTOS ADENTRO
+<header> -- PONER VARIOS ELEMENTOS ADENTRO
+<footer> -- PONER VARIOS ELEMENTOS ADENTRO
+<section> -- PONER VARIOS ELEMENTOS ADENTRO
+<article> -- PONER VARIOS ELEMENTOS ADENTRO
+<body> -- IRA EL CONTENIDO DE LA PAGINA
+
+CSS -- CONTENIDO
+ 
+PARA INGRESAR CSS ADENTRO DE HTML
+<style>
+	body{
+		CODIGO
+	}
+</style>
+
+<link rel="stylesheet" href="css/estilos.css"> -- CON ESTE RELACIONAREMOS EL CSS CON HTML
+
+ALGUNAS ETIQUETAS:
+
+width -- HANCHO
+heigth -- ALTO
+background-color -- COLOR FONDO
+color -- COLOR ESPECIFICO DE TEXTO O ALGO
+font-size -- TAMAÑO DE LETRA (em y rem se basan en tamaño de la fuente)
+font-family -- TIPO DE LETRA
+text-align -- ACOMODAR TEXTO O TITULOS
+# -- CAMBIAR UN ATRIBUTO CON ID
+. -- CAMBIAR UN ATRIBUTO CON CLASS
+display -- COMO QUERES QUE SE MUESTREN LAS COSAS
+margin -- DARLE MARGEN A NUESTRO ELEMENTO (auto = centrado automatico)
+text-decoration -- SACAR SUBRAYADO AL LINK
+hover -- PSEUDO SELECTOR (AL PASAR EL MOUSE POR ENCIMA CAMBIA LO QUE NOSOTROS QUERAMOS)
+box-sizing -- NO CRECER MAS ALLA DEL TAMAÑO QUE NOSOTROS LE DEMOS
+border-radius -- RADIO DE BORDE
+flex-direction -- ACOMODAR LOS ITEMS (column = en columna)
+background-image -- IMAGEN EN FONDO (linear-gradient = que quede mejor la letra arriba de la foto
+padding -- DISTANICA HACIA ITEMS (PADDING: VALOR-SUPERIOR VALOR-DERECHA VALOR-INFERIOR VALOR-IZQUIERDA;)
+
+ATAJOS:
+
+ALT - ARRIBA O ABAJO -> CAMBIA DE LUGAR LAS LINEAS

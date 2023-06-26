@@ -1,0 +1,904 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+h4{ font-size: 5em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
+li{ font-size: 1.25em;}
+
+/* BOTONES */
+
+.prod, .infoproductos{
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 10px 40px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: darkslategrey;
+}
+
+.prod:hover, .infoproductos:hover{
+    background-color: rgb(15, 114, 114);
+    cursor: pointer;
+}
+
+.container{
+    max-width: 1400px;
+    margin: auto;
+}
+
+/* SOMOS LIVINGS DEL HEADER */
+
+.color-acento{ color: darkgray;}
+
+/* HEADER */
+
+header{
+    background-color: white;
+    position: relative;
+    z-index: 11;
+}
+
+header .logo{
+    margin: 0;
+    padding-right: 450px;
+    padding-left: 20px;
+    font-weight: bold;
+    color: black;
+    font-size: 1.6em;
+}
+
+header .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+/* <A> DEL HEADER */
+
+.dropdown-a{
+    font-style: inherit;
+    font-size: 1em;
+    font-weight: 500;
+}
+
+.dropdown-a :hover{
+    background-color: aqua;
+}
+
+.contacto-a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.contacto-a:hover{
+    color: darkslategrey;
+}
+
+.somos-a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.somos-a:hover{
+    color: darkslategrey;
+}
+
+
+/* HERO */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.hero-titulo {
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+}
+
+#hero h4{
+    color: #FFFFFF;
+    font-size: 5em;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+#hero button{
+    font-size: 1.7em;
+    font-weight: 600;
+}
+
+/* SOMOS LEONLIVINGS */
+
+#somos-leonlivings .container{
+    text-align: center;
+    padding: 200px 12px;
+    display: inline-block;
+    line-height: 1;
+}
+
+.somostxt-1{
+    font-size: 30px;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+.somostxt-2{
+    font-size: 22px;
+    font-weight: 100;
+    font-style: inherit;
+    font-weight: inherit;
+}
+
+/* SECCION DE PRODUCTOS */
+
+#nuestros-productos{
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#nuestros-productos .container{
+    padding: 150px 12px;
+}
+
+#nuestros-productos h2{
+    margin-top: 0;
+    font-size: 3.2em;
+}
+
+#nuestros-productos p{
+    display: none;
+}
+
+#nuestros-productos .carta{
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.carta:first-child{
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/somos.jpg");
+}
+
+.carta:nth-child(2){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/somos.jpg");
+}
+
+.carta:nth-child(3){
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/somos.jpg");
+}
+
+/* SECCION OPINIONES PROYECTO */
+
+#opiniones .container{
+    text-align: center;
+    padding: 50px 12px;
+}
+
+#opiniones li{
+    margin: 15px 0px;
+}
+
+/* FIN DE PAGINA */
+
+#findepagina{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("/media/findepagina.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: bottom;
+}
+
+#findepagina h2{
+    font-size: 9vw;
+}
+
+/* COPYRIGHT */
+
+footer{
+    background-color: rgb(230, 230, 230);
+}
+
+footer p{
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container{
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px){
+
+    /* HEADER */
+
+    header{
+        opacity: 2;
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container{
+        flex-direction: row;
+    }
+
+    header nav{
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    /* HERO */
+
+    .hero-titulo{
+        font-size: 7em;
+    }
+
+    /* SECCION SOMOS LEON LIVINGS */
+
+    #somos-leonlivings .container{
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .somos-button{
+        font-size: 1.2em;
+        font-weight: 400;
+        padding: 10px 40px;
+        border-radius: 7px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: rgb(16, 87, 87);
+    }
+
+    .somos-button:hover{
+        background-color: rgb(15, 114, 114);
+        cursor: pointer;
+    }
+
+    #somos-leonlivings .texto{
+        width: 50%;
+        max-width: 600px;
+        text-align: center;
+        padding-left: 30px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #somos-leonlivings h2{
+        margin-top: 0px;
+        font-size: 50px;
+        font-weight: 600;
+    }
+
+    /* BOTON NOSOTROS */   
+
+    #somos-leonlivings .nosotros{
+        padding: 8px 0px;
+    }
+
+    #somos-leonlivings .img-container{
+        background-image: url("/media/equipo.jpg");
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 800px;
+        border-radius: 80px;
+    }
+
+    /* SECCION NUESTROS PRODUCTOS */
+
+    #nuestros-productos .productos{
+        display: flex;
+        justify-content: center;
+    }
+
+    #nuestros-productos p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #nuestros-productos h2{
+        font-size: 4em;
+    }
+
+    #nuestros-productos h3{
+        margin-top: 0;
+    }
+
+    #nuestros-productos .carta{
+        padding: 50px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    }
+
+    /* SECCION FIN DE PAGINA */
+
+    #findepagina .container-findepagina{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    #findepagina .logo-container .finlogo{
+        width: 80px;    
+        max-width: 100%;
+        padding: 40px 0px 0px 0px;
+        margin-left: 750px;
+    }
+
+    #findepagina .container-findepagina h3{
+        font-size: x-large;
+        color: cadetblue;
+        padding: 0px 20px;
+        padding-bottom: 0;
+        font-weight: 200px;
+    }
+
+    #findepagina .institucional-container li{
+        margin-left: -28px;
+        padding: 0px 0px 20px 10px;
+        font-weight: 300;
+        list-style-type: none;
+        
+    }
+
+    .institucional-container a{
+        color: #FFFFFF;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .institucional-container a:hover{
+        color: #ccc;
+    }
+
+    .divisor {
+        width: 250px;
+    }
+
+    /* LOCALES FIN DE PAGINA */
+
+    #findepagina .locales h4{
+        font-size: x-large;
+        color: cadetblue;
+        padding: 0px 20px;
+        padding-bottom: 0;
+        font-weight: 200px;
+        margin-bottom:  0;
+        display: flex;
+    }
+
+    .locales li{
+        margin-left: -28px;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    .locales a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .locales a:hover{
+        color: #ccc;
+    }
+
+    /* PRODUCTOS DE FINAL DE PAGINA */
+
+    #findepagina .productos-findepagina h5{
+        font-size: x-large;
+        color: cadetblue;
+        font-weight: 200px;
+        padding-left: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .productos-findepagina li{
+        padding: 10px 0;
+        text-align: center;
+        font-weight: 300;
+        padding-left: 200px;
+    }
+
+    .productos-findepagina a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .productos-findepagina a:hover{
+        color: #ccc;
+    }
+
+    #findepagina .contacto-findepagina h6{
+        font-size: x-large;
+        color: cadetblue;
+        font-weight: 200px;
+        padding-left: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contacto-findepagina li{
+        padding: 10px 0;
+        font-weight: 300;
+        padding-left: 200px;
+    }
+
+    .contacto-findepagina a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .contacto-findepagina a:hover{
+        color: #ccc;
+    }
+
+    .divisor2{
+        margin-left: 200px;
+        width: 350px;
+    }
+    /* LOGO DE INICIO */
+
+    header .logoinicio{
+        width: 50px;
+        padding: 5px 0px;
+        border-radius: 15px;
+    }
+
+    /* LOGO DE BUSCADOR */
+
+    .logobuscador{
+    width: 30px;
+    border-radius: 15px;
+    margin-right: 80px;
+    }
+      
+    .interactive-button {
+        position: fixed;
+        bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
+        right: 20px; /* Ajusta la distancia desde la parte derecha según tus necesidades */
+        display: flex;
+        align-items: center;
+        z-index: 3;
+    }
+      
+    .button-text {
+        font-size: 14px;
+        fill: var(--e-global-color-primary );
+        color: var(--e-global-color-primary );
+        background-color: var(--e-global-color-e724fab );
+        border-radius: 12px;
+        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+        padding: 8px 8px;
+        color: black;
+        background-color: rgb(245, 255, 255);
+        margin-right: 10px;
+    }
+
+    .container-botonimagen a{
+        text-decoration: none;
+    }
+      
+    .interactive-button img {
+        width: 60px; /* Ajusta el ancho de la imagen según tus necesidades */
+        height: auto; /* Ajusta la altura proporcionalmente a la anchura */
+    }
+      
+    .interactive-button:hover .button-text {
+        background-color: #ddd; /* Cambia el color de fondo en el hover */
+        transform: scale(1.1); /* Aumenta el tamaño en el hover */
+    }
+    
+    .search-icon:hover{
+        cursor: pointer;
+    
+    }
+
+    /* ANIMACION TEXTO QUIENES SOMOS */
+
+.scroll-effect {
+        position: relative;
+        z-index: 1;
+        opacity: 0;
+        transform: translateY(100px);
+        transition: opacity 2s ease, transform 2s ease;
+}
+      
+.scroll-effect.active {
+        opacity: 1;
+        transform: translateY(0);
+}
+      
+@keyframes fade-in {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .dropbtn {
+        border: none;
+        cursor: pointer;
+        padding: 5px 12px;
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+        text-transform: uppercase;
+        font-size: 1em;
+      }
+
+      .dropbtn:hover{
+            color: darkslategrey;
+      }
+      
+      /* Estilos para el contenedor del dropdown */
+      .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Estilos para el contenido del dropdown */
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 220px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        margin-left: 12px;
+      }
+      
+      /* Estilos para los enlaces dentro del dropdown */
+      .dropdown-content a {
+        color: black;
+        padding: 14px 12px 14px 32px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      /* Cambiar color del enlace cuando se pasa el mouse por encima */
+      .dropdown-content a:hover {
+        background-color: #54595F;
+        color: #f9f9f9;
+        transition: background-color 0.4s ease;
+      }
+      
+      /* Mostrar el dropdown cuando se pasa el mouse por encima del botón */
+      .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+
+    /* CARRUSEL */
+
+    .slide {
+            position: relative;
+            margin-top: 26px;
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            user-select: none;
+            height: 50vw;
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .slide:hover{
+            cursor: pointer;
+        }
+
+        .slide-inner {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-open:checked + .slide-item {
+            position: static;
+            opacity: 100;
+        }
+
+        .slide-item {
+            position: absolute;
+            opacity: 0;
+            width: 100%;
+        }
+
+        .slide-item img {
+            display: block;
+            height: auto;
+            padding: 100px 0px 0px 0px;
+            width: 800px;
+        }
+
+        .slide-control {
+            background: rgba(77, 73, 73, 0.28);
+            border-radius: 50%;
+            color: #fff;
+            cursor: pointer;
+            display: none;
+            font-size: 40px;
+            height: 40px;
+            line-height: 35px;
+            position: absolute;
+            top: 60%;
+            -webkit-transform: translate(0, -50%);
+            cursor: pointer;
+            -ms-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+            text-align: center;
+            width: 40px;
+            z-index: 10;
+        }
+
+        .slide-control.prev {
+            left: 2%;
+        }
+
+        .slide-control.next {
+            right: 2%;
+        }
+
+        .slide-control:hover {
+            background: rgba(0, 0, 0, 0.8);
+            color: #aaaaaa;
+        }
+
+        #slide-1:checked ~ .control-1,
+        #slide-2:checked ~ .control-2,
+        #slide-3:checked ~ .control-3,
+        #slide-4:checked ~ .control-4,
+        #slide-5:checked ~ .control-5 {
+            display: block;
+        }
+
+        /* CIRCULO DE POSICION */
+
+        .slide-indicador {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            bottom: 65px;
+            left: 0;
+            right: 0;
+            text-align: center;
+            z-index: 10;
+        }
+
+        .slide-indicador li {
+            display: inline-block;
+            margin: 0 5px;
+        }
+        
+        .slide-circulo {
+            color: #828282;
+            cursor: pointer;
+            display: block;
+            font-size: 55px;
+        }
+
+        .slide-circulo:hover {
+            color: #aaaaaa;
+        }
+
+        #slide-1:checked ~ .control-1 ~ .slide-indicador 
+             li:nth-child(1) .slide-circulo,
+        #slide-2:checked ~ .control-2 ~ .slide-indicador 
+              li:nth-child(2) .slide-circulo,
+        #slide-3:checked ~ .control-3 ~ .slide-indicador 
+              li:nth-child(3) .slide-circulo,
+        #slide-4:checked ~ .control-4 ~ .slide-indicador 
+              li:nth-child(4) .slide-circulo,
+        #slide-5:checked ~ .control-5 ~ .slide-indicador 
+              li:nth-child(5) .slide-circulo {
+            color: #fff;
+        }
+
+        #titulo-sup{
+            display: flex;
+            justify-content: center;
+            padding: 0px 0 0 0;
+            color: #fff;
+            margin: 60px;
+            font-size: 54px;
+            font-weight: 600;
+        }
+
+        #titulo {
+            width: 100%;
+            position: absolute;
+            text-align: center;
+            font-size: 38px;
+            color: rgba(255, 255, 255, 1);
+            font-family: 'Open Sans', sans-serif;
+            z-index: 1;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+                 -1px 0px 2px rgba(255, 255, 255, 0);
+        }
+
+        /* -- WEB SECCION LOCALES -- */
+
+        #web-locales:hover{
+            cursor: pointer;
+        }
+
+        #locales{
+            position: relative;
+            display: inline-block;
+            flex-direction: column;
+            height: 100vh;
+            width: 50%;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("/media/img4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .locales-titulo{
+            display: flex;
+            flex-direction: column;
+            color: #FFFFFF;
+            font-weight: 550;
+            font-size: 50px;
+            letter-spacing: 0px;
+            margin-bottom: 0;  
+            margin-top: 50%;
+            margin-left: 25%;
+            transition: transform 0.3s;
+            transform-origin: center;
+        }
+    
+        #locales:hover{
+            transform: scale(1.2);
+        }
+
+        .local-cj{
+            color: #fff;
+            z-index: 1;
+            font-size: 30px;
+            font-weight: 300;
+            margin-left: 21%;
+            padding-bottom: 30px;
+        }
+
+        .boton{
+            color: #fff;
+            font-size: 40px;
+            display: inline-block;
+            border: 1px solid white;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            margin-left: 21%;
+        }
+
+        #locales2{
+            position: absolute;
+            display: inline-block;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            width: 50%;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("/media/img4.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .locales-titulo2 {
+            color: #FFFFFF;
+            font-weight: 300;
+            letter-spacing: 0px;
+            margin-bottom: 0;
+            margin: 50%;
+        }
+
+        .local-palomar{
+            color: #fff;
+            z-index: 1;
+            margin: 50%;
+        }
+
+
+    /* ---------------------------- PRUEBAS -------------------------------- */
+
+}
+
+
+@media (min-width: 1200px){
+    #opiniones{
+        background-position-x: calc(100vw - 800px);
+    }
+}
