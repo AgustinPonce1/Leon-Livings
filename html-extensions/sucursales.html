@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title>Leon Livings™</title>
+    <title>Sucursales - Leon Livings</title>
     <link rel="stylesheet" href="../css/estilos.css">
     <link rel="shortcut icon" href="../media/logosinf.png" type="image/x-icon">
     <script src="../js/script.js"></script>
@@ -31,15 +31,41 @@
                       <a class="dropdown-a" href="#">Personalizable</a>
                     </div>
                   </div>   
-                <a class="contacto-a" href="../html-extensions/sucursales.html">Sucursales</a>
-                <a class="somos-a" href="/html-extensions/sobrenosotros.html">Quienes Somos</a>           
-                <a class="contacto-a" href="./html-extensions/contacto.html">Contacto</a>
+                <a class="contacto-a" href="html-extensions/sucursales.html">Sucursales</a>
+                <a class="somos-a" href="#somos-leonlivings">Quienes Somos</a>           
+                <a class="contacto-a" href="/html-extensions/contacto.html">Contacto</a>
             </nav>
                 <img class="logobuscador search-icon" src="../media/buscador.jpg" alt="buscador">
         </div>
     </header>
-    
-   <!-- FOOTER -->
+
+    <div class="container-videos">
+        <div onclick="redirigir()" class="video video1">
+          <video autoplay loop muted>
+            <source src="../media-videos/cj.mp4" type="video/mp4"> <!-- Reemplaza 'ruta_video_1.mp4' por la ruta correcta del primer video -->
+          </video>
+          
+          <div onclick="redirigir()" class="titulo-cj">
+            <h2>CIUDAD JARDIN</h2>
+            <p class="ubi-cj">SANTOS DUMONT 2632, CJ</p>
+            <p class="boton-cj">+</p>
+          </div>
+        </div>
+
+
+        <div onclick="redirigir2()" class="video video2">
+          <video autoplay loop muted>
+            <source src="../media-videos/palomar.mp4" type="video/mp4"> <!-- Reemplaza 'ruta_video_2.mp4' por la ruta correcta del segundo video -->
+          </video>
+          <div onclick="redirigir2()" class="titulo-palomar">
+            <h2>PALOMAR</h2>
+            <p class="ubi-palomar">MARCONI 2523, PALOMAR</p>
+            <p class="boton-palomar">+</p>
+          </div>
+        </div>
+      </div>
+
+         <!-- FOOTER -->
 
    <section id="findepagina">
     <div class="logo-container">
@@ -99,5 +125,6 @@
         <p>&copy; LEON LIVINGS | 2023</p>
     </div>
 </footer>
+
 </body>
 </html>
