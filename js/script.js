@@ -1,4 +1,4 @@
-// EFECTO AL BAJAR PAGINA PRINCIPAL //
+  // EFECTO AL BAJAR PAGINA PRINCIPAL //
 
 window.addEventListener("scroll", function() {
   var scrollPos = window.scrollY;

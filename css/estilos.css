@@ -540,6 +540,7 @@ footer .container{
         color: black;
         text-transform: uppercase;
         font-size: 1em;
+        background-color: #FFFFFF;
       }
 
       .dropbtn:hover{
@@ -731,7 +732,7 @@ footer .container{
                  -1px 0px 2px rgba(255, 255, 255, 0);
         }
 
-        /* -- WEB SECCION SUCURSALES -- */
+    /* -- WEB SECCION SUCURSALES -- */
 
     .container-videos{
         display: flex;
@@ -831,105 +832,211 @@ footer .container{
     }
 
 
-    /* ---------------------------- PRUEBAS -------------------------------- */
+    /* WEB SECCION CONTACTO */
 
-    .container-videos {
+    #hero-contacto{
         display: flex;
-        width: 100%;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
         height: 100vh;
-      }
-
-    .container-videos:hover{
-        cursor: pointer;
-    }
-      
-      .video {
-        position: relative;
-        flex-basis: 50%;
-        height: 100%;
-        overflow: hidden;
-      }
-      
-      .video video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-      }
-      
-      .titulo-cj {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 17px;
-        transition: font-size 0.3s ease;
+        background-image: linear-gradient(
+            0deg,
+            rgba(61, 60, 60, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/test.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
     }
 
-    .video:hover .titulo-cj {
-        font-size: 19px;
-    }
-
-    .titulo-cj h2{
-        margin-bottom: -15px;
-    }
-
-    .ubi-cj{
-        margin-left: 2px;
-    }
-
-    .boton-cj{
-        color: #fff;
-        font-size: 40px;
-        border: 1px solid white;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        margin-top: -10px;
-    }
-
-    .titulo-palomar {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 17px;
-        transition: font-size 0.3s ease;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 19px;
-    }
-
-    .titulo-palomar h2{
-        margin-bottom: -15px;
-    }
-
-    .ubi-palomar{
-        margin-left: 2px;
-    }
-
-    .boton-palomar{
-        color: #fff;
-        font-size: 40px;
-        border: 1px solid white;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        margin-bottom: 0px;
-        margin-top: -10px;
-        margin-left: 0;
-        margin-right: 0;
+    #hero-contacto h1 {
+        color: #FFFFFF;
+        font-weight: 300;
+        letter-spacing: 0px;
+        margin-bottom: 0;
+        font-size: 60px;
     }
     
+    #hero-contacto h4{
+        color: #FFFFFF;
+        font-size: 25px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+    #flechita{
+        color: #FFFFFF;
+        font-size: 40px;
+    }
+
+    #flechita:hover{
+        cursor: pointer;
+    }
+
+
+
+    /* INPUTS */
+
+    .container-solicitar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 150px 0px;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      .container-solicitar h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #54595F;
+        margin-right: 475px;
+      }
+      
+      .nombreinput,
+      .apellidoinput,
+      .emailinput,
+      .telefonoinput {
+        border: 2px solid rgb(154, 152, 152);
+        user-select: none;
+        width: 300px;
+        height: 30px;
+        margin-top: 8px;
+      }
+
+      .nombrelabel,
+      .apellidolabel,
+      .emaillabel,
+      .telefonolabel {
+        color: #34343B;
+        font-weight: bold;
+        font-size: 16px;
+      }
+      
+      #nombrecontainer,
+      #apellidocontainer {
+        display: inline-block;
+        margin-right: 20px;
+      }
+
+      #emailcontainer,
+      #telefonocontainer{
+        display: inline-block;
+        margin-top: 20px;
+      }
+
+      #telefonocontainer{
+        margin-left: 20px;
+      }
+
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .send-label{
+        color: #34343B;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .mensajeinput{
+        border: 2px solid rgb(154, 152, 152);
+        user-select: none;
+        margin: 10px 0px;
+        width: 625px;
+        padding: 10px 0px 125px 0px;
+        margin-top: 8px;
+    }
+
+    .enviarmensaje-container{
+        margin-top: 10px;
+    }
+
+    .enviarmensaje{
+        color: rgb(70, 70, 70);
+        font-size: 14px;
+        cursor: pointer;
+        border: 2px solid rgb(132, 130, 130);
+        padding: 8px;
+        font-weight: 100;
+    }
+
+    .enviarmensaje:hover{
+        background-color: rgb(223, 221, 221);
+    }
+
+    .masinfo{
+        float: right;
+        font-size: 16px;
+        font-weight: 550;
+        color: #15868A;
+        margin-top: 12px;
+    }
+
+    .iconinfo{
+        margin: -5px 1px;
+        width: 20px;
+    }
+
+    .masinfo:hover{
+        cursor: pointer;
+    }
+
+    .lineacontacto{
+        color: #1bb6bb;
+    }
+
+    .nombreinput,
+    .apellidoinput,
+    .emailinput,
+    .telefonoinput,
+    .mensajeinput {
+        color: rgb(49, 47, 47);
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .nombreinput::selection{
+        color: #ffffff;
+        background-color: #0170b9;
+    }
+
+    .telefonoinput::selection{
+        color: #ffffff;
+        background-color: #0170b9;
+    }
+
+    .apellidoinput::selection{
+        color: #ffffff;
+        background-color: #0170b9;
+    }
+
+    .emailinput::selection{
+        color: #ffffff;
+        background-color: #0170b9;
+    }
+
+    .mensajeinput::selection{
+        color: #ffffff;
+        background-color: #0170b9;
+    }
+
+    .obligatorio{
+        color: red;
+        font-size: 14px;
+    }
+
+
+
+    /* ---------------------------- PRUEBAS -------------------------------- */
+
+
 }
 
 
@@ -937,4 +1044,5 @@ footer .container{
     #opiniones{
         background-position-x: calc(100vw - 800px);
     }
+
 }
