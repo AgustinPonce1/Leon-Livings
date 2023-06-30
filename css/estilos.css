@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+*::selection{
+    color: #ffffff;
+    background-color: #0170b9;
+}
+
 html{
     scroll-behavior: smooth;
 }
@@ -85,6 +90,18 @@ header .nav{
 
 .dropdown-a :hover{
     background-color: aqua;
+}
+
+.sucursales-a{
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+}
+
+.sucursales-a:hover{
+    color: darkslategrey;
 }
 
 .contacto-a{
@@ -509,18 +526,18 @@ footer .container{
 
     /* ANIMACION TEXTO QUIENES SOMOS */
 
-.scroll-effect {
+    .scroll-effect {
         position: relative;
         z-index: 1;
         opacity: 0;
         transform: translateY(100px);
         transition: opacity 1s ease, transform 1s ease;
-}
+    }
       
-.scroll-effect.active {
+    .scroll-effect.active {
         opacity: 1;
         transform: translateY(0);
-}
+    }
       
 @keyframes fade-in {
         0% {
@@ -529,9 +546,9 @@ footer .container{
         100% {
           opacity: 1;
         }
-      }
+    }
 
-      .dropbtn {
+    .dropbtn {
         border: none;
         cursor: pointer;
         padding: 5px 12px;
@@ -541,20 +558,20 @@ footer .container{
         text-transform: uppercase;
         font-size: 1em;
         background-color: #FFFFFF;
-      }
+    }
 
-      .dropbtn:hover{
+    .dropbtn:hover{
             color: darkslategrey;
-      }
+    }
       
       /* Estilos para el contenedor del dropdown */
-      .dropdown {
+    .dropdown {
         position: relative;
         display: inline-block;
-      }
+    }
       
       /* Estilos para el contenido del dropdown */
-      .dropdown-content {
+    .dropdown-content {
         display: none;
         position: absolute;
         background-color: #f9f9f9;
@@ -562,175 +579,175 @@ footer .container{
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
         margin-left: 12px;
-      }
+    }
       
       /* Estilos para los enlaces dentro del dropdown */
-      .dropdown-content a {
+    .dropdown-content a {
         color: black;
         padding: 14px 12px 14px 32px;
         text-decoration: none;
         display: block;
-      }
+    }
       
       /* Cambiar color del enlace cuando se pasa el mouse por encima */
-      .dropdown-content a:hover {
+    .dropdown-content a:hover {
         background-color: #54595F;
         color: #f9f9f9;
         transition: background-color 0.4s ease;
-      }
+    }
       
       /* Mostrar el dropdown cuando se pasa el mouse por encima del botón */
-      .dropdown:hover .dropdown-content {
+    .dropdown:hover .dropdown-content {
         display: block;
-        }
+    }
 
 
     /* CARRUSEL */
 
     .slide {
-            position: relative;
-            margin-top: 26px;
-            display: flex;
-            justify-content: center;
-            background-color: black;
-            user-select: none;
-            height: 50vw;
-            width: 100%;
-            overflow: hidden;
-        }
+        position: relative;
+        margin-top: 26px;
+        display: flex;
+        justify-content: center;
+        background-color: black;
+        user-select: none;
+        height: 50vw;
+        width: 100%;
+        overflow: hidden;
+    }
 
-        .slide:hover{
-            cursor: pointer;
-        }
+    .slide:hover{
+        cursor: pointer;
+    }
 
-        .slide-inner {
-            position: relative;
-            overflow: hidden;
-        }
+    .slide-inner {
+        position: relative;
+        overflow: hidden;
+    }
 
-        .slide-open:checked + .slide-item {
-            position: static;
-            opacity: 100;
-        }
+    .slide-open:checked + .slide-item {
+        position: static;
+        opacity: 100;
+    }
 
-        .slide-item {
-            position: absolute;
-            opacity: 0;
-            width: 100%;
-        }
+    .slide-item {
+        position: absolute;
+        opacity: 0;
+        width: 100%;
+    }
 
-        .slide-item img {
-            display: block;
-            height: auto;
-            padding: 100px 0px 0px 0px;
-            width: 800px;
-        }
+    .slide-item img {
+        display: block;
+        height: auto;
+        padding: 100px 0px 0px 0px;
+        width: 800px;
+    }
 
-        .slide-control {
-            background: rgba(77, 73, 73, 0.28);
-            border-radius: 50%;
-            color: #fff;
-            cursor: pointer;
-            display: none;
-            font-size: 40px;
-            height: 40px;
-            line-height: 35px;
-            position: absolute;
-            top: 60%;
-            -webkit-transform: translate(0, -50%);
-            cursor: pointer;
-            -ms-transform: translate(0, -50%);
-            transform: translate(0, -50%);
-            text-align: center;
-            width: 40px;
-            z-index: 10;
-        }
+    .slide-control {
+         background: rgba(77, 73, 73, 0.28);
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: none;
+        font-size: 40px;
+        height: 40px;
+        line-height: 35px;
+        position: absolute;
+        top: 60%;
+        -webkit-transform: translate(0, -50%);
+        cursor: pointer;
+        -ms-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        text-align: center;
+        width: 40px;
+        z-index: 10;
+    }
 
-        .slide-control.prev {
-            left: 2%;
-        }
+    .slide-control.prev {
+        left: 2%;
+    }
 
-        .slide-control.next {
-            right: 2%;
-        }
+    .slide-control.next {
+        right: 2%;
+    }
 
-        .slide-control:hover {
-            background: rgba(0, 0, 0, 0.8);
-            color: #aaaaaa;
-        }
+    .slide-control:hover {
+        background: rgba(0, 0, 0, 0.8);
+        color: #aaaaaa;
+     }
 
-        #slide-1:checked ~ .control-1,
-        #slide-2:checked ~ .control-2,
-        #slide-3:checked ~ .control-3,
-        #slide-4:checked ~ .control-4,
-        #slide-5:checked ~ .control-5 {
-            display: block;
-        }
+    #slide-1:checked ~ .control-1,
+    #slide-2:checked ~ .control-2,
+    #slide-3:checked ~ .control-3,
+    #slide-4:checked ~ .control-4,
+    #slide-5:checked ~ .control-5 {
+        display: block;
+    }
 
         /* CIRCULO DE POSICION */
 
-        .slide-indicador {
-            list-style: none;
-            margin: 0;
-            padding: 0;
-            position: absolute;
-            bottom: 65px;
-            left: 0;
-            right: 0;
-            text-align: center;
-            z-index: 10;
-        }
+    .slide-indicador {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 65px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
 
-        .slide-indicador li {
-            display: inline-block;
-            margin: 0 5px;
-        }
+    .slide-indicador li {
+        display: inline-block;
+        margin: 0 5px;
+    }
         
-        .slide-circulo {
-            color: #828282;
-            cursor: pointer;
-            display: block;
-            font-size: 55px;
-        }
+    .slide-circulo {
+        color: #828282;
+        cursor: pointer;
+        display: block;
+        font-size: 55px;
+    }
 
-        .slide-circulo:hover {
-            color: #aaaaaa;
-        }
+    .slide-circulo:hover {
+        color: #aaaaaa;
+    }
 
-        #slide-1:checked ~ .control-1 ~ .slide-indicador 
-             li:nth-child(1) .slide-circulo,
-        #slide-2:checked ~ .control-2 ~ .slide-indicador 
-              li:nth-child(2) .slide-circulo,
-        #slide-3:checked ~ .control-3 ~ .slide-indicador 
-              li:nth-child(3) .slide-circulo,
-        #slide-4:checked ~ .control-4 ~ .slide-indicador 
-              li:nth-child(4) .slide-circulo,
-        #slide-5:checked ~ .control-5 ~ .slide-indicador 
-              li:nth-child(5) .slide-circulo {
-            color: #fff;
-        }
+    #slide-1:checked ~ .control-1 ~ .slide-indicador 
+        li:nth-child(1) .slide-circulo,
+    #slide-2:checked ~ .control-2 ~ .slide-indicador 
+          li:nth-child(2) .slide-circulo,
+    #slide-3:checked ~ .control-3 ~ .slide-indicador 
+        li:nth-child(3) .slide-circulo,
+    #slide-4:checked ~ .control-4 ~ .slide-indicador 
+        li:nth-child(4) .slide-circulo,
+    #slide-5:checked ~ .control-5 ~ .slide-indicador 
+        li:nth-child(5) .slide-circulo {
+        color: #fff;
+    }
 
-        #titulo-sup{
-            display: flex;
-            justify-content: center;
-            padding: 0px 0 0 0;
-            color: #fff;
-            margin: 60px;
-            font-size: 54px;
-            font-weight: 600;
-        }
+    #titulo-sup{
+        display: flex;
+        justify-content: center;
+        padding: 0px 0 0 0;
+        color: #fff;
+        margin: 60px;
+        font-size: 54px;
+        font-weight: 600;
+    }
 
-        #titulo {
-            width: 100%;
-            position: absolute;
-            text-align: center;
-            font-size: 38px;
-            color: rgba(255, 255, 255, 1);
-            font-family: 'Open Sans', sans-serif;
-            z-index: 1;
-            text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-                 -1px 0px 2px rgba(255, 255, 255, 0);
-        }
+    #titulo {
+        width: 100%;
+        position: absolute;
+        text-align: center;
+        font-size: 38px;
+        color: rgba(255, 255, 255, 1);
+        font-family: 'Open Sans', sans-serif;
+        z-index: 1;
+        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+            -1px 0px 2px rgba(255, 255, 255, 0);
+    }
 
     /* -- WEB SECCION SUCURSALES -- */
 
@@ -738,29 +755,29 @@ footer .container{
         display: flex;
         width: 100%;
         height: 100vh;
-      }
+    }
 
     .container-videos:hover{
         cursor: pointer;
     }
       
-      .video {
+    .video {
         position: relative;
         flex-basis: 50%;
         height: 100%;
         overflow: hidden;
-      }
+    }
       
-      .video video {
+    .video video {
         position: absolute;
         top: 0;
         left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
-      }
+    }
       
-      .titulo-cj {
+    .titulo-cj {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -887,50 +904,50 @@ footer .container{
         margin: 150px 0px;
         justify-content: center;
         align-items: center;
-      }
+    }
       
-      .container-solicitar h1 {
+    .container-solicitar h1 {
         font-size: 30px;
         font-weight: 600;
         color: #54595F;
         margin-right: 475px;
-      }
+    }
       
-      .nombreinput,
-      .apellidoinput,
-      .emailinput,
-      .telefonoinput {
+    .nombreinput,
+    .apellidoinput,
+    .emailinput,
+    .telefonoinput {
         border: 2px solid rgb(154, 152, 152);
         user-select: none;
         width: 300px;
         height: 30px;
         margin-top: 8px;
-      }
+    }
 
-      .nombrelabel,
-      .apellidolabel,
-      .emaillabel,
-      .telefonolabel {
+    .nombrelabel,
+    .apellidolabel,
+    .emaillabel,
+    .telefonolabel {
         color: #34343B;
         font-weight: bold;
         font-size: 16px;
-      }
+    }
       
-      #nombrecontainer,
-      #apellidocontainer {
+    #nombrecontainer,
+    #apellidocontainer {
         display: inline-block;
         margin-right: 20px;
-      }
+    }
 
-      #emailcontainer,
-      #telefonocontainer{
+    #emailcontainer,
+    #telefonocontainer{
         display: inline-block;
         margin-top: 20px;
-      }
+    }
 
-      #telefonocontainer{
+    #telefonocontainer{
         margin-left: 20px;
-      }
+    }
 
     .mensaje{
         display: flex;
@@ -1002,31 +1019,6 @@ footer .container{
         font-weight: 300;
     }
 
-    .nombreinput::selection{
-        color: #ffffff;
-        background-color: #0170b9;
-    }
-
-    .telefonoinput::selection{
-        color: #ffffff;
-        background-color: #0170b9;
-    }
-
-    .apellidoinput::selection{
-        color: #ffffff;
-        background-color: #0170b9;
-    }
-
-    .emailinput::selection{
-        color: #ffffff;
-        background-color: #0170b9;
-    }
-
-    .mensajeinput::selection{
-        color: #ffffff;
-        background-color: #0170b9;
-    }
-
     .obligatorio{
         color: red;
         font-size: 14px;
@@ -1036,8 +1028,188 @@ footer .container{
 
     /* ---------------------------- PRUEBAS -------------------------------- */
 
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
 
-}
+    #hero-np{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(61, 60, 60, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/hero-np.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #hero-np h1 {
+        color: #FFFFFF;
+        letter-spacing: 0px;
+        margin-bottom: 0;
+        font-family: "Poppins", Sans-serif;
+        font-size: 95px;
+        font-weight: bold;
+        letter-spacing: -2.7px;
+        margin-left: 15%;
+
+    }
+    
+    #hero-np h4{
+        color: #FFFFFF;
+        font-size: 2.8rem;
+        font-weight: 550;
+        margin-top: 0;
+        margin-left: 15.3%;
+        margin-bottom: 0;
+    }
+
+    .listahero{
+        color: #FFFFFF;
+        margin-left: 13%;
+        user-select: none; 
+    }
+
+    .listahero li{
+        padding: 10px;
+        font-size: 20px;
+        font-style: inherit;
+        font-weight: inherit;
+        vertical-align: baseline;
+        display: flex;
+        align-items: center;
+    }
+
+    .iconoentrega,
+    .iconoresistentes,
+    .iconomateriales{
+        width: 40px;
+        padding-right: 10px;
+    }
+
+    .iconodiseños{
+        width: 25px;
+        margin-right: 15px;
+    }
+
+    /* CONTENEDOR DE IMAGENES */
+
+    .container-productos-jgsillones {
+        max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
+        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+      
+    .container-images{
+        font-size: 40px;
+        text-align: center;
+    }
+      
+    .image-row {
+        display: flex;
+        justify-content: center;
+    }
+      
+    .image-container img {
+        display: block;
+        width: 350px;
+        height: 350px;
+        transition: filter 0.3s;
+        filter: brightness(70%);
+    }
+
+    
+
+    .image-container:hover img {
+        cursor: pointer;
+        filter: brightness(60%);
+    }
+
+    .image-title {
+        font-size: 35px;
+        position: absolute;
+        margin: 100px 0px 10px 80px;
+        color: white;
+        font-weight: bold;
+        z-index: 1;
+        user-select: none;
+    }
+
+    .image-title:hover{
+        cursor: pointer;
+    }
+
+    .image-titlepuff{
+        font-size: 35px;
+        position: absolute;
+        margin: 100px 0px 0px 100px;
+        color: white;
+        font-weight: bold;
+        z-index: 1;
+    }
+
+    .image-titlepersonalizable{
+      font-size: 35px;
+      position: absolute;
+      margin: 100px 0px 0px 50px;
+      color: white;
+      font-weight: bold;
+      z-index: 1;
+    }
+
+    /* SECCIONES POR ELECCION - SILLONES */
+
+    .seccion-sillones {
+        max-width: 1035px; /* Ajusta el ancho máximo según tus necesidades */
+        margin: 100px auto; /* Centra horizontalmente el contenedor */
+        margin-top: 60px;
+    }
+
+    .seccions-title{
+        color: #54595F;
+        font-family: "Poppins", Sans-serif;
+        font-weight: 600;
+        font-size: 31px;
+    }
+      
+    .image-sillones-cont {
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+    }
+      
+    .image-sillones {
+        margin: 20px 10px;
+    }
+      
+    .image-sillones img {
+        width: 330px;
+    }
+
+    .image-sillones:hover{
+        cursor: pointer;
+    }
+      
+    .tituloimagen{
+        font-size: 22px;    
+        margin: 0;
+        padding: 20px 0 0 0;
+        color: black;
+    }
+
+    .infoimagen{
+        font-size: 18px;    
+        margin: 0;
+        padding: 20px 0;
+        color: rgb(98, 97, 97);
+        text-decoration: underline;
+    }
+}   
 
 
 @media (min-width: 1200px){
