@@ -149,7 +149,7 @@ header .nav{
     background-position: center center;
 }
 
-.hero-titulo {
+.hero-titulo{
     color: #FFFFFF;
     font-weight: 300;
     letter-spacing: 0px;
@@ -158,14 +158,9 @@ header .nav{
 
 #hero h4{
     color: #FFFFFF;
-    font-size: 5em;
+    font-size: 3em;
     font-weight: 400;
     margin-top: 0;
-}
-
-#hero button{
-    font-size: 1.7em;
-    font-weight: 600;
 }
 
 /* SOMOS LEONLIVINGS */
@@ -258,7 +253,7 @@ footer .container{
     /* HERO */
 
     .hero-titulo{
-        font-size: 7em;
+        font-size: 8em;
     }
 
     /* SECCION SOMOS LEON LIVINGS */
@@ -613,7 +608,6 @@ footer .container{
         user-select: none;
         height: 50vw;
         width: 100%;
-        overflow: hidden;
     }
 
     .slide:hover{
@@ -637,7 +631,7 @@ footer .container{
     }
 
     .slide-item img {
-        display: block;
+        float: right;
         height: auto;
         padding: 100px 0px 0px 0px;
         width: 800px;
@@ -654,10 +648,7 @@ footer .container{
         line-height: 35px;
         position: absolute;
         top: 60%;
-        -webkit-transform: translate(0, -50%);
-        cursor: pointer;
-        -ms-transform: translate(0, -50%);
-        transform: translate(0, -50%);
+        cursor: pointer;    
         text-align: center;
         width: 40px;
         z-index: 10;
@@ -884,17 +875,6 @@ footer .container{
         margin-top: 0;
     }
 
-    #flechita{
-        color: #FFFFFF;
-        font-size: 40px;
-    }
-
-    #flechita:hover{
-        cursor: pointer;
-    }
-
-
-
     /* INPUTS */
 
     .container-solicitar {
@@ -1023,10 +1003,6 @@ footer .container{
         color: red;
         font-size: 14px;
     }
-
-
-
-    /* ---------------------------- PRUEBAS -------------------------------- */
 
     /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
 
@@ -1209,6 +1185,146 @@ footer .container{
         color: rgb(98, 97, 97);
         text-decoration: underline;
     }
+
+    /* WEB SECCION SOBRE NOSOTROS */
+
+    #hero-sobrenosotros{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/img3.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+      
+      .arrow-down {
+        position: absolute;
+        bottom: 0px; /* Ajusta la posición vertical según tus necesidades */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        height: 200px;
+        background-image: url("/media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        background-color: transparent;
+        animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
+        opacity: 0;
+    }
+
+    .arrow-down-contacto {
+        position: absolute;
+        bottom: 200px; /* Ajusta la posición vertical según tus necesidades */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 160px;
+        background-image: url("/media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        background-color: transparent;
+        animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
+        opacity: 0;
+    }
+    
+    @keyframes arrowAppear {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    
+    @keyframes arrowMove {
+      0% {
+        transform: translate(-50%, 0);
+      }
+      100% {
+        transform: translate(-50%, 20px);
+      }
+    }
+    
+    
+    .hero-sobrenosotros-titulo {
+        font-family: "Montserrat", Sans-serif;
+        font-size: 120px;
+        color: #FFFFFF;
+        font-weight: 100;
+        letter-spacing: 0px;
+        margin-bottom: 0;
+    }
+
+    .historia-container{
+        text-align: center;
+        flex-direction: column;
+    }
+
+    .historia-container h1{
+        margin-top: 80px;
+        margin-bottom: 40px;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 30px;
+        font-weight: 600;
+        justify-content: center;
+        text-align: center;
+        text-decoration: underline;
+        color: #000;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .container-texto{
+        padding-bottom: 80px;
+    }
+
+    .texto-historia1 {
+        color: #000;
+        display: inline-block;
+        padding-right: 10px;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 13.5px;
+        font-weight: 300;
+        word-wrap: break-word;
+        width: 580px;
+        vertical-align: top; /* ALINEA EL PRIMER TEXTO EN LA PARTE SUPERIOR */
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .texto-historia2 {
+        color: #000;
+        display: inline-block;
+        padding-right: 10px;
+        font-family: "Montserrat", Sans-serif;
+        font-size: 13.5px;
+        font-weight: 300;
+        word-wrap: break-word;
+        width: 580px;
+        vertical-align: top; /* ALINEA EL PRIMER TEXTO EN LA PARTE SUPERIOR */
+        text-align: left;
+        line-height: 1.5;
+        letter-spacing: 1px;
+    }
+
+    .negrita-historia{
+        font-family: "Montserrat", Sans-serif;
+        font-weight: 600; /* DETALLE: PONIENDO EN BOLD, NEGRITA AFECTANDO EL GROSOR, EN 600, NO AFECTA */
+    }
+
+    /* ---------------------------- PRUEBAS -------------------------------- */
 }   
 
 
