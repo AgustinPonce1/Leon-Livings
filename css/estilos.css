@@ -4,7 +4,7 @@
 
 *::selection{
     color: #ffffff;
-    background-color: #0170b9;
+    background-color: #0170b9; /* ESTE SERA EL COLOR QUE APARECERA AL SELECCIONAR */
 }
 
 html{
@@ -58,13 +58,12 @@ header{
     z-index: 11;
 }
 
-header .logo{
+header .logo-text{
     margin: 0;
     padding-right: 350px;
-    padding-left: 20px;
-    font-weight: bold;
+    font-weight: 600;
     color: black;
-    font-size: 1.6em;
+    font-size: 1.4em;
 }
 
 header .container{
@@ -234,21 +233,43 @@ footer .container{
 
     /* HEADER */
 
-    header{
+    header {
         opacity: 2;
         position: fixed;
         width: 100%;
+        transition: height 0.3s ease-in-out;
+        z-index: 999;
     }
-
-    header .container{
+    
+    header .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    header nav {
+        display: flex;
         flex-direction: row;
     }
-
-    header nav{
-        flex-direction: row;
-        padding-bottom: 0;
-        padding-right: 20px;
+    
+    header .logoinicio {
+        width: 50px;
+        padding: 5px 0px;
+        border-radius: 15px;
     }
+    
+    .menu-icon {
+        display: none;
+    }
+    
+    .menu-icon img {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+    }
+
 
     /* HERO */
 
@@ -434,6 +455,8 @@ footer .container{
         color: #ccc;
     }
 
+    /* SECCION CONTACTO FOOTER */
+
     #findepagina .contacto-findepagina h6{
         font-size: x-large;
         color: cadetblue;
@@ -462,26 +485,19 @@ footer .container{
         margin-left: 200px;
         width: 350px;
     }
-    /* LOGO DE INICIO */
-
-    header .logoinicio{
-        width: 50px;
-        padding: 5px 0px;
-        border-radius: 15px;
-    }
 
     /* LOGO DE BUSCADOR */
 
     .logobuscador{
-    width: 30px;
-    border-radius: 15px;
-    margin-right: 80px;
+        width: 30px;
+        border-radius: 15px;
+        margin-right: 80px;
     }
       
     .interactive-button {
         position: fixed;
-        bottom: 20px; /* Ajusta la distancia desde la parte inferior según tus necesidades */
-        right: 20px; /* Ajusta la distancia desde la parte derecha según tus necesidades */
+        bottom: 20px;
+        right: 20px;
         display: flex;
         align-items: center;
         z-index: 3;
@@ -505,13 +521,13 @@ footer .container{
     }
       
     .interactive-button img {
-        width: 60px; /* Ajusta el ancho de la imagen según tus necesidades */
-        height: auto; /* Ajusta la altura proporcionalmente a la anchura */
+        width: 60px;
+        height: auto;
     }
       
     .interactive-button:hover .button-text {
-        background-color: #ddd; /* Cambia el color de fondo en el hover */
-        transform: scale(1.1); /* Aumenta el tamaño en el hover */
+        background-color: #ddd;
+        transform: scale(1.1);
     }
     
     .search-icon:hover{
@@ -559,13 +575,11 @@ footer .container{
             color: darkslategrey;
     }
       
-      /* Estilos para el contenedor del dropdown */
     .dropdown {
         position: relative;
         display: inline-block;
     }
       
-      /* Estilos para el contenido del dropdown */
     .dropdown-content {
         display: none;
         position: absolute;
@@ -575,8 +589,7 @@ footer .container{
         z-index: 1;
         margin-left: 12px;
     }
-      
-      /* Estilos para los enlaces dentro del dropdown */
+
     .dropdown-content a {
         color: black;
         padding: 14px 12px 14px 32px;
@@ -584,18 +597,19 @@ footer .container{
         display: block;
     }
       
-      /* Cambiar color del enlace cuando se pasa el mouse por encima */
     .dropdown-content a:hover {
         background-color: #54595F;
         color: #f9f9f9;
         transition: background-color 0.4s ease;
     }
+    
+    .dropdown-content {
+        display: none;
+    }
       
-      /* Mostrar el dropdown cuando se pasa el mouse por encima del botón */
-    .dropdown:hover .dropdown-content {
+    .dropdown.active .dropdown-content {
         display: block;
     }
-
 
     /* CARRUSEL */
 
@@ -633,12 +647,12 @@ footer .container{
     .slide-item img {
         float: right;
         height: auto;
-        padding: 100px 0px 0px 0px;
+        padding: 100px 0px 100px 0px;
         width: 800px;
     }
 
     .slide-control {
-         background: rgba(77, 73, 73, 0.28);
+        background: rgba(77, 73, 73, 0.28);
         border-radius: 50%;
         color: #fff;
         cursor: pointer;
@@ -1074,8 +1088,8 @@ footer .container{
     /* CONTENEDOR DE IMAGENES */
 
     .container-productos-jgsillones {
-        max-width: 1000px; /* Ajusta el ancho máximo según tus necesidades */
-        margin: 0 auto; /* Centra el contenedor horizontalmente */
+        max-width: 1000px;
+        margin: 0 auto;
         padding: 20px;
         margin-top: 80px;
         min-height: 100vh;
@@ -1138,11 +1152,9 @@ footer .container{
       z-index: 1;
     }
 
-    /* SECCIONES POR ELECCION - SILLONES */
-
     .seccion-sillones {
-        max-width: 1035px; /* Ajusta el ancho máximo según tus necesidades */
-        margin: 100px auto; /* Centra horizontalmente el contenedor */
+        max-width: 1035px;
+        margin: 100px auto;
         margin-top: 60px;
     }
 
@@ -1326,6 +1338,193 @@ footer .container{
 
     /* ---------------------------- PRUEBAS -------------------------------- */
 }   
+
+
+@media (max-width: 950px){
+
+    #hero{
+        background-position: left;
+    }
+
+    /* HEADER */
+
+    header{
+        width: 100%;
+    }
+
+    header .logo-text{
+        margin-left: -280px;
+        font-size: 1.2em;
+        font-weight: 600;
+    }
+
+    /* MENU HAMBURGESA */
+
+    header .container {
+        flex-wrap: wrap;
+    }
+    
+    header nav {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        order: 3;
+        width: 100%;
+    }
+    
+    header.show-nav nav {
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-icon {
+        display: block;
+        order: 2;
+        text-align: right;
+    }
+    
+    .menu-icon img {
+        display: block;
+    }
+    
+    .logobuscador{
+        display: none;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 45px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .logo-container .finlogo{
+        margin-left: 380px;
+    }
+
+    #findepagina .container-findepagina h3{
+        margin-left: 30px;
+    }
+
+    #findepagina .institucional-container li{
+        margin-left: 0px;
+    }
+
+    .divisor {
+        margin-left: 50px;
+        width: 160px;
+    }
+
+    #findepagina .locales h4{
+        margin-left: 30px;
+        padding: 0px 20px;
+    }
+
+    #findepagina .productos-findepagina h5{
+        padding-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .productos-findepagina li{
+        padding: 10px 0;
+    }
+
+    #findepagina .contacto-findepagina h6{
+        padding-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contacto-findepagina li{
+        padding: 10px 0;
+    }
+
+    .divisor2{
+        margin-left: 40px;
+        width: 250px;
+    }
+
+    .arrow-down {
+        bottom: -80px;
+    }
+
+    /* HERO SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-contacto {
+        bottom: 20px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 60px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+           margin-left: 10%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+        margin-bottom: -220px;
+    }
+          
+    .container-images{
+        font-size: 34px;
+    }
+          
+    .image-container img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 30px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 30px;
+      margin: 100px 0px 0px 30px;
+    }
+    
+    .seccion-sillones {
+        max-width: 880px;
+        margin: 100px auto;
+    }
+          
+    .image-sillones img {
+        width: 280px;
+    }
+    
+}
 
 
 @media (min-width: 1200px){
