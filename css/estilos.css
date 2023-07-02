@@ -368,7 +368,7 @@ footer .container{
         width: 80px;    
         max-width: 100%;
         padding: 40px 0px 0px 0px;
-        margin-left: 750px;
+        margin-left: 650px;
     }
 
     #findepagina .container-findepagina h3{
@@ -1225,7 +1225,7 @@ footer .container{
         transform: translateX(-50%);
         width: 80px;
         height: 200px;
-        background-image: url("/media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-image: url("../media/iconflecha.png"); /* O utiliza una fuente de iconos */
         background-size: contain;
         background-repeat: no-repeat;
         color: #FFFFFF;
@@ -1241,7 +1241,7 @@ footer .container{
         transform: translateX(-50%);
         width: 60px;
         height: 160px;
-        background-image: url("/media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-image: url("../media/iconflecha.png"); /* O utiliza una fuente de iconos */
         background-size: contain;
         background-repeat: no-repeat;
         color: #FFFFFF;
@@ -1257,7 +1257,7 @@ footer .container{
         transform: translateX(-50%);
         width: 100px;
         height: 160px;
-        background-image: url("/media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-image: url("../media/iconflecha.png"); /* O utiliza una fuente de iconos */
         background-size: contain;
         background-repeat: no-repeat;
         color: #FFFFFF;
@@ -1355,194 +1355,6 @@ footer .container{
     /* ---------------------------- PRUEBAS -------------------------------- */
 }   
 
-
-/* RESPONSIVE A 950px */
-
-@media (max-width: 950px){
-
-    #hero{
-        background-position: left;
-    }
-
-    /* HEADER */
-
-    header{
-        width: 100%;
-    }
-
-    header .logo-text{
-        padding-left: 180px;
-        font-size: 1.2em;
-    }
-
-    /* MENU HAMBURGESA */
-
-    header .container {
-        flex-wrap: wrap;
-    }
-    
-    header nav {
-        flex-wrap: wrap;
-        overflow: hidden;
-        max-height: 0;
-        transition: max-height 0.3s ease-in-out;
-        order: 3;
-        width: 100%;
-    }
-    
-    header.show-nav nav {
-        max-height: 500px;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    .menu-icon {
-        display: block;
-        order: 2;
-        text-align: right;
-    }
-    
-    .menu-icon img {
-        display: block;
-    }
-    
-    .logobuscador{
-        display: none;
-    }
-
-    /* CARRUSEL */
-
-    .slide {
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-indicador {
-        bottom: 45px;
-    }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-    }
-
-    #findepagina .logo-container .finlogo{
-        margin-left: 380px;
-    }
-
-    #findepagina .container-findepagina h3{
-        margin-left: 30px;
-    }
-
-    #findepagina .institucional-container li{
-        margin-left: 0px;
-    }
-
-    .divisor {
-        margin-left: 50px;
-        width: 160px;
-    }
-
-    #findepagina .locales h4{
-        margin-left: 30px;
-        padding: 0px 20px;
-    }
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .productos-findepagina li{
-        padding: 10px 0;
-    }
-
-    #findepagina .contacto-findepagina h6{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .contacto-findepagina li{
-        padding: 10px 0;
-    }
-
-    .divisor2{
-        margin-left: 40px;
-        width: 250px;
-    }
-
-    .arrow-down {
-        bottom: -80px;
-    }
-
-    /* HERO SOBRE NOSOTROS */
-
-    .hero-sobrenosotros-titulo {
-        font-size: 80px;
-    }
-
-    .arrow-down-sobrenosotros {
-        bottom: 20px;
-    }
-
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-    
-    #hero-np h1 {
-        font-size: 60px;
-    }
-        
-    #hero-np h4{
-        font-size: 2.2rem;
-    }
-    
-    .listahero{
-           margin-left: 10%;
-    }
-    
-    /* CONTENEDOR DE IMAGENES */
-    
-    .container-productos-jgsillones {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-        margin-bottom: -220px;
-    }
-          
-    .container-images{
-        font-size: 34px;
-    }
-          
-    .image-container img {
-        width: 280px;
-        height: 280px;
-    }
-    
-    .image-title,
-    .image-titlepuff {
-        font-size: 30px;
-    }
-    
-    .image-titlepersonalizable{
-      font-size: 30px;
-      margin: 100px 0px 0px 30px;
-    }
-    
-    .seccion-sillones {
-        max-width: 880px;
-        margin: 100px auto;
-    }
-          
-    .image-sillones img {
-        width: 280px;
-    }
-    
-}
-
 /* RESPONSIVE A 1920px */
 
 @media (max-width: 1920px){
@@ -1569,7 +1381,7 @@ footer .container{
     }
 
     #findepagina .logo-container .finlogo{
-        margin-left: 860px;
+        margin-left: 870px;
     }
 
     .arrow-down {
@@ -1791,7 +1603,7 @@ footer .container{
 
     .arrow-down {
         width: 100px;
-        bottom: 80px;
+        bottom: -40px;
     }
 
     /* CARRUSEL */
@@ -1840,7 +1652,7 @@ footer .container{
 
     .arrow-down-contacto{
         width: 80px;
-        bottom: 160px;
+        bottom: 60px;
     }
 
     /* TITULO SECCION SUCURSALES */
@@ -1869,7 +1681,7 @@ footer .container{
 
     .arrow-down-sobrenosotros {
         width: 100px;
-        bottom: 100px;
+        bottom: 0px;
     }
 
     /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
@@ -1928,7 +1740,7 @@ footer .container{
 
 /* RESPONSIVE A 1024px */
 
-@media (max-width: 1024px){
+@media (max-width: 1024px) and (min-width: 960px){
 
     /* MENU HAMBURGESA */
 
@@ -1966,7 +1778,8 @@ footer .container{
     }
 
     header .logo-text{
-        margin-left: -450px;
+        font-size: 1.2em;
+        margin-left: -400px;
     }
 
     /* SOMOS LEON LIVINGS CONTAINER */
@@ -2005,11 +1818,11 @@ footer .container{
     }
 
     #findepagina .logo-container .finlogo{
-        margin-left: 390px;
+        margin-left: 410px;
     }
 
     #findepagina .productos-findepagina h5{
-        padding-left: 120px;
+        padding-left: 140px;
     }
 
     .productos-findepagina li{
@@ -2052,6 +1865,13 @@ footer .container{
 
     .video:hover .titulo-palomar {
         font-size: 14px;
+    }
+
+    .container-videos{
+        display: flex;
+        width: 100%;
+        height: 200vh;
+        flex-direction: column;
     }
 
     /* HERO  SECCION SOBRE NOSOTROS */
@@ -2121,6 +1941,193 @@ footer .container{
     }
 }
 
+/* RESPONSIVE A 950px */
+
+@media (max-width: 950px){
+
+    #hero{
+        background-position: left;
+    }
+
+    /* HEADER */
+
+    header{
+        width: 100%;
+    }
+
+    header .logo-text{
+        padding-left: 180px;
+        font-size: 20em;
+    }
+
+    /* MENU HAMBURGESA */
+
+    header .container {
+        flex-wrap: wrap;
+    }
+    
+    header nav {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        order: 3;
+        width: 100%;
+    }
+    
+    header.show-nav nav {
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .menu-icon {
+        display: block;
+        order: 2;
+        text-align: right;
+    }
+    
+    .menu-icon img {
+        display: block;
+    }
+    
+    .logobuscador{
+        display: none;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 45px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .logo-container .finlogo{
+        margin-left: 380px;
+    }
+
+    #findepagina .container-findepagina h3{
+        margin-left: 30px;
+    }
+
+    #findepagina .institucional-container li{
+        margin-left: 0px;
+    }
+
+    .divisor {
+        margin-left: 50px;
+        width: 160px;
+    }
+
+    #findepagina .locales h4{
+        margin-left: 30px;
+        padding: 0px 20px;
+    }
+
+    #findepagina .productos-findepagina h5{
+        padding-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .productos-findepagina li{
+        padding: 10px 0;
+    }
+
+    #findepagina .contacto-findepagina h6{
+        padding-left: 100px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .contacto-findepagina li{
+        padding: 10px 0;
+    }
+
+    .divisor2{
+        margin-left: 40px;
+        width: 250px;
+    }
+
+    .arrow-down {
+        bottom: -80px;
+    }
+
+    /* HERO SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-sobrenosotros {
+        bottom: 20px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 60px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+           margin-left: 10%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+        margin-bottom: -220px;
+    }
+          
+    .container-images{
+        font-size: 34px;
+    }
+          
+    .image-container img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 30px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 30px;
+      margin: 100px 0px 0px 30px;
+    }
+    
+    .seccion-sillones {
+        max-width: 880px;
+        margin: 100px auto;
+    }
+          
+    .image-sillones img {
+        width: 280px;
+    }
+    
+}
+
 /* RESPONSIVE A 768px */
 
 @media (max-width: 768px){
@@ -2167,12 +2174,21 @@ footer .container{
     /* SOMOS LEON LIVINGS CONTAINER */
 
     .somostxt-1{
-        font-size: 28px;
+        font-size: 32px;
     }
     
     .somostxt-2{
-        font-size: 18px;
-        font-weight: 100;
+        font-size: 22px;
+    }
+
+    #somos-leonlivings .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #somos-leonlivings .img-container{
+        height: 300px;
+        width: 600px;
     }
 
     /* HERO */
@@ -2197,31 +2213,46 @@ footer .container{
         bottom: 35px;
     }
 
+    .slide-item img {
+        width: 650px;
+    }
+
     /* FOOTER */
     
     #findepagina{
         width: 100%;
     }
 
+    #findepagina .logo-container .finlogo{
+        width: 80px;    
+        max-width: 100%;
+        padding: 40px 0px 0px 0px;
+        margin-left: 290px;
+    }
+
     #findepagina .productos-findepagina h5{
-        padding-left: 125px;
+        padding-left: 55px;
     }
 
     .productos-findepagina li{
-        padding-left: 40px;
+        padding-left: 0px;
     }
 
     #findepagina .contacto-findepagina h6{
-        margin-left: -90px;
+        margin-left: 40px;
     }
 
     .contacto-findepagina li{
-        padding-left: 125px;
+        padding-left: 45px;
     }
 
     .divisor2{
-        margin-left: 160px;
+        margin-left: 80px;
         width: 250px;
+    }
+
+    footer .container{
+        justify-content: right;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -2243,6 +2274,7 @@ footer .container{
     }
 
     .container-videos{
+        display: flex;
         height: 200vh;
         flex-direction: column;
     }
@@ -2254,6 +2286,7 @@ footer .container{
     .video:hover .titulo-palomar {
         font-size: 20px;
     }  
+    
 
     /* HERO  SECCION SOBRE NOSOTROS */
 
@@ -2326,8 +2359,13 @@ footer .container{
 
 @media (max-width: 320px){
 
-    header .logo-text{
-        font-size: 20%;
+    .container-videos{
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .logo-text{
+        font-size: 20em;
     }
 
     /* SOMOS LEON LIVINGS CONTAINER */
@@ -2365,29 +2403,170 @@ footer .container{
 
     /* FOOTER */
     
-    #findepagina{
+        #findepagina{
+            display: flex;
+            flex-direction: column;
+            padding-left: 40px;
+            background-color: rgb(30, 30, 30);
+            color: white;
+            height: 100vh;
+            background-image: linear-gradient(
+                0deg,
+                rgba(0,0,0,0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../media/img4.jpg");
+    }
+    
+    #findepagina h2{
+        font-size: 9vw;
+    }
+    
+    #findepagina .container-findepagina{
+        display: flex;
+        justify-content: center;
         width: 100%;
     }
 
+    #findepagina .logo-container .finlogo{
+        width: 80px;    
+        max-width: 100%;
+        padding: 40px 0px 0px 0px;
+        margin-left: 650px;
+    }
+
+    #findepagina .container-findepagina h3{
+        font-size: x-large;
+        color: cadetblue;
+        padding: 0px 20px;
+        padding-bottom: 0;
+        font-weight: 200px;
+    }
+
+    #findepagina .institucional-container li{
+        margin-left: -28px;
+        padding: 0px 0px 20px 10px;
+        font-weight: 300;
+        list-style-type: none;
+        
+    }
+
+    .institucional-container a{
+        color: #FFFFFF;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    .institucional-container a:hover{
+        color: #ccc;
+    }
+
+    .divisor {
+        width: 250px;
+    }
+
+    /* LOCALES FIN DE PAGINA */
+
+    #findepagina .locales h4{
+        font-size: x-large;
+        color: cadetblue;
+        padding: 0px 20px;
+        padding-bottom: 0;
+        font-weight: 200px;
+        margin-bottom:  0;
+        display: flex;
+    }
+
+    .locales li{
+        margin-left: -28px;
+        padding: 10px;
+        font-weight: 300;
+    }
+
+    .locales a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .locales a:hover{
+        color: #ccc;
+    }
+
+    /* PRODUCTOS DE FINAL DE PAGINA */
+
     #findepagina .productos-findepagina h5{
-        padding-left: 125px;
+        font-size: x-large;
+        color: cadetblue;
+        font-weight: 200px;
+        padding-left: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .productos-findepagina li{
-        padding-left: 40px;
+        padding: 10px 0;
+        text-align: center;
+        font-weight: 300;
+        padding-left: 200px;
     }
 
+    .productos-findepagina a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .productos-findepagina a:hover{
+        color: #ccc;
+    }
+
+    /* SECCION CONTACTO FOOTER */
+
     #findepagina .contacto-findepagina h6{
-        margin-left: -90px;
+        font-size: x-large;
+        color: cadetblue;
+        font-weight: 200px;
+        padding-left: 300px;
+        margin-top: 20px;
+        margin-bottom: 10px;
     }
 
     .contacto-findepagina li{
-        padding-left: 125px;
+        padding: 10px 0;
+        font-weight: 300;
+        padding-left: 200px;
+    }
+
+    .contacto-findepagina a{
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+
+    .contacto-findepagina a:hover{
+        color: #ccc;
     }
 
     .divisor2{
-        margin-left: 160px;
-        width: 250px;
+        margin-left: 200px;
+        width: 350px;
+    }
+
+    /* COPYRIGHT */
+    
+    footer{
+        background-color: rgb(230, 230, 230);
+    }
+    
+    footer p{
+        margin: 0;
+        padding: 12px;
+        color: rgb(100, 100, 100);
+    }
+    
+    footer .container{
+        height: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -2397,29 +2576,6 @@ footer .container{
         bottom: 140px;
     }
 
-    /* TITULO SECCION SUCURSALES */
-
-    .titulo-cj {
-        font-size: 18px;
-    }
-
-    .titulo-palomar {
-        font-size: 18px;
-        padding-bottom: 40px;
-    }
-
-    .container-videos{
-        height: 200vh;
-        flex-direction: column;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 20px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 20px;
-    }  
 
     /* HERO  SECCION SOBRE NOSOTROS */
 
