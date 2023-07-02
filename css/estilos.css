@@ -1371,9 +1371,8 @@ footer .container{
     }
 
     header .logo-text{
-        margin-left: -280px;
+        padding-left: 180px;
         font-size: 1.2em;
-        font-weight: 600;
     }
 
     /* MENU HAMBURGESA */
@@ -2162,7 +2161,7 @@ footer .container{
     }
 
     header .logo-text{
-        margin-right: -200px;
+        padding-left: 200px;
     }
 
     /* SOMOS LEON LIVINGS CONTAINER */
