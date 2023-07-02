@@ -1,0 +1,15 @@
+Pantallas soportables:
+
+1920PX x --
+
+1440PX x --
+
+1280PX x --
+
+1024PX x --
+
+950PX x --
+
+768PX x --
+
+320PX x --

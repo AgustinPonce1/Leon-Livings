@@ -1249,6 +1249,22 @@ footer .container{
         animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
         opacity: 0;
     }
+
+    .arrow-down-sobrenosotros{
+        position: absolute;
+        bottom: 10px; /* Ajusta la posición vertical según tus necesidades */
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 160px;
+        background-image: url("/media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-size: contain;
+        background-repeat: no-repeat;
+        color: #FFFFFF;
+        background-color: transparent;
+        animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
+        opacity: 0;
+    }
     
     @keyframes arrowAppear {
       0% {
@@ -1339,6 +1355,8 @@ footer .container{
     /* ---------------------------- PRUEBAS -------------------------------- */
 }   
 
+
+/* RESPONSIVE A 950px */
 
 @media (max-width: 950px){
 
@@ -1467,7 +1485,7 @@ footer .container{
         font-size: 80px;
     }
 
-    .arrow-down-contacto {
+    .arrow-down-sobrenosotros {
         bottom: 20px;
     }
 
@@ -1526,10 +1544,947 @@ footer .container{
     
 }
 
+/* RESPONSIVE A 1920px */
 
-@media (min-width: 1200px){
-    #opiniones{
-        background-position-x: calc(100vw - 800px);
+@media (max-width: 1920px){
+
+    header{
+        width: 100%;
     }
 
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 45px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .logo-container .finlogo{
+        margin-left: 860px;
+    }
+
+    .arrow-down {
+        width: 100px;
+        bottom: 100px;
+    }
+
+    /* FLECHA SECCION CONTACTO */
+
+    .arrow-down-contacto{
+        width: 80px;
+    }
+
+    /* HERO  SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 100px;
+        bottom: 100px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 80px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+           margin-left: 13%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+          
+    .container-images{
+        font-size: 42px;
+    }
+          
+    .image-container img {
+        width: 420px;
+        height: 420px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 48px;
+        margin: 200px 0px 0px 100px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 48px;
+      margin: 200px 0px 0px 100px;
+    }
+    
+    .seccion-sillones {
+        max-width: 1245px;
+        margin: 100px auto;
+    }
+          
+    .image-sillones img {
+        width: 400px;
+    }
+    
+}
+
+/* RESPONSIVE A 1440px */
+
+@media (max-width: 1440px){
+
+    header{
+        width: 100%;
+    }
+
+    /* HERO */
+
+    .arrow-down {
+        width: 100px;
+        bottom: 80px;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 35px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .logo-container .finlogo{
+        margin-left: 640px;
+    }
+
+    /* FLECHA SECCION CONTACTO */
+
+    .arrow-down-contacto{
+        width: 80px;
+        bottom: 160px;
+    }
+
+    /* TITULO SECCION SUCURSALES */
+
+    .titulo-cj {
+        font-size: 16px;
+    }
+
+    .titulo-palomar {
+        font-size: 16px;
+    }
+
+    .video:hover .titulo-cj {
+        font-size: 18px;
+    }
+
+    .video:hover .titulo-palomar {
+        font-size: 18px;
+    }
+
+    /* HERO  SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 100px;
+        bottom: 100px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 80px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+           margin-left: 12%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+          
+    .container-images{
+        font-size: 36px;
+    }
+          
+    .image-container img {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 36px;
+        margin: 140px 0px 0px 100px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 36px;
+      margin: 140px 0px 0px 50px;
+    }
+    
+    .seccion-sillones {
+        max-width: 1005px;
+        margin: 100px auto;
+    }
+          
+    .image-sillones img {
+        width: 320px;
+    }
+}
+
+/* RESPONSIVE A 1280px */
+
+@media (max-width: 1280px){
+
+    header{
+        width: 100%;
+    }
+
+    header .logo-text{
+        padding-right: 220px;
+    }
+
+    /* HERO */
+
+    .arrow-down {
+        width: 100px;
+        bottom: 80px;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 35px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .logo-container .finlogo{
+        margin-left: 570px;
+    }
+
+    #findepagina .productos-findepagina h5{
+        padding-left: 200px;
+    }
+
+    .productos-findepagina li{
+        padding-left: 100px;
+    }
+
+    #findepagina .contacto-findepagina h6{
+        margin-left: -90px;
+    }
+
+    .contacto-findepagina li{
+        padding-left: 120px;
+    }
+
+    .divisor2{
+        margin-left: 160px;
+        width: 250px;
+    }
+
+    /* FLECHA SECCION CONTACTO */
+
+    .arrow-down-contacto{
+        width: 80px;
+        bottom: 160px;
+    }
+
+    /* TITULO SECCION SUCURSALES */
+
+    .titulo-cj {
+        font-size: 16px;
+    }
+
+    .titulo-palomar {
+        font-size: 16px;
+    }
+
+    .video:hover .titulo-cj {
+        font-size: 18px;
+    }
+
+    .video:hover .titulo-palomar {
+        font-size: 18px;
+    }
+
+    /* HERO  SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 100px;
+        bottom: 100px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 80px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+           margin-left: 12%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 1000px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+          
+    .container-images{
+        font-size: 36px;
+    }
+          
+    .image-container img {
+        width: 340px;
+        height: 340px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 36px;
+        margin: 140px 0px 0px 100px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 36px;
+      margin: 140px 0px 0px 50px;
+    }
+    
+    .seccion-sillones {
+        max-width: 1005px;
+        margin: 100px auto;
+    }
+          
+    .image-sillones img {
+        width: 320px;
+    }
+}
+
+/* RESPONSIVE A 1024px */
+
+@media (max-width: 1024px){
+
+    /* MENU HAMBURGESA */
+
+    header .container {
+        flex-wrap: wrap;
+    }
+        
+    header nav {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        order: 3;
+        width: 100%;
+    }
+        
+    header.show-nav nav {
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .menu-icon {
+        display: block;
+        order: 2;
+        text-align: right;
+    }
+        
+    .menu-icon img {
+        display: block;
+    }
+        
+    .logobuscador{
+        display: none;
+    }
+
+    header .logo-text{
+        margin-left: -450px;
+    }
+
+    /* SOMOS LEON LIVINGS CONTAINER */
+
+    .somostxt-1{
+        font-size: 28px;
+    }
+    
+    .somostxt-2{
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    /* HERO */
+
+    .arrow-down {
+        width: 100px;
+        bottom: 80px;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 35px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .logo-container .finlogo{
+        margin-left: 390px;
+    }
+
+    #findepagina .productos-findepagina h5{
+        padding-left: 120px;
+    }
+
+    .productos-findepagina li{
+        padding-left: 40px;
+    }
+
+    #findepagina .contacto-findepagina h6{
+        margin-left: -90px;
+    }
+
+    .contacto-findepagina li{
+        padding-left: 125px;
+    }
+
+    .divisor2{
+        margin-left: 160px;
+        width: 250px;
+    }
+
+    /* FLECHA SECCION CONTACTO */
+
+    .arrow-down-contacto{
+        width: 80px;
+        bottom: 160px;
+    }
+
+    /* TITULO SECCION SUCURSALES */
+
+    .titulo-cj {
+        font-size: 12px;
+    }
+
+    .titulo-palomar {
+        font-size: 12px;
+    }
+
+    .video:hover .titulo-cj {
+        font-size: 14px;
+    }
+
+    .video:hover .titulo-palomar {
+        font-size: 14px;
+    }
+
+    /* HERO  SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 100px;
+        bottom: 100px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 65px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+        margin-left: 10.5%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+        margin-bottom: -100px;
+    }
+          
+    .container-images{
+        font-size: 32px;
+    }
+          
+    .image-container img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 32px;
+        margin: 140px 0px 0px 60px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 32px;
+      margin: 140px 0px 0px 30px;
+    }
+    
+    .seccion-sillones {
+        max-width: 825px;
+        margin: 0px auto;
+        margin-bottom: 100px;
+    }
+          
+    .image-sillones img {
+        width: 260px;
+    }
+}
+
+/* RESPONSIVE A 768px */
+
+@media (max-width: 768px){
+
+    /* MENU HAMBURGESA */
+
+    header .container {
+        flex-wrap: wrap;
+    }
+        
+    header nav {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        order: 3;
+        width: 100%;
+    }
+        
+    header.show-nav nav {
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+        
+    .menu-icon {
+        display: block;
+        order: 2;
+        text-align: right;
+    }
+        
+    .menu-icon img {
+        display: block;
+    }
+        
+    .logobuscador{
+        display: none;
+    }
+
+    header .logo-text{
+        margin-right: -200px;
+    }
+
+    /* SOMOS LEON LIVINGS CONTAINER */
+
+    .somostxt-1{
+        font-size: 28px;
+    }
+    
+    .somostxt-2{
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    /* HERO */
+
+    .arrow-down {
+        width: 100px;
+        bottom: 0px;
+    }
+
+    #hero{
+        background-position: left;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 35px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .productos-findepagina h5{
+        padding-left: 125px;
+    }
+
+    .productos-findepagina li{
+        padding-left: 40px;
+    }
+
+    #findepagina .contacto-findepagina h6{
+        margin-left: -90px;
+    }
+
+    .contacto-findepagina li{
+        padding-left: 125px;
+    }
+
+    .divisor2{
+        margin-left: 160px;
+        width: 250px;
+    }
+
+    /* FLECHA SECCION CONTACTO */
+
+    .arrow-down-contacto{
+        width: 80px;
+        bottom: 140px;
+    }
+
+    /* TITULO SECCION SUCURSALES */
+
+    .titulo-cj {
+        font-size: 18px;
+    }
+
+    .titulo-palomar {
+        font-size: 18px;
+        padding-bottom: 40px;
+    }
+
+    .container-videos{
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .video:hover .titulo-cj {
+        font-size: 20px;
+    }
+
+    .video:hover .titulo-palomar {
+        font-size: 20px;
+    }  
+
+    /* HERO  SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 100px;
+        bottom: 80px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 65px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+        margin-left: 10.5%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+        margin-bottom: 0px;
+    }
+          
+    .container-images{
+        font-size: 32px;
+    }
+          
+    .image-container img {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 30px;
+        margin: 140px 0px 0px 60px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 30px;
+      margin: 140px 0px 0px 30px;
+    }
+    
+    .seccion-sillones {
+        max-width: 765px;
+        margin: 0px auto;
+        margin-bottom: 100px;
+    }
+          
+    .image-sillones img {
+        width: 240px;
+    }
+}
+
+/* RESPONSIVE A 320px */
+
+@media (max-width: 320px){
+
+    header .logo-text{
+        font-size: 20%;
+    }
+
+    /* SOMOS LEON LIVINGS CONTAINER */
+
+    .somostxt-1{
+        font-size: 28px;
+    }
+    
+    .somostxt-2{
+        font-size: 18px;
+        font-weight: 100;
+    }
+
+    /* HERO */
+
+    .arrow-down {
+        width: 100px;
+        bottom: 0px;
+    }
+
+    #hero{
+        background-position: left;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-indicador {
+        bottom: 35px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+    }
+
+    #findepagina .productos-findepagina h5{
+        padding-left: 125px;
+    }
+
+    .productos-findepagina li{
+        padding-left: 40px;
+    }
+
+    #findepagina .contacto-findepagina h6{
+        margin-left: -90px;
+    }
+
+    .contacto-findepagina li{
+        padding-left: 125px;
+    }
+
+    .divisor2{
+        margin-left: 160px;
+        width: 250px;
+    }
+
+    /* FLECHA SECCION CONTACTO */
+
+    .arrow-down-contacto{
+        width: 80px;
+        bottom: 140px;
+    }
+
+    /* TITULO SECCION SUCURSALES */
+
+    .titulo-cj {
+        font-size: 18px;
+    }
+
+    .titulo-palomar {
+        font-size: 18px;
+        padding-bottom: 40px;
+    }
+
+    .container-videos{
+        height: 200vh;
+        flex-direction: column;
+    }
+
+    .video:hover .titulo-cj {
+        font-size: 20px;
+    }
+
+    .video:hover .titulo-palomar {
+        font-size: 20px;
+    }  
+
+    /* HERO  SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 80px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 100px;
+        bottom: 80px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 65px;
+    }
+        
+    #hero-np h4{
+        font-size: 2.2rem;
+    }
+    
+    .listahero{
+        margin-left: 10.5%;
+    }
+    
+    /* CONTENEDOR DE IMAGENES */
+    
+    .container-productos-jgsillones {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+        margin-bottom: 0px;
+    }
+          
+    .container-images{
+        font-size: 32px;
+    }
+          
+    .image-container img {
+        width: 260px;
+        height: 260px;
+    }
+    
+    .image-title,
+    .image-titlepuff {
+        font-size: 30px;
+        margin: 140px 0px 0px 60px;
+    }
+    
+    .image-titlepersonalizable{
+      font-size: 30px;
+      margin: 140px 0px 0px 30px;
+    }
+    
+    .seccion-sillones {
+        max-width: 765px;
+        margin: 0px auto;
+        margin-bottom: 100px;
+    }
+          
+    .image-sillones img {
+        width: 240px;
+    }
 }
