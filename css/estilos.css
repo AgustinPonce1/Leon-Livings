@@ -2805,8 +2805,8 @@ footer .container{
     /* HERO */
 
     .arrow-down {
-        width: 120px;
-        bottom: 100px;
+        width: 80px;
+        bottom: 20px;
     }
 
     #hero{
@@ -2885,7 +2885,7 @@ footer .container{
         display: flex;
         flex-direction: column;
         padding-left: 0px;
-        height: 180vh;
+        height: 220vh;
     }
     
     #findepagina h2{
@@ -2901,10 +2901,7 @@ footer .container{
     }
 
     #findepagina .logo-container .finlogo{
-        margin: 0;
-        margin-top: 20px;
-        margin-left: 44%;
-        margin-bottom: -200px;
+        display: none;
     }
 
     #findepagina .container-findepagina h3{
@@ -2955,15 +2952,15 @@ footer .container{
     }
 
     .divisor2{
-        width: 600px;
-        margin-left: 0px;
+        width: 340px;
+        margin-left: 160px;
     }
 
     /* FLECHA SECCION CONTACTO */
 
     .arrow-down-contacto{
         width: 80px;
-        bottom: 140px;
+        bottom: 60px;
     }
 
     /* WEB SECCION CONTACTO */
@@ -2993,7 +2990,7 @@ footer .container{
 
     .arrow-down-sobrenosotros {
         width: 80px;
-        bottom: 80px;
+        bottom: 60px;
     }
 
     .historia-container h1{
