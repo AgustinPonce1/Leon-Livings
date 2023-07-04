@@ -229,8 +229,6 @@ footer .container{
     align-items: flex-end;
 }
 
-@media (min-width: 720px){
-
     /* HEADER */
 
     header {
@@ -493,6 +491,8 @@ footer .container{
         border-radius: 15px;
         margin-right: 80px;
     }
+
+    /* SOLAPA WHATSAPP */
       
     .interactive-button {
         position: fixed;
@@ -1220,12 +1220,12 @@ footer .container{
       
       .arrow-down {
         position: absolute;
-        bottom: 0px; /* Ajusta la posición vertical según tus necesidades */
+        bottom: 0px;
         left: 50%;
         transform: translateX(-50%);
         width: 80px;
         height: 200px;
-        background-image: url("../media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-image: url("../media/iconflecha.png");
         background-size: contain;
         background-repeat: no-repeat;
         color: #FFFFFF;
@@ -1236,12 +1236,12 @@ footer .container{
 
     .arrow-down-contacto {
         position: absolute;
-        bottom: 200px; /* Ajusta la posición vertical según tus necesidades */
+        bottom: 100px;
         left: 50%;
         transform: translateX(-50%);
         width: 60px;
         height: 160px;
-        background-image: url("../media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-image: url("../media/iconflecha.png");
         background-size: contain;
         background-repeat: no-repeat;
         color: #FFFFFF;
@@ -1252,12 +1252,12 @@ footer .container{
 
     .arrow-down-sobrenosotros{
         position: absolute;
-        bottom: 10px; /* Ajusta la posición vertical según tus necesidades */
+        bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
         width: 100px;
         height: 160px;
-        background-image: url("../media/iconflecha.png"); /* O utiliza una fuente de iconos */
+        background-image: url("../media/iconflecha.png");
         background-size: contain;
         background-repeat: no-repeat;
         color: #FFFFFF;
@@ -1353,7 +1353,73 @@ footer .container{
     }
 
     /* ---------------------------- PRUEBAS -------------------------------- */
-}   
+
+        /* WEB SECCION SILLONES LIVING A */
+
+        #hero-np-livinga{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            height: 100vh;
+            background-image: linear-gradient(
+                0deg,
+                rgba(61, 60, 60, 0.5),
+                rgba(0,0,0,0.5)
+            )
+            ,url("../media/img3.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center center;
+        }
+    
+        #hero-np-livinga h1 {
+            color: #FFFFFF;
+            letter-spacing: 0px;
+            margin-bottom: 0;
+            font-family: "Poppins", Sans-serif;
+            font-size: 95px;
+            font-weight: bold;
+            letter-spacing: -2.7px;
+            margin-left: 15%;
+    
+        }
+        
+        #hero-np-livinga h4{
+            color: #FFFFFF;
+            font-size: 2.8rem;
+            font-weight: 550;
+            margin-top: 0;
+            margin-left: 15.3%;
+            margin-bottom: 0;
+        }
+    
+        .listahero-livinga{
+            color: #FFFFFF;
+            margin-left: 13%;
+            user-select: none; 
+        }
+    
+        .listahero-livinga li{
+            padding: 10px;
+            font-size: 20px;
+            font-style: inherit;
+            font-weight: inherit;
+            vertical-align: baseline;
+            display: flex;
+            align-items: center;
+        }
+    
+        .iconoentrega-livinga,
+        .iconoresistentes-livinga,
+        .iconomateriales-livinga{
+            width: 40px;
+            padding-right: 10px;
+        }
+    
+        .iconodiseños-livinga{
+            width: 25px;
+            margin-right: 15px;
+        }    
 
 /* RESPONSIVE A 1920px */
 
@@ -1380,13 +1446,9 @@ footer .container{
         width: 100%;
     }
 
-    #findepagina .logo-container .finlogo{
-        margin-left: 870px;
-    }
-
     .arrow-down {
         width: 100px;
-        bottom: 100px;
+        bottom: 40px;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -1447,7 +1509,7 @@ footer .container{
     
     .image-titlepersonalizable{
       font-size: 48px;
-      margin: 200px 0px 0px 100px;
+      margin: 200px 0px 0px 60px;
     }
     
     .seccion-sillones {
@@ -1589,7 +1651,7 @@ footer .container{
 
 /* RESPONSIVE A 1280px */
 
-@media (max-width: 1280px){
+@media (max-width: 1280px) and (min-width: 1260px){
 
     header{
         width: 100%;
@@ -1740,7 +1802,7 @@ footer .container{
 
 /* RESPONSIVE A 1024px */
 
-@media (max-width: 1024px) and (min-width: 960px){
+@media (max-width: 1024px) and (min-width: 1014px){
 
     /* MENU HAMBURGESA */
 
@@ -1778,8 +1840,7 @@ footer .container{
     }
 
     header .logo-text{
-        font-size: 1.2em;
-        margin-left: -400px;
+        padding-right: 700px;
     }
 
     /* SOMOS LEON LIVINGS CONTAINER */
@@ -1943,7 +2004,7 @@ footer .container{
 
 /* RESPONSIVE A 950px */
 
-@media (max-width: 950px){
+@media (max-width: 950px) and (min-width: 800px){
 
     #hero{
         background-position: left;
@@ -1957,8 +2018,9 @@ footer .container{
 
     header .logo-text{
         padding-left: 180px;
-        font-size: 20em;
+        font-size: 1.2em;
     }
+
 
     /* MENU HAMBURGESA */
 
@@ -2130,7 +2192,7 @@ footer .container{
 
 /* RESPONSIVE A 768px */
 
-@media (max-width: 768px){
+@media (max-width: 768px) and (min-width: 720px){
 
     /* MENU HAMBURGESA */
 
@@ -2162,13 +2224,13 @@ footer .container{
     .menu-icon img {
         display: block;
     }
-        
+
     .logobuscador{
         display: none;
     }
 
     header .logo-text{
-        padding-left: 200px;
+        margin-left: -80px;
     }
 
     /* SOMOS LEON LIVINGS CONTAINER */
@@ -2226,12 +2288,13 @@ footer .container{
     #findepagina .logo-container .finlogo{
         width: 80px;    
         max-width: 100%;
-        padding: 40px 0px 0px 0px;
-        margin-left: 290px;
+        margin-left: 270px;
     }
 
     #findepagina .productos-findepagina h5{
-        padding-left: 55px;
+        padding: 0;
+        padding-left: 75px;
+        padding-bottom: -5px;
     }
 
     .productos-findepagina li{
@@ -2239,20 +2302,37 @@ footer .container{
     }
 
     #findepagina .contacto-findepagina h6{
-        margin-left: 40px;
+        padding: 0;
+        padding-left: 120px;
     }
 
     .contacto-findepagina li{
-        padding-left: 45px;
+        margin-left: -140px;
     }
 
     .divisor2{
-        margin-left: 80px;
-        width: 250px;
+        width: 220px;
+        margin-left: 60px;
     }
 
-    footer .container{
-        justify-content: right;
+    #findepagina .institucional-container li{
+        padding-left: 0px;
+        
+    }
+
+    .divisor {
+        width: 100px;
+        margin-left: 15px;
+    }
+
+    #findepagina .container-findepagina h3{
+        padding: 0px 20px;
+        margin-left: -5px;
+    }
+
+    #findepagina .locales h4{
+        padding: 0px 20px;
+        margin-left: -5px;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -2353,19 +2433,210 @@ footer .container{
     .image-sillones img {
         width: 240px;
     }
+
+    .container-solicitar {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 150px 0px;
+        justify-content: center;
+        align-items: center;
+    }
+      
+    .container-solicitar h1 {
+        font-size: 30px;
+        font-weight: 600;
+        color: #54595F;
+        margin-right: 325px;
+    }
+      
+    .nombreinput,
+    .apellidoinput,
+    .emailinput,
+    .telefonoinput {
+        border: 2px solid rgb(154, 152, 152);
+        user-select: none;
+        width: 300px;
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    .nombrelabel,
+    .apellidolabel,
+    .emaillabel,
+    .telefonolabel {
+        color: #34343B;
+        font-weight: bold;
+        font-size: 16px;
+    }
+      
+    #nombrecontainer,
+    #apellidocontainer {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    #emailcontainer,
+    #telefonocontainer{
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    #telefonocontainer{
+        margin-left: 20px;
+    }
+
+    .mensaje{
+        display: flex;
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+    .send-label{
+        color: #34343B;
+        font-weight: bold;
+        font-size: 16px;
+    }
+
+    .mensajeinput{
+        border: 2px solid rgb(154, 152, 152);
+        user-select: none;
+        margin: 10px 0px;
+        width: 625px;
+        padding: 10px 0px 125px 0px;
+        margin-top: 8px;
+    }
+
+    .enviarmensaje-container{
+        margin-top: 10px;
+    }
+
+    .enviarmensaje{
+        color: rgb(70, 70, 70);
+        font-size: 14px;
+        cursor: pointer;
+        border: 2px solid rgb(132, 130, 130);
+        padding: 8px;
+        font-weight: 100;
+    }
+
+    .enviarmensaje:hover{
+        background-color: rgb(223, 221, 221);
+    }
+
+    .masinfo{
+        float: right;
+        font-size: 16px;
+        font-weight: 550;
+        color: #15868A;
+        margin-top: 12px;
+        display: none;
+    }
+
+    .iconinfo{
+        margin: -5px 1px;
+        width: 20px;
+    }
+
+    .masinfo:hover{
+        cursor: pointer;
+    }
+
+    .lineacontacto{
+        color: #1bb6bb;
+    }
+
+    .nombreinput,
+    .apellidoinput,
+    .emailinput,
+    .telefonoinput,
+    .mensajeinput {
+        color: rgb(49, 47, 47);
+        padding-left: 10px;
+        font-size: 14px;
+        font-weight: 300;
+    }
+
+    .obligatorio{
+        color: red;
+        font-size: 14px;
+    }
 }
 
 /* RESPONSIVE A 320px */
 
-@media (max-width: 320px){
+@media (min-width: 320px) and (max-width: 321px){
+
+    header {
+        opacity: 2;
+        position: fixed;
+        width: 100%;
+        transition: height 0.3s ease-in-out;
+        z-index: 999;
+    }
+    
+    header .container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+    }
+    
+    header nav {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    header .logoinicio {
+        width: 50px;
+        padding: 5px 0px;
+        border-radius: 15px;
+        margin-right: 200px;
+    }
+
+    /* MENU HAMBURGESA */
+
+    header .container {
+        flex-wrap: wrap;
+    }
+            
+    header nav {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        order: 3;
+        width: 100%;
+    }
+            
+    header.show-nav nav {
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+            
+    .menu-icon {
+        display: block;
+        order: 2;
+        text-align: right;
+    }
+            
+    .menu-icon img {
+        display: block;
+    }
+            
+    .logobuscador{
+        display: none;
+    }
+    
+    header .logo-text{
+        display: none;
+    }
 
     .container-videos{
         height: 100vh;
         flex-direction: column;
-    }
-
-    .logo-text{
-        font-size: 1.2em;
     }
 
     /* SOMOS LEON LIVINGS CONTAINER */
@@ -2382,191 +2653,156 @@ footer .container{
     /* HERO */
 
     .arrow-down {
-        width: 100px;
+        width: 40px;
         bottom: 0px;
     }
 
     #hero{
         background-position: left;
     }
+    
+    .hero-titulo{
+        font-size: 2em;
+    }
+    
+    #hero h4{
+        font-size: 1em;
+    }
 
     /* CARRUSEL */
 
     .slide {
+        margin-top: 26px;
         height: 100%;
         width: 100%;
     }
 
+    .slide-item img {
+        padding: 40px 0px 60px 0px;
+        width: 250px;
+    }
+
+    .slide-control {
+        border-radius: 50%;
+        font-size: 22px;
+        height: 20px;
+        top: 55%;
+        width: 20px;
+        z-index: 10;
+        background: rgba(77, 73, 73, 0.28);
+        line-height: 20px;
+    }
+
+    .slide-control.prev {
+        left: 4%;
+    }
+
+    .slide-control.next {
+        right: 4%;
+    }
+
+    /* CIRCULO DE POSICION */
+
     .slide-indicador {
-        bottom: 35px;
+        bottom: 25px;
+    }
+
+    .slide-indicador li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+        
+    .slide-circulo {
+        font-size: 25px;
+    }
+
+    #titulo-sup{
+        margin: 20px;
+        font-size: 20px;
+    }
+
+    #titulo {
+        width: 100%;
+        font-size: 14px;
     }
 
     /* FOOTER */
     
-        #findepagina{
-            display: flex;
-            flex-direction: column;
-            padding-left: 40px;
-            background-color: rgb(30, 30, 30);
-            color: white;
-            height: 100vh;
-            background-image: linear-gradient(
-                0deg,
-                rgba(0,0,0,0.5),
-                rgba(0,0,0,0.5)
-            )
-            ,url("../media/img4.jpg");
+    #findepagina{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        height: 180vh;
     }
     
     #findepagina h2{
-        font-size: 9vw;
+        font-size: 2vw;
     }
     
     #findepagina .container-findepagina{
-        display: flex;
-        justify-content: center;
+        flex-direction: column;
         width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        text-align: center;
     }
 
     #findepagina .logo-container .finlogo{
-        width: 80px;    
-        max-width: 100%;
-        padding: 40px 0px 0px 0px;
-        margin-left: 650px;
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 38%;
+        margin-bottom: 0px;
     }
 
     #findepagina .container-findepagina h3{
-        font-size: x-large;
-        color: cadetblue;
         padding: 0px 20px;
-        padding-bottom: 0;
-        font-weight: 200px;
+        margin-left: 0;
     }
 
     #findepagina .institucional-container li{
-        margin-left: -28px;
+        margin-left: -45px;
         padding: 0px 0px 20px 10px;
-        font-weight: 300;
-        list-style-type: none;
         
     }
 
-    .institucional-container a{
-        color: #FFFFFF;
-        cursor: pointer;
-        text-decoration: none;
-    }
-
-    .institucional-container a:hover{
-        color: #ccc;
-    }
-
     .divisor {
-        width: 250px;
+        margin-left: 65px;
+        width: 200px;
     }
 
     /* LOCALES FIN DE PAGINA */
 
     #findepagina .locales h4{
-        font-size: x-large;
-        color: cadetblue;
-        padding: 0px 20px;
-        padding-bottom: 0;
-        font-weight: 200px;
-        margin-bottom:  0;
-        display: flex;
-    }
-
-    .locales li{
-        margin-left: -28px;
-        padding: 10px;
-        font-weight: 300;
-    }
-
-    .locales a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
-    .locales a:hover{
-        color: #ccc;
+        margin-left: 95px;
     }
 
     /* PRODUCTOS DE FINAL DE PAGINA */
 
     #findepagina .productos-findepagina h5{
-        font-size: x-large;
-        color: cadetblue;
-        font-weight: 200px;
-        padding-left: 300px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        padding-left: 0px;
     }
 
     .productos-findepagina li{
-        padding: 10px 0;
-        text-align: center;
-        font-weight: 300;
-        padding-left: 200px;
-    }
-
-    .productos-findepagina a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
-    .productos-findepagina a:hover{
-        color: #ccc;
+        padding-left: 0px;
+        margin-left: -40px;
     }
 
     /* SECCION CONTACTO FOOTER */
 
     #findepagina .contacto-findepagina h6{
-        font-size: x-large;
-        color: cadetblue;
-        font-weight: 200px;
-        padding-left: 300px;
-        margin-top: 20px;
-        margin-bottom: 10px;
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: center;
     }
 
     .contacto-findepagina li{
-        padding: 10px 0;
-        font-weight: 300;
-        padding-left: 200px;
-    }
-
-    .contacto-findepagina a{
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-
-    .contacto-findepagina a:hover{
-        color: #ccc;
+        padding-left: 0px;
+        margin-left: -45px;
     }
 
     .divisor2{
-        margin-left: 200px;
-        width: 350px;
-    }
-
-    /* COPYRIGHT */
-    
-    footer{
-        background-color: rgb(230, 230, 230);
-    }
-    
-    footer p{
-        margin: 0;
-        padding: 12px;
-        color: rgb(100, 100, 100);
-    }
-    
-    footer .container{
-        height: 0;
-        display: flex;
-        justify-content: center;
-        align-items: flex-end;
+        margin-left: 0px;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -2576,70 +2812,255 @@ footer .container{
         bottom: 140px;
     }
 
+    /* WEB SECCION CONTACTO */
 
-    /* HERO  SECCION SOBRE NOSOTROS */
+    #hero-contacto{
+        height: 100vh;
+        background-position: left;
+    }
+    
+    #hero-contacto h1 {
+        font-size: 40px;
+    }
+        
+    #hero-contacto h4{
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+
+    /* HERO SECCION SOBRE NOSOTROS */
 
     .hero-sobrenosotros-titulo {
-        font-size: 80px;
+        font-size: 40px;
     }
 
     .arrow-down-sobrenosotros {
-        width: 100px;
+        width: 80px;
         bottom: 80px;
+    }
+
+    .historia-container h1{
+        font-size: 18px;
+    }
+
+    .texto-historia1 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .texto-historia2 {
+        font-size: 12px;
+        width: 300px;
     }
 
     /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
     
     #hero-np h1 {
-        font-size: 65px;
+        font-size: 35px;
     }
         
     #hero-np h4{
-        font-size: 2.2rem;
+        font-size: 15px;
     }
     
     .listahero{
-        margin-left: 10.5%;
+        margin-left: 0;
     }
-    
+
+    .listahero li{
+        font-size: 12px;
+    }
+
+    .iconoentrega,
+    .iconoresistentes,
+    .iconomateriales{
+        width: 35px;
+    }
+
+    .iconodiseños{
+        width: 20px;
+    }
+
     /* CONTENEDOR DE IMAGENES */
-    
+
     .container-productos-jgsillones {
-        max-width: 800px;
+        max-width: 320px;
         margin: 0 auto;
         padding: 20px;
         margin-top: 80px;
         min-height: 100vh;
-        margin-bottom: 0px;
     }
           
     .container-images{
         font-size: 32px;
+        color: #505459;
+    }
+          
+    .image-row {
+        flex-direction: column;
     }
           
     .image-container img {
-        width: 260px;
-        height: 260px;
+        width: 280px;
+        height: 280px;
     }
     
-    .image-title,
-    .image-titlepuff {
-        font-size: 30px;
-        margin: 140px 0px 0px 60px;
+    .image-title {
+        margin: 100px 0px 10px 20px;
+    }
+
+    .image-titlepuff{
+        margin: 100px 0px 0px 20px;
     }
     
     .image-titlepersonalizable{
-      font-size: 30px;
-      margin: 140px 0px 0px 30px;
+        margin: 100px 0px 0px 20px;
     }
     
     .seccion-sillones {
-        max-width: 765px;
-        margin: 0px auto;
-        margin-bottom: 100px;
+        max-width: 320px;
+        margin-top: 80px;
+    }
+    
+    .seccions-title{
+        text-align: left;
+        padding-left: 20px;
+    }
+          
+    .image-sillones-cont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
     }
           
     .image-sillones img {
-        width: 240px;
+        width: 280px;
     }
+
+    /* SECCION SOMOS LEON LIVINGS */
+
+    #somos-leonlivings .container{
+        padding: 100px 12px;
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .somostxt-1{
+        font-size: 14px;
+    }
+    
+    .somostxt-2{
+        font-size: 12px;
+    }
+
+    #somos-leonlivings .img-container{
+        height: 150px;
+        width: 200px;
+        border-radius: 30px;
+    }
+
+    .somos-button{
+        font-size: 0.6em;
+        padding: 4px 10px;
+        border-radius: 54px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: rgb(16, 87, 87);
+    }
+
+    #somos-leonlivings .texto{
+        padding-left: 0px;
+    }
+
+    /* SOLAPA WHATSAPP 320PX */
+      
+    .button-text {
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+        padding: 6px 6px;
+        margin-right: 6px;
+    }
+
+    .interactive-button img {
+        width: 50px;
+    }
+
+    /* SECCION CONTACTO - INPUT */
+
+    .container-solicitar {
+        margin: 150px 0px;
+        padding-left: 10px;
+    }
+      
+    .container-solicitar h1 {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-left: -370px;
+    }
+      
+    .nombreinput,
+    .apellidoinput,
+    .emailinput,
+    .telefonoinput {
+        width: 140px;
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    .mensajeinput{
+        margin: 10px 0px;
+        width: 305px;
+        padding: 10px 0px 125px 0px;
+        margin-top: 8px;
+        margin-right: 280px;
+    }
+
+    .masinfo{
+        display: none;
+    }
+
+    .iconinfo{
+        display: none;
+    }
+
+    /* -- WEB SECCION SUCURSALES -- */
+
+    .container-videos{
+        height: 200vh;
+    }
+      
+    .titulo-cj {
+        font-size: 16px;
+    }
+
+    .video:hover .titulo-cj {
+        font-size: 18px;
+    }
+
+    .boton-cj{
+        font-size: 30px;
+    }
+
+    .titulo-palomar {
+        font-size: 16px;
+    }
+
+    .video:hover .titulo-palomar {
+        font-size: 18px;
+    }
+
+    .boton-palomar{
+        font-size: 30px;
+    }
+
 }
