@@ -2563,9 +2563,481 @@ footer .container{
     }
 }
 
+@media (min-width: 460px) and (max-width: 560px){
+    
+    header .logoinicio {
+        width: 60px;
+    }
+
+    /* MENU HAMBURGESA */
+
+    header .container {
+        flex-wrap: wrap;
+    }
+            
+    header nav {
+        flex-wrap: wrap;
+        overflow: hidden;
+        max-height: 0;
+        transition: max-height 0.3s ease-in-out;
+        order: 3;
+        width: 100%;
+    }
+            
+    header.show-nav nav {
+        max-height: 500px;
+        display: flex;
+        flex-direction: column;
+    }
+            
+    .menu-icon {
+        display: block;
+        order: 2;
+        text-align: right;
+    }
+            
+    .menu-icon img {
+        display: block;
+    }
+            
+    .logobuscador{
+        display: none;
+    }
+    
+    header .logo-text{
+        display: none;
+    }
+
+    /* SECCION SUCURSALES */
+
+    .container-videos{
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    /* HERO */
+
+    .arrow-down {
+        width: 120px;
+        bottom: 100px;
+    }
+
+    #hero{
+        background-position: left;
+    }
+    
+    .hero-titulo{
+        font-size: 4em;
+    }
+    
+    #hero h4{
+        font-size: 2em;
+    }
+
+    /* CARRUSEL */
+
+    .slide {
+        margin-top: 26px;
+        height: 100%;
+        width: 100%;
+    }
+
+    .slide-item img {
+        padding: 80px 0px 60px 0px;
+        width: 350px;
+    }
+
+    .slide-control {
+        border-radius: 50%;
+        font-size: 32px;
+        height: 25px;
+        top: 65%;
+        width: 25px;
+        z-index: 10;
+        background: rgba(77, 73, 73, 0.28);
+        line-height: 20px;
+    }
+
+    .slide-control.prev {
+        left: 4%;
+    }
+
+    .slide-control.next {
+        right: 4%;
+    }
+
+    /* CIRCULO DE POSICION */
+
+    .slide-indicador {
+        bottom: 25px;
+    }
+
+    .slide-indicador li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+        
+    .slide-circulo {
+        font-size: 35px;
+    }
+
+    #titulo-sup{
+        margin: 40px;
+        font-size: 30px;
+    }
+
+    #titulo {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    /* FOOTER */
+    
+    #findepagina{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding-left: 0px;
+        height: 180vh;
+    }
+    
+    #findepagina h2{
+        font-size: 2vw;
+    }
+    
+    #findepagina .container-findepagina{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    #findepagina .logo-container .finlogo{
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 44%;
+        margin-bottom: -200px;
+    }
+
+    #findepagina .container-findepagina h3{
+        padding: 0px 20px;
+        margin-left: 0;
+    }
+
+    #findepagina .institucional-container li{
+        margin-left: -45px;
+        padding-top: 0;
+        padding: 0px 0px 20px 10px;
+        
+    }
+
+    .divisor {
+        margin-left: 165px;
+        width: 200px;
+    }
+
+    /* LOCALES FIN DE PAGINA */
+
+    #findepagina .locales h4{
+        margin-left: 200px;
+    }
+
+    /* PRODUCTOS DE FINAL DE PAGINA */
+
+    #findepagina .productos-findepagina h5{
+        padding-left: 0px;
+    }
+
+    .productos-findepagina li{
+        padding-left: 0px;
+        margin-left: -40px;
+    }
+
+    /* SECCION CONTACTO FOOTER */
+
+    #findepagina .contacto-findepagina h6{
+        padding-left: 0px;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .contacto-findepagina li{
+        padding-left: 0px;
+        margin-left: -45px;
+    }
+
+    .divisor2{
+        width: 600px;
+        margin-left: 0px;
+    }
+
+    /* FLECHA SECCION CONTACTO */
+
+    .arrow-down-contacto{
+        width: 80px;
+        bottom: 140px;
+    }
+
+    /* WEB SECCION CONTACTO */
+
+    #hero-contacto{
+        height: 100vh;
+        background-position: left;
+    }
+    
+    #hero-contacto h1 {
+        font-size: 40px;
+    }
+        
+    #hero-contacto h4{
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+
+    /* HERO SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 40px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 80px;
+        bottom: 80px;
+    }
+
+    .historia-container h1{
+        font-size: 18px;
+    }
+
+    .texto-historia1 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .texto-historia2 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+    
+    #hero-np h1 {
+        font-size: 44px;
+    }
+        
+    #hero-np h4{
+        font-size: 22px;
+    }
+    
+    .listahero{
+        margin-left: 0;
+    }
+
+    .listahero li{
+        font-size: 16px;
+    }
+
+    .iconoentrega,
+    .iconoresistentes,
+    .iconomateriales{
+        width: 45px;
+        margin-left: 6%;
+    }
+
+    .iconodiseños{
+        width: 30px;
+        margin-left: 6%;
+    }
+
+    /* CONTENEDOR DE IMAGENES */
+
+    .container-productos-jgsillones {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+          
+    .container-images{
+        font-size: 32px;
+        color: #505459;
+    }
+          
+    .image-row {
+        flex-direction: column;
+    }
+          
+    .image-container img {
+        width: 280px;
+        height: 280px;
+    }
+    
+    .image-title {
+        margin: 100px 0px 10px 20px;
+    }
+
+    .image-titlepuff{
+        margin: 100px 0px 0px 20px;
+    }
+    
+    .image-titlepersonalizable{
+        margin: 100px 0px 0px 20px;
+    }
+    
+    .seccion-sillones {
+        max-width: 320px;
+        margin-top: 80px;
+    }
+    
+    .seccions-title{
+        text-align: left;
+        padding-left: 20px;
+    }
+          
+    .image-sillones-cont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+          
+    .image-sillones img {
+        width: 280px;
+    }
+
+    /* SECCION SOMOS LEON LIVINGS */
+
+    #somos-leonlivings .container{
+        padding: 100px 12px;
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .somostxt-1{
+        font-size: 28px;
+        width: 260px;
+    }
+    
+    .somostxt-2{
+        width: 260px;
+        font-size: 22px;
+    }
+
+    #somos-leonlivings .img-container{
+        height: 300px;
+        width: 500px;
+        border-radius: 60px;
+    }
+
+    .somos-button{
+        font-size: 1em;
+        padding: 8px 10px;
+        border-radius: 20px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: rgb(16, 87, 87);
+    }
+
+    #somos-leonlivings .texto{
+        padding-left: 0px;
+    }
+
+    /* SOLAPA WHATSAPP 500PX */
+      
+    .button-text {
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+        padding: 6px 6px;
+        margin-right: 6px;
+    }
+
+    .interactive-button img {
+        width: 50px;
+    }
+
+    /* SECCION CONTACTO - INPUT */
+
+    .container-solicitar {
+        margin: 150px 0px;
+        padding-left: 10px;
+    }
+      
+    .container-solicitar h1 {
+        font-size: 20px;
+        margin: 0;
+        margin-bottom: 20px;
+        margin-right: auto;
+    }
+      
+    .nombreinput,
+    .apellidoinput,
+    .emailinput,
+    .telefonoinput {
+        width: 230px;
+        height: 30px;
+        margin-top: 8px;
+    }
+
+    .mensajeinput{
+        margin: 10px 0px;
+        width: 485px;
+        padding: 10px 0px 125px 0px;
+        margin-top: 8px;
+        margin-right: 280px;
+    }
+
+    .masinfo{
+        display: none;
+    }
+
+    .iconinfo{
+        display: none;
+    }
+
+    /* -- WEB SECCION SUCURSALES -- */
+
+    .container-videos{
+        height: 200vh;
+    }
+      
+    .titulo-cj {
+        font-size: 16px;
+    }
+
+    .video:hover .titulo-cj {
+        font-size: 18px;
+    }
+
+    .boton-cj{
+        font-size: 30px;
+    }
+
+    .titulo-palomar {
+        font-size: 16px;
+    }
+
+    .video:hover .titulo-palomar {
+        font-size: 18px;
+    }
+
+    .boton-palomar{
+        font-size: 30px;
+    }
+
+}
+
 /* RESPONSIVE A 320px */
 
-@media (min-width: 320px) and (max-width: 321px){
+@media (min-width: 320px) and (max-width: 330px){
 
     header {
         opacity: 2;
