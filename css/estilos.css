@@ -1188,9 +1188,10 @@ footer .container{
         margin: 0;
         padding: 20px 0 0 0;
         color: black;
+        text-decoration: none;
     }
 
-    .infoimagen{
+    .image-sillones .infoimagen{
         font-size: 18px;    
         margin: 0;
         padding: 20px 0;
@@ -3230,7 +3231,15 @@ footer .container{
 @media (min-width: 460px) and (max-width: 560px){
     
     header .logoinicio {
-        width: 60px;
+        width: 50px;
+    }
+    
+    header .logo-text{
+        padding-right: 0px;
+    }
+    
+    header .nav{
+        padding-bottom: 0px;
     }
 
     /* MENU HAMBURGESA */
@@ -3267,7 +3276,7 @@ footer .container{
     .logobuscador{
         display: none;
     }
-    
+
     header .logo-text{
         display: none;
     }
@@ -3282,8 +3291,8 @@ footer .container{
     /* HERO */
 
     .arrow-down {
-        width: 120px;
-        bottom: 100px;
+        width: 80px;
+        bottom: 40px;
     }
 
     #hero{
@@ -3378,10 +3387,7 @@ footer .container{
     }
 
     #findepagina .logo-container .finlogo{
-        margin: 0;
-        margin-top: 20px;
-        margin-left: 44%;
-        margin-bottom: -200px;
+        display: none;
     }
 
     #findepagina .container-findepagina h3{
@@ -3432,8 +3438,9 @@ footer .container{
     }
 
     .divisor2{
-        width: 600px;
-        margin-left: 0px;
+        width: 300px;
+        margin-left: 120px;
+        margin-bottom: 20px;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -3494,7 +3501,7 @@ footer .container{
     }
         
     #hero-np h4{
-        font-size: 22px;
+        font-size: 18px;
     }
     
     .listahero{
@@ -3509,18 +3516,18 @@ footer .container{
     .iconoresistentes,
     .iconomateriales{
         width: 45px;
-        margin-left: 6%;
+        margin-left: 8%;
     }
 
     .iconodiseños{
         width: 30px;
-        margin-left: 6%;
+        margin-left: 8%;
     }
 
     /* CONTENEDOR DE IMAGENES */
 
     .container-productos-jgsillones {
-        max-width: 320px;
+        max-width: 520px;
         margin: 0 auto;
         padding: 20px;
         margin-top: 80px;
@@ -3537,8 +3544,8 @@ footer .container{
     }
           
     .image-container img {
-        width: 280px;
-        height: 280px;
+        width: 480px;
+        height: 480px;
     }
     
     .image-title {
@@ -3554,7 +3561,7 @@ footer .container{
     }
     
     .seccion-sillones {
-        max-width: 320px;
+        max-width: 485px;
         margin-top: 80px;
     }
     
@@ -3570,7 +3577,11 @@ footer .container{
     }
           
     .image-sillones img {
-        width: 280px;
+        width: 440px;
+    }
+
+    .tituloimagen{
+        text-decoration: none;
     }
 
     /* SECCION SOMOS LEON LIVINGS */
@@ -3700,10 +3711,7 @@ footer .container{
 }
 
 @media (min-width: 380px) and (max-width: 440px){
-    
-    header .logoinicio {
-        width: 6    0px;
-    }
+
 
     /* MENU HAMBURGESA */
 
