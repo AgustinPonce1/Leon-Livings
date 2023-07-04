@@ -362,13 +362,6 @@ footer .container{
         width: 100%;
     }
 
-    #findepagina .logo-container .finlogo{
-        width: 80px;    
-        max-width: 100%;
-        padding: 40px 0px 0px 0px;
-        margin-left: 650px;
-    }
-
     #findepagina .container-findepagina h3{
         font-size: x-large;
         color: cadetblue;
@@ -1742,10 +1735,6 @@ footer .container{
         width: 100%;
     }
 
-    #findepagina .logo-container .finlogo{
-        margin-left: 640px;
-    }
-
     /* FLECHA SECCION CONTACTO */
 
     .arrow-down-contacto{
@@ -1870,10 +1859,6 @@ footer .container{
     
     #findepagina{
         width: 100%;
-    }
-
-    #findepagina .logo-container .finlogo{
-        margin-left: 570px;
     }
 
     #findepagina .productos-findepagina h5{
@@ -2063,10 +2048,6 @@ footer .container{
     
     #findepagina{
         width: 100%;
-    }
-
-    #findepagina .logo-container .finlogo{
-        margin-left: 410px;
     }
 
     #findepagina .productos-findepagina h5{
@@ -2259,10 +2240,6 @@ footer .container{
     
     #findepagina{
         width: 100%;
-    }
-
-    #findepagina .logo-container .finlogo{
-        margin-left: 380px;
     }
 
     #findepagina .container-findepagina h3{
@@ -2472,11 +2449,6 @@ footer .container{
         width: 100%;
     }
 
-    #findepagina .logo-container .finlogo{
-        width: 80px;    
-        max-width: 100%;
-        margin-left: 270px;
-    }
 
     #findepagina .productos-findepagina h5{
         padding: 0;
@@ -2898,10 +2870,6 @@ footer .container{
         height: 100%;
         margin-left: 0px;
         text-align: center;
-    }
-
-    #findepagina .logo-container .finlogo{
-        display: none;
     }
 
     #findepagina .container-findepagina h3{
@@ -3383,10 +3351,6 @@ footer .container{
         text-align: center;
     }
 
-    #findepagina .logo-container .finlogo{
-        display: none;
-    }
-
     #findepagina .container-findepagina h3{
         padding: 0px 20px;
         margin-left: 0;
@@ -3852,13 +3816,6 @@ footer .container{
         height: 100%;
         margin-left: 0px;
         text-align: center;
-    }
-
-    #findepagina .logo-container .finlogo{
-        margin: 0;
-        margin-top: 20px;
-        margin-left: 40%;
-        margin-bottom: -200px;
     }
 
     #findepagina .container-findepagina h3{
@@ -4367,13 +4324,6 @@ footer .container{
         height: 100%;
         margin-left: 0px;
         text-align: center;
-    }
-
-    #findepagina .logo-container .finlogo{
-        margin: 0;
-        margin-top: 20px;
-        margin-left: 38%;
-        margin-bottom: 0px;
     }
 
     #findepagina .container-findepagina h3{
