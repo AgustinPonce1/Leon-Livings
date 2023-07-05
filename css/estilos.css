@@ -3724,7 +3724,7 @@ footer .container{
 
     .arrow-down {
         width: 80px;
-        bottom: 100px;
+        bottom: 20px;
     }
 
     #hero{
@@ -3831,14 +3831,14 @@ footer .container{
     }
 
     .divisor {
-        margin-left: 110px;
+        margin-left: 95px;
         width: 200px;
     }
 
     /* LOCALES FIN DE PAGINA */
 
     #findepagina .locales h4{
-        margin-left: 140px;
+        margin-left: 100px;
     }
 
     /* PRODUCTOS DE FINAL DE PAGINA */
@@ -3867,14 +3867,14 @@ footer .container{
 
     .divisor2{
         width: 300px;
-        margin-left: 60px;
+        margin-left: 40px;
     }
 
     /* FLECHA SECCION CONTACTO */
 
     .arrow-down-contacto{
         width: 80px;
-        bottom: 80px;
+        bottom: 60px;
     }
 
     /* WEB SECCION CONTACTO */
@@ -3956,7 +3956,7 @@ footer .container{
     .container-productos-jgsillones {
         max-width: 420px;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
         margin-top: 80px;
         min-height: 100vh;
     }
@@ -4091,12 +4091,20 @@ footer .container{
         margin-top: 8px;
     }
 
+    .apellidoinput{
+        margin-left: -5px;
+    }
+
+    .emailinput{
+        margin-right: -5px;
+    }
+
     .mensajeinput{
         margin: 10px 0px;
         width: 345px;
         padding: 10px 0px 125px 0px;
         margin-top: 8px;
-        margin-right: 280px;
+        margin-right: 0px;
     }
 
     .masinfo{
