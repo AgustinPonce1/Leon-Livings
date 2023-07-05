@@ -3866,15 +3866,15 @@ footer .container{
     }
 
     .divisor2{
-        width: 600px;
-        margin-left: 0px;
+        width: 300px;
+        margin-left: 60px;
     }
 
     /* FLECHA SECCION CONTACTO */
 
     .arrow-down-contacto{
         width: 80px;
-        bottom: 140px;
+        bottom: 80px;
     }
 
     /* WEB SECCION CONTACTO */
