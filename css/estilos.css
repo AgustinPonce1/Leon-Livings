@@ -3804,6 +3804,7 @@ footer .container{
         flex-direction: column;
         padding-left: 0px;
         height: 180vh;
+        justify-content: center;
     }
     
     #findepagina h2{
@@ -3838,7 +3839,7 @@ footer .container{
     /* LOCALES FIN DE PAGINA */
 
     #findepagina .locales h4{
-        margin-left: 100px;
+        justify-content: center;
     }
 
     /* PRODUCTOS DE FINAL DE PAGINA */
@@ -3895,7 +3896,6 @@ footer .container{
         margin-top: 0;
     }
 
-
     /* HERO SECCION SOBRE NOSOTROS */
 
     .hero-sobrenosotros-titulo {
@@ -3904,7 +3904,7 @@ footer .container{
 
     .arrow-down-sobrenosotros {
         width: 80px;
-        bottom: 80px;
+        bottom: 60px;
     }
 
     .historia-container h1{
