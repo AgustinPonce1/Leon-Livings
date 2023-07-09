@@ -98,3 +98,4 @@ document.addEventListener('DOMContentLoaded', function () {
     dropdownContent.style.display = dropdown.classList.contains('active') ? 'block' : 'none';
   });
 });
+
