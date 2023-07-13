@@ -50,6 +50,7 @@
     <div class="container-solicitar">
         <h1>Solicitar información ⇩</h1>
         <form id="contacto">
+        <div class="inputs-contacto">
             <div id="nombrecontainer">
                 <label class="nombrelabel" for="nombre">Nombre <span class="obligatorio">*</span></label><br>
                 <input class="nombreinput" type="text" id="nombre" name="nombre" required>
@@ -58,11 +59,6 @@
                 <label class="apellidolabel" for="apellido">Apellido <span class="obligatorio">*</span></label><br>
                 <input class="apellidoinput" type="text" id="apellido" name="apellido" required>
             </div>
-
-            <div class="masinfo">
-                <a href="#findepagina"><label class="masinfo" for="masinfo"><img class="iconinfo" src="../media/iconinfo.png">   Mas Información<hr class="lineacontacto">  </label></a>
-            </div>
-            <br>
             <div id="emailcontainer">
                 <label class="emaillabel" for="text">E-mail <span class="obligatorio">*</span></label><br>
                 <input class="emailinput" type="text" id="text" name="text" required>
@@ -71,16 +67,30 @@
                 <label class="telefonolabel" for="telefono">Telefono <span class="obligatorio">*</span></label><br>
                 <input class="telefonoinput" type="tel" id="telefono" name="telefono" required>
             </div>
-            
-            <div class="mensaje">
-                <label class="send-label" for="send">Mensaje <span class="obligatorio">*</span></label>
-                <input class="mensajeinput" type="text" id="send" name="send" required>
-            </div>
-
-            <div class="enviarmensaje-container">
-                <input class="enviarmensaje" type="submit" value="Enviar Mensaje">
-            </div>
+        
         </div>
+        <div class="mensaje">
+            <label class="send-label" for="send">Mensaje <span class="obligatorio">*</span></label>
+            <input class="mensajeinput" type="text" id="send" name="send" required>
+        </div>
+        <div class="enviarmensaje-container">
+            <input class="enviarmensaje" type="submit" value="Enviar Mensaje">
+        </div>
+        <div class="masinfo-container">
+            <a href="https://api.whatsapp.com/send/?phone=541122786964&text=Hola%2C%20quiero%20hacer%20una%20consulta"><label class="masinfo" for="masinfo">
+            <img class="iconinfo" src="../media/iconinfo.png">   Asesoria Online</label></a>
+
+            <a href="https://api.whatsapp.com/send/?phone=541122786964&text=Hola%2C%20quiero%20hacer%20una%20consulta"><label class="masinfo" for="masinfo">
+            <img class="iconinfo" src="../media/iconasesoria.png">   Contactanos por Whatsapp</label></a>
+
+            <a href="https://api.whatsapp.com/send/?phone=541122786964&text=Hola%2C%20quiero%20hacer%20una%20consulta"><label class="masinfo" for="masinfo">
+            <img class="iconinfo" src="../media/icontel.png">   0800 349 (13284)</label></a>
+
+            <a href="../html-extensions/sucursales.html"><label class="masinfo" for="masinfo">
+            <img class="iconinfo" src="../media/iconwsp.png">   Visita nuestras Sucursales <hr class="lineacontacto">  </label></a>
+
+        </div>
+    </div>
 
             <!-- SOLAPA WHATSAPP AYUDA -->
       
