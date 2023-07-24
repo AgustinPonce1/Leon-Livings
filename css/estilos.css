@@ -457,7 +457,7 @@ footer .container-copyright{
 
     .dropdown-content a {
         color: black;
-        padding: 14px 12px 14px 32px;
+        padding: 8px 12px 14px 32px;
         text-decoration: none;
         display: block;
     }
@@ -1518,15 +1518,15 @@ footer .container-copyright{
         flex-wrap: wrap;
         overflow: hidden;
         max-height: 0;
-        transition: max-height 0.3s ease-in-out;
         order: 3;
         width: 100%;
     }
-        
+
     header.show-nav nav {
         max-height: 500px;
         display: flex;
-        flex-direction: column;
+        flex-direction: column; 
+        opacity: 1;
     }
         
     .menu-icon {
