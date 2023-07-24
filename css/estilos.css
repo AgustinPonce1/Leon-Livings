@@ -485,7 +485,7 @@ footer .container-copyright{
         justify-content: center;
         background-color: black;
         user-select: none;
-        height: 50vw;
+        height: 100%;
         width: 100%;
     }
 
@@ -513,7 +513,7 @@ footer .container-copyright{
         float: right;
         height: auto;
         padding: 100px 0px 100px 0px;
-        width: 800px;
+        width: 100%;
     }
 
     .slide-control {
@@ -561,7 +561,7 @@ footer .container-copyright{
         margin: 0;
         padding: 0;
         position: absolute;
-        bottom: 65px;
+        bottom: 45px;
         left: 0;
         right: 0;
         text-align: center;
@@ -1226,16 +1226,7 @@ footer .container-copyright{
 
 @media (max-width: 1920px){
 
-    /* CARRUSEL */
-
-    .slide {
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-indicador {
-        bottom: 45px;
-    }
+    /* FLECHA INDEX */
 
     .arrow-down {
         width: 100px;
@@ -1323,17 +1314,6 @@ footer .container-copyright{
     .arrow-down {
         width: 100px;
         bottom: 80px;
-    }
-
-    /* CARRUSEL */
-
-    .slide {
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-indicador {
-        bottom: 35px;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -1435,17 +1415,6 @@ footer .container-copyright{
     .arrow-down {
         width: 100px;
         bottom: -40px;
-    }
-
-    /* CARRUSEL */
-
-    .slide {
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-indicador {
-        bottom: 35px;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -1597,17 +1566,6 @@ footer .container-copyright{
         bottom: 80px;
     }
 
-    /* CARRUSEL */
-
-    .slide {
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-indicador {
-        bottom: 35px;
-    }
-
     /* FLECHA SECCION CONTACTO */
 
     .arrow-down-contacto{
@@ -1732,17 +1690,6 @@ footer .container-copyright{
         background-position: left;
     }
 
-    /* CARRUSEL */
-
-    .slide {
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-indicador {
-        bottom: 45px;
-    }
-
     .arrow-down {
         bottom: -80px;
     }
@@ -1845,21 +1792,6 @@ footer .container-copyright{
 
     #hero{
         background-position: left;
-    }
-
-    /* CARRUSEL */
-
-    .slide {
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-indicador {
-        bottom: 35px;
-    }
-
-    .slide-item img {
-        width: 650px;
     }
 
     /* FLECHA SECCION CONTACTO */
@@ -2034,56 +1966,11 @@ footer .container-copyright{
         font-size: 2em;
     }
 
-    /* CARRUSEL */
-
-    .slide {
-        margin-top: 26px;
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-item img {
-        padding: 80px 0px 60px 0px;
-        width: 600px;
-    }
-
-    .slide-control {
-        border-radius: 50%;
-        font-size: 42px;
-        height: 30px;
-        top: 60%;
-        width: 30px;
-        z-index: 10;
-        background: rgba(77, 73, 73, 0.28);
-        line-height: 20px;
-    }
-
-    .slide-control.prev {
-        left: 4%;
-    }
-
-    .slide-control.next {
-        right: 4%;
-    }
-
-    /* CIRCULO DE POSICION */
-
-    .slide-indicador {
-        bottom: 25px;
-    }
-
-    .slide-indicador li {
-        display: inline-block;
-        margin: 0 5px;
-    }
-        
-    .slide-circulo {
-        font-size: 35px;
-    }
+    /* CARRUSEL TITULOS */
 
     #titulo-sup{
         margin: 40px;
-        font-size: 30px;
+        font-size: 40px;
     }
 
     #titulo {
@@ -2352,52 +2239,7 @@ footer .container-copyright{
         font-size: 2em;
     }
 
-    /* CARRUSEL */
-
-    .slide {
-        margin-top: 26px;
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-item img {
-        padding: 80px 0px 60px 0px;
-        width: 350px;
-    }
-
-    .slide-control {
-        border-radius: 50%;
-        font-size: 32px;
-        height: 25px;
-        top: 65%;
-        width: 25px;
-        z-index: 10;
-        background: rgba(77, 73, 73, 0.28);
-        line-height: 20px;
-    }
-
-    .slide-control.prev {
-        left: 4%;
-    }
-
-    .slide-control.next {
-        right: 4%;
-    }
-
-    /* CIRCULO DE POSICION */
-
-    .slide-indicador {
-        bottom: 25px;
-    }
-
-    .slide-indicador li {
-        display: inline-block;
-        margin: 0 5px;
-    }
-        
-    .slide-circulo {
-        font-size: 35px;
-    }
+    /* CARRUSEL TITULOS */
 
     #titulo-sup{
         margin: 40px;
@@ -2669,52 +2511,7 @@ footer .container-copyright{
         font-size: 1.6em;
     }
 
-    /* CARRUSEL */
-
-    .slide {
-        margin-top: 26px;
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-item img {
-        padding: 80px 0px 60px 0px;
-        width: 380px;
-    }
-
-    .slide-control {
-        border-radius: 50%;
-        font-size: 32px;
-        height: 25px;
-        top: 65%;
-        width: 30px;
-        z-index: 10;
-        background: rgba(77, 73, 73, 0.28);
-        line-height: 20px;
-    }
-
-    .slide-control.prev {
-        left: 4%;
-    }
-
-    .slide-control.next {
-        right: 4%;
-    }
-
-    /* CIRCULO DE POSICION */
-
-    .slide-indicador {
-        bottom: 25px;
-    }
-
-    .slide-indicador li {
-        display: inline-block;
-        margin: 0 5px;
-    }
-        
-    .slide-circulo {
-        font-size: 35px;
-    }
+    /* CARRUSEL TITULOS */
 
     #titulo-sup{
         margin: 40px;
@@ -2826,7 +2623,7 @@ footer .container-copyright{
     }
           
     .image-container img {
-        width: 360px;
+        width: 335px;
         height: 320px;
     }
     
@@ -2842,7 +2639,7 @@ footer .container-copyright{
     
     .image-titlepersonalizable{
         font-size: 42px;
-        margin: 120px 0px 10px 40px;
+        margin: 120px 0px 10px 20px;
     }
     
     .seccion-sillones {
@@ -2999,53 +2796,8 @@ footer .container-copyright{
         font-size: 1em;
     }
 
-    /* CARRUSEL */
-
-    .slide {
-        margin-top: 26px;
-        height: 100%;
-        width: 100%;
-    }
-
-    .slide-item img {
-        padding: 40px 0px 60px 0px;
-        width: 250px;
-    }
-
-    .slide-control {
-        border-radius: 50%;
-        font-size: 22px;
-        height: 20px;
-        top: 55%;
-        width: 20px;
-        z-index: 10;
-        background: rgba(77, 73, 73, 0.28);
-        line-height: 20px;
-    }
-
-    .slide-control.prev {
-        left: 4%;
-    }
-
-    .slide-control.next {
-        right: 4%;
-    }
-
-    /* CIRCULO DE POSICION */
-
-    .slide-indicador {
-        bottom: 25px;
-    }
-
-    .slide-indicador li {
-        display: inline-block;
-        margin: 0 5px;
-    }
-        
-    .slide-circulo {
-        font-size: 25px;
-    }
-
+    /* CARRUSEL TITULOS */
+    
     #titulo-sup{
         margin: 20px;
         font-size: 20px;
