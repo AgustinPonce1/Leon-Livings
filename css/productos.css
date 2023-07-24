@@ -140,10 +140,9 @@ header .logoinicio {
 #findepagina{
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
     background-color: rgb(30, 30, 30);
     color: white;
-    height: 100vh;
+    height: 80vh;
     background-image: linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
@@ -157,135 +156,25 @@ header .logoinicio {
     justify-content: center;
 }
 
-#findepagina h2{
-    font-size: 9vw;
-}
-
-/* COPYRIGHT - FOOTER */
-
-.container-copyright{
-    height: 0;
+.container-findepagina {
     display: flex;
-    justify-content: center;
-    align-items: flex-end;
+    flex-wrap: wrap; /* Permite envolver los elementos en líneas adicionales */
+    align-items: flex-start; /* Alinea los elementos en la parte superior */
+    text-align: center;
 }
 
-.container-copyright p{
-    margin: 0;
-    padding: 12px;
-    color: rgb(100, 100, 100);
-}
-
-/* SECCION FIN DE PAGINA */
-
-#findepagina .container-findepagina{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-#findepagina .container-findepagina h3{
-    font-size: x-large;
+.container-findepagina h1{
+    font-size: 1.6em;
     color: cadetblue;
-    padding: 0px 20px;
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-left: 8%;
     padding-bottom: 0;
-    font-weight: 200px;
 }
 
-#findepagina .institucional-container li{
-    margin-left: -28px;
-    padding: 0px 0px 20px 10px;
-    font-weight: 300;
-    list-style-type: none;
-}
-
-.institucional-container a{
+.container-findepagina a{
     color: #FFFFFF;
     cursor: pointer;
-    text-decoration: none;
-}
-
-.institucional-container a:hover{
-    color: #ccc;
-}
-
-.divisor {
-    width: 250px;
-}
-
-/* LOCALES FIN DE PAGINA */
-
-#findepagina .locales h4{
-    font-size: x-large;
-    color: cadetblue;
-    padding: 0px 20px;
-    padding-bottom: 0;
-    font-weight: 200px;
-    margin-bottom:  0;
-    display: flex;
-}
-
-.locales li{
-    margin-left: -28px;
-    padding: 10px;
-    font-weight: 300;
-}
-
-.locales a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.locales a:hover{
-    color: #ccc;
-}
-
-/* PRODUCTOS DE FINAL DE PAGINA */
-
-#findepagina .productos-findepagina h5{
-    font-size: x-large;
-    color: cadetblue;
-    font-weight: 200px;
-    padding-left: 300px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.productos-findepagina li{
-    padding: 10px 0;
-    text-align: center;
-    font-weight: 300;
-    padding-left: 200px;
-}
-
-.productos-findepagina a{
-    color: #FFFFFF;
-    text-decoration: none;
-}
-
-.productos-findepagina a:hover{
-    color: #ccc;
-}
-
-/* SECCION CONTACTO FOOTER */
-
-#findepagina .contacto-findepagina h6{
-    font-size: x-large;
-    color: cadetblue;
-    font-weight: 200px;
-    padding-left: 300px;
-    margin-top: 20px;
-    margin-bottom: 10px;
-}
-
-.contacto-findepagina li{
-    padding: 10px 0;
-    font-weight: 300;
-    padding-left: 200px;
-}
-
-.contacto-findepagina a{
-    color: #FFFFFF;
     text-decoration: none;
 }
 
@@ -293,9 +182,42 @@ header .logoinicio {
     color: #ccc;
 }
 
+.institucional-findepagina,
+.productos-findepagina,
+.contacto-findepagina{
+    font-size: 1.2em;
+    font-weight: 400;
+    display: inline-block;
+    width: calc(100% / 3.1); /* Divide el ancho en partes iguales */
+}
+
+.contacto li,
+.institucional li,
+.productos li,
+.locales li{
+    padding-top: 10px;
+}
+
+.divisor,
 .divisor2{
-    margin-left: 200px;
-    width: 350px;
+    margin-left: 30%;
+    width: 50%;
+}
+
+/* COPYRIGHT */
+
+footer .container-copyright{
+    font-size: 1.5em;
+    margin: 0;
+    padding: 0px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container-copyright{
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
 }
 
 /* SOLAPA WHATSAPP */
@@ -806,33 +728,6 @@ header .logoinicio {
         display: flex;
         margin: 60px 120px 100px 120px;
     }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-    }
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 200px;
-    }
-
-    .productos-findepagina li{
-        padding-left: 100px;
-    }
-
-    #findepagina .contacto-findepagina h6{
-        margin-left: -90px;
-    }
-
-    .contacto-findepagina li{
-        padding-left: 120px;
-    }
-
-    .divisor2{
-        margin-left: 160px;
-        width: 250px;
-    }
 }
     
 
@@ -854,32 +749,6 @@ header .logoinicio {
         margin: 60px 100px;
     }
 
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-    }
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 200px;
-    }
-
-    .productos-findepagina li{
-        padding-left: 100px;
-    }
-
-    #findepagina .contacto-findepagina h6{
-        margin-left: -90px;
-    }
-
-    .contacto-findepagina li{
-        padding-left: 120px;
-    }
-
-    .divisor2{
-        margin-left: 160px;
-        width: 250px;
-    }
 }
 
 
@@ -900,59 +769,10 @@ header .logoinicio {
     #txtcontainer-productos{
         margin: 60px 80px;
     }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-    }
-
-    #findepagina .container-findepagina h3{
-        margin-left: 30px;
-    }
-
-    #findepagina .institucional-container li{
-        margin-left: 0px;
-    }
-
-    .divisor {
-        margin-left: 50px;
-        width: 160px;
-    }
-
-    #findepagina .locales h4{
-        margin-left: 30px;
-        padding: 0px 20px;
-    }
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .productos-findepagina li{
-        padding: 10px 0;
-    }
-
-    #findepagina .contacto-findepagina h6{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .contacto-findepagina li{
-        padding: 10px 0;
-    }
-
-    .divisor2{
-        margin-left: 40px;
-        width: 250px;
-    }
 }
 
 @media (max-width: 1024px){
-        /* MENU HAMBURGESA */
+    /* MENU HAMBURGESA */
 
     header .container {
         flex-wrap: wrap;
@@ -986,8 +806,25 @@ header .logoinicio {
     .logobuscador{
         display: none;
     }
-}
 
+    /* FIN DE PAGINA */
+
+    .container-findepagina h1{
+        font-size: 1.4em;
+    }
+
+    .institucional-findepagina,
+    .productos-findepagina,
+    .contacto-findepagina{
+        font-size: 1.2em;
+    }
+
+    /* COPYRIGHT */
+
+    footer .container-copyright{
+        font-size: 1em;
+    }
+}
 
 @media (min-width: 920px) and (max-width: 1024px){
 
@@ -1014,55 +851,6 @@ header .logoinicio {
         margin-top: 5%;
         margin-right: 0;
         margin-left: 0;
-    }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-    }
-
-    #findepagina .container-findepagina h3{
-        margin-left: 30px;
-    }
-
-    #findepagina .institucional-container li{
-        margin-left: 0px;
-    }
-
-    .divisor {
-        margin-left: 50px;
-        width: 160px;
-    }
-
-    #findepagina .locales h4{
-        margin-left: 30px;
-        padding: 0px 20px;
-    }
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .productos-findepagina li{
-        padding: 10px 0;
-    }
-
-    #findepagina .contacto-findepagina h6{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .contacto-findepagina li{
-        padding: 10px 0;
-    }
-
-    .divisor2{
-        margin-left: 40px;
-        width: 250px;
     }
 }
 
@@ -1102,54 +890,42 @@ header .logoinicio {
         margin-right: 0;
         margin-left: 0;
     }
+}
 
-    /* FOOTER */
-    
+@media (max-width: 680px){
+    /* FIN DE PAGINA */
+
     #findepagina{
-        width: 100%;
+        height: 110vh;
     }
 
-    #findepagina .container-findepagina h3{
-        margin-left: 30px;
+    .container-findepagina {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
     }
 
-    #findepagina .institucional-container li{
-        margin-left: 0px;
+    .container-findepagina h1{
+        font-size: 1.2em;
     }
 
-    .divisor {
-        margin-left: 50px;
-        width: 160px;
-    }
-
-    #findepagina .locales h4{
-        margin-left: 30px;
-        padding: 0px 20px;
-    }
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .productos-findepagina li{
-        padding: 10px 0;
-    }
-
-    #findepagina .contacto-findepagina h6{
-        padding-left: 100px;
-        margin-top: 20px;
-        margin-bottom: 10px;
-    }
-
-    .contacto-findepagina li{
-        padding: 10px 0;
-    }
-
+    .divisor,
     .divisor2{
-        margin-left: 40px;
-        width: 250px;
+        width: 50%;
+        margin-left: 28%;
+    }
+
+    .institucional-findepagina,
+    .productos-findepagina,
+    .contacto-findepagina{
+        font-size: 1em;
+        width: calc(100% / 1); /* Divide el ancho en partes iguales */
+    }
+
+    /* COPYRIGHT */
+
+    footer .container-copyright{
+        font-size: 1em;
     }
 }
 
@@ -1188,57 +964,6 @@ header .logoinicio {
         margin-top: 5%;
         margin-right: 0;
         margin-left: 0;
-    }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-    }
-
-
-    #findepagina .productos-findepagina h5{
-        padding: 0;
-        padding-left: 75px;
-        padding-bottom: -5px;
-    }
-
-    .productos-findepagina li{
-        padding-left: 0px;
-    }
-
-    #findepagina .contacto-findepagina h6{
-        padding: 0;
-        padding-left: 120px;
-    }
-
-    .contacto-findepagina li{
-        margin-left: -140px;
-    }
-
-    .divisor2{
-        width: 220px;
-        margin-left: 60px;
-    }
-
-    #findepagina .institucional-container li{
-        padding-left: 0px;
-        
-    }
-
-    .divisor {
-        width: 100px;
-        margin-left: 15px;
-    }
-
-    #findepagina .container-findepagina h3{
-        padding: 0px 20px;
-        margin-left: -5px;
-    }
-
-    #findepagina .locales h4{
-        padding: 0px 20px;
-        margin-left: -5px;
     }
 }
 
@@ -1294,79 +1019,6 @@ header .logoinicio {
         margin-top: 5%;
         margin-right: 0;
         margin-left: 0;
-    }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0px;
-        height: 140vh;
-    }
-    
-    #findepagina h2{
-        font-size: 2vw;
-    }
-    
-    #findepagina .container-findepagina{
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin-left: 0px;
-        text-align: center;
-    }
-
-    #findepagina .container-findepagina h3{
-        padding: 0px 20px;
-        margin-left: 0;
-    }
-
-    #findepagina .institucional-container li{
-        margin-left: -45px;
-        padding-top: 0;
-        padding: 0px 0px 20px 10px;
-    }
-
-    .divisor {
-        margin-left: 230px;
-        width: 200px;
-    }
-
-    /* LOCALES FIN DE PAGINA */
-
-    #findepagina .locales h4{
-        margin-left: 260px;
-    }
-
-    /* PRODUCTOS DE FINAL DE PAGINA */
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 0px;
-    }
-
-    .productos-findepagina li{
-        padding-left: 0px;
-        margin-left: -40px;
-    }
-
-    /* SECCION CONTACTO FOOTER */
-
-    #findepagina .contacto-findepagina h6{
-        padding-left: 0px;
-        margin-left: 0px;
-        text-align: center;
-    }
-
-    .contacto-findepagina li{
-        padding-left: 0px;
-        margin-left: -45px;
-    }
-
-    .divisor2{
-        width: 340px;
-        margin-left: 160px;
     }
 }
 
@@ -1448,81 +1100,6 @@ header .logoinicio {
     .encontra-productos{
         width: 440px;
         font-size: 18px;
-    }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0px;
-        height: 140vh;
-    }
-    
-    #findepagina h2{
-        font-size: 2vw;
-    }
-    
-    #findepagina .container-findepagina{
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin-left: 0px;
-        text-align: center;
-    }
-
-    #findepagina .container-findepagina h3{
-        padding: 0px 20px;
-        margin-left: 0;
-    }
-
-    #findepagina .institucional-container li{
-        margin-left: -45px;
-        padding-top: 0;
-        padding: 0px 0px 20px 10px;
-        
-    }
-
-    .divisor {
-        margin-left: 165px;
-        width: 200px;
-    }
-
-    /* LOCALES FIN DE PAGINA */
-
-    #findepagina .locales h4{
-        margin-left: 180px;
-    }
-
-    /* PRODUCTOS DE FINAL DE PAGINA */
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 0px;
-    }
-
-    .productos-findepagina li{
-        padding-left: 0px;
-        margin-left: -40px;
-    }
-
-    /* SECCION CONTACTO FOOTER */
-
-    #findepagina .contacto-findepagina h6{
-        padding-left: 0px;
-        margin-left: 0px;
-        text-align: center;
-    }
-
-    .contacto-findepagina li{
-        padding-left: 0px;
-        margin-left: -45px;
-    }
-
-    .divisor2{
-        width: 300px;
-        margin-left: 120px;
-        margin-bottom: 20px;
     }
 }
 
@@ -1609,80 +1186,5 @@ header .logoinicio {
     .encontra-productos{
         width: 320px;
         font-size: 18px;
-    }
-
-    /* FOOTER */
-    
-    #findepagina{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding-left: 0px;
-        height: 140vh;
-        justify-content: center;
-    }
-    
-    #findepagina h2{
-        font-size: 2vw;
-    }
-    
-    #findepagina .container-findepagina{
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        margin-left: 0px;
-        text-align: center;
-    }
-
-    #findepagina .container-findepagina h3{
-        padding: 0px 20px;
-        margin-left: 0;
-    }
-
-    #findepagina .institucional-container li{
-        margin-left: -45px;
-        padding-top: 0;
-        padding: 0px 0px 20px 10px;
-        
-    }
-
-    .divisor {
-        margin-left: 95px;
-        width: 200px;
-    }
-
-    /* LOCALES FIN DE PAGINA */
-
-    #findepagina .locales h4{
-        justify-content: center;
-    }
-
-    /* PRODUCTOS DE FINAL DE PAGINA */
-
-    #findepagina .productos-findepagina h5{
-        padding-left: 0px;
-    }
-
-    .productos-findepagina li{
-        padding-left: 0px;
-        margin-left: -40px;
-    }
-
-    /* SECCION CONTACTO FOOTER */
-
-    #findepagina .contacto-findepagina h6{
-        padding-left: 0px;
-        margin-left: 0px;
-        text-align: center;
-    }
-
-    .contacto-findepagina li{
-        padding-left: 0px;
-        margin-left: -45px;
-    }
-
-    .divisor2{
-        width: 300px;
-        margin-left: 40px;
     }
 }
