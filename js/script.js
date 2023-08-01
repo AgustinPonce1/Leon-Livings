@@ -11,8 +11,6 @@ window.addEventListener("scroll", function() {
 });
 
 
-
-
 // CARRUSEL PAGINA PRINCIPAL //
 
 const slideItems = document.querySelectorAll('.slide-item');
@@ -98,4 +96,3 @@ document.addEventListener('DOMContentLoaded', function () {
     dropdownContent.style.display = dropdown.classList.contains('active') ? 'block' : 'none';
   });
 });
-

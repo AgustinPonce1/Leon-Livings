@@ -260,7 +260,6 @@ footer .container-copyright{
 
 .search-icon:hover{
     cursor: pointer;
-
 }
 
 /* ANIMACION TEXTO QUIENES SOMOS */
@@ -338,7 +337,6 @@ footer .container-copyright{
 .dropdown.active .dropdown-content {
     display: block;
 }
-
     /* WEB SECCION PRODUCTOS POR SELECCION */
 
     #hero-np-productos{
@@ -400,6 +398,8 @@ footer .container-copyright{
         width: 40px;
         padding-right: 10px;
     }
+
+    /* ----------------------- SECCION LIVINGS ----------------------- */
 
     /* INPUTS-SILLONES */
 
@@ -666,6 +666,225 @@ footer .container-copyright{
 
     .barra-productos{
         width: 75%;
+    }
+
+    /* BOTON NUESTROS PROD. SECCION DE PERSONALIZABLE */
+
+    .buttonproductos-personalizable{
+        color: #4599bb;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .buttonproductos-personalizable:hover{
+        color: #307591;
+        cursor: pointer;
+    }
+
+    /* ----------------------- SECCION MESAS ----------------------- */
+
+    /* INPUTS-SILLONES */
+
+    .container-solicitar-mesas {
+        display: grid;
+        flex-wrap: wrap;
+        margin: 50px 0px 50px 0px;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+          
+    .container-solicitar-mesas h1 {
+        max-width: 100%;
+        color: #000000;
+        font-size: 2em;
+        line-height: 1.2;
+        margin: 0;
+        margin-bottom: 15px;
+        font-weight: 600;
+        font-family: "Poppins", Sans-serif;
+    }
+    
+    .container-solicitar-mesas h2 {
+        color: #3A3A3A;
+        font-family: "Poppins", Sans-serif;
+        font-size: 1.6em;
+        font-weight: 300;
+        margin-top: 0;
+    }    
+
+    /* DESCRIPCION SILLONES */
+
+    .container-descripcion-Psillones-mesas{
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+    }
+            
+    #txtcontainer-productos-mesas{
+        display: flex;
+        margin: 0px 250px;
+        grid-template-columns: 50% 50%; /* Dos columnas en cuadrícula */
+        align-items: flex-start;
+    }
+
+    /* CARRUSEL MESAS */
+
+    .slide {
+        position: relative;
+        margin-top: 0px;
+        display: flex;
+        justify-content: center;
+        user-select: none;
+        height: 100%;
+        width: 100%;
+    }
+    
+    .slide:hover{
+        cursor: pointer;
+    }
+    
+    .slide-inner {
+        position: relative;
+        overflow: hidden;
+    }
+    
+    .slide-open:checked + .slide-item {
+        position: static;
+        opacity: 100;
+    }
+    
+    .slide-item {
+        position: absolute;
+        opacity: 0;
+        width: 85%;
+    }
+    
+    .slide-item img {
+        float: right;
+        height: auto;
+        padding: 50px 0px 50px 0px;
+        width: 85%;
+    }
+    
+    .slide-control {
+        border-radius: 50%;
+        color: #030303;
+        cursor: pointer;
+        display: none;
+        font-size: 40px;
+        height: 40px;
+        line-height: 35px;
+        position: absolute;
+        top: 50%;
+        cursor: pointer;    
+        text-align: center;
+        width: 40px;
+        z-index: 10;
+        padding-left: 5%;
+        left: 84%;
+    }
+    
+    .slide-control.prev {
+        left: 2%;
+    }
+    
+    .slide-control.next {
+        right: 2%;
+    }
+    
+    #slide-1:checked ~ .control-1,
+    #slide-2:checked ~ .control-2,
+    #slide-3:checked ~ .control-3,
+    #slide-4:checked ~ .control-4,
+    #slide-5:checked ~ .control-5 {
+        display: block;
+    }
+    
+    /* CIRCULO DE POSICION */
+    
+    .slide-indicador {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        right: 0;
+        text-align: center;
+        z-index: 10;
+    }
+    
+    .slide-indicador li {
+        display: inline-block;
+        margin: 0 5px;
+    }
+            
+    .slide-circulo {
+        color: #828282;
+        cursor: pointer;
+        display: block;
+        font-size: 45px;
+    }
+    
+    .slide-circulo:hover {
+        color: #aaaaaa;
+    }
+    
+    #slide-1:checked ~ .control-1 ~ .slide-indicador 
+        li:nth-child(1) .slide-circulo,
+    #slide-2:checked ~ .control-2 ~ .slide-indicador 
+        li:nth-child(2) .slide-circulo,
+    #slide-3:checked ~ .control-3 ~ .slide-indicador 
+        li:nth-child(3) .slide-circulo,
+    #slide-4:checked ~ .control-4 ~ .slide-indicador 
+        li:nth-child(4) .slide-circulo,
+    #slide-5:checked ~ .control-5 ~ .slide-indicador 
+        li:nth-child(5) .slide-circulo {
+        color: #2d2b2b;
+    }
+
+    /* ----------------------- SECCION PERSONALIZABLE ----------------------- */
+
+    /* DESCRIPCION SILLONES */
+
+    .container-descripcion-Psillones-personalizable{
+        text-align: center;
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .texto-Psillones3 {
+        width: 50%;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-left: 25%;
+    }
+
+    .container-solicitar{
+        padding-top: 100px;
+    }
+
+    .container-solicitar h2{
+        font-size: 20px;
+    }
+
+    .boton{
+        margin: 50px 0px 0px 0px;
+        text-align: center;
+    }
+
+    .solicitar-button{
+        background-color: greenyellow;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 20px;
+        padding: 8px 10px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: rgb(16, 87, 87);
+        cursor: pointer;
     }
 
     /* ------------------ MEDIA ---------------- */
@@ -1186,5 +1405,9 @@ footer .container-copyright{
     .encontra-productos{
         width: 320px;
         font-size: 18px;
+    }
+
+    #findepagina{
+        height: 170vh;
     }
 }

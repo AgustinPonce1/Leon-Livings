@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Personalizable - Leon Livings</title>
+    <meta name="description" content="¡Crea tu mueble para exterior perfecto! En esta sección, podrás personalizar y diseñar tu propio living, mesa, reposera, puff, silla o mesa para adaptarse a tu estilo y necesidades. Explora nuestra amplia variedad de opciones y materiales para crear un espacio al aire libre único y hecho a tu medida. ¡Deja volar tu imaginación y haz realidad el mueble de tus sueños!">
     <link rel="stylesheet" href="../css/productos.css">
     <link rel="shortcut icon" href="../media/logosinf.png" type="image/x-icon">
     <script src="../js/script.js"></script>
@@ -34,7 +34,6 @@
           <div class="menu-icon">
               <img src="../media/iconhamburgesa.png" alt="Menú">
           </div>
-          <img class="logobuscador search-icon" src="../media/buscador.jpg" alt="buscador">
       </div>
       </div>
   </header>
@@ -55,11 +54,55 @@
         </div>
     </section>
 
-    <div class="container-solicitar">
-        <h1>En esta nueva seccion, puedes pedir tu Mueble para exterior a tu gusto!<br>
-            Estamos para lo que necesites, y en esta seccion te damos el placer de poder elegir.</h1>
-        <h2>En caso de que este producto te interese, contactanos poniendo tus datos aqui abajo y describe el mueble que deseas.</h2>
-        <form id="contacto-s">
+    <section class="container-descripcion-Psillones-personalizable">
+        <div class="container-texto-Psillones">
+            <div class="texto-Psillones1">
+            <p>Presentamos la seccion Personalizable, nos encanta darte el poder de diseñar tus muebles a medida, para que se adapten perfectamente a tus gustos y necesidades. Con una amplia variedad de opciones y materiales de primera calidad, tú eres el arquitecto de tu propio oasis exterior. Deja volar tu imaginación y transforma tu espacio al aire libre en un lugar verdaderamente único.</p>
+
+        </div>
+    
+        <div class="texto-Psillones2">
+            <p>
+                Aquí es donde tus sueños exteriores se convierten en realidad. 
+                Nos apasiona ofrecerte la oportunidad de diseñar muebles exclusivos que reflejen
+                tu estilo y personalidad.  <span class= marca-productos>En este espacio, la imaginación no tiene límites</span>, y cada detalle será
+                meticulosamente creado para cumplir con tus expectativas más altas.
+                <br>
+                <br>
+                Podes combinar tu diseño con los demas productos de Leon Livings!
+                Si no encuentras un diseño que te guste, <span class= marca-productos>puedes revisar los nuestros en la sección de</span> <a class= buttonproductos-personalizable href="/html-extensions/np-jdsillones.html">Nuestros Productos.</a>
+                <br>
+                Si necesitas asistencia para saber mas, hacenoslo saber a traves de whatsapp <span class= marca-productos>, te ayudaremos con lo que necesites.</span>    </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="boton">
+    <a href="#solicitar">
+        <button class="solicitar-button">¡Pedi tu personalizado ahora!</button>
+    </a>
+    </div>
+
+    <div class="texto-Psillones3">
+        <p>
+            Al crear tu Living para exterior te pedimos los siguientes datos;:
+            Nos apasiona ofrecerte la oportunidad de diseñar muebles exclusivos que reflejen
+            tu estilo y personalidad.  <span class= marca-productos>En este espacio, la imaginación no tiene límites</span>, y cada detalle será
+            meticulosamente creado para cumplir con tus expectativas más altas.
+            <br>
+            <br>
+            Podes combinar tu diseño con los demas productos de Leon Livings!
+            Si no encuentras un diseño que te guste, <span class= marca-productos>puedes revisar los nuestros en la sección de</span> <a class= buttonproductos-personalizable href="/html-extensions/np-jdsillones.html">Nuestros Productos.</a>
+            <br>
+            Si necesitas asistencia para saber mas, hacenoslo saber a traves de whatsapp <span class= marca-productos>, te ayudaremos con lo que necesites.</span>    </p>
+        </div>
+        
+    
+    <div id= "solicitar" class="container-solicitar">
+        <h1>Diseña tu espacio exterior ideal: Muebles a tu Medida</h1>
+        <h2>En caso de que te interese, contactanos poniendo tus datos aqui abajo y describe el mueble que necesites.<br>
+        Luego te contactaremos a vos por correo electronico o whatsapp para informarte sobre el producto que pediste.</h2>
+        <form action="https://formspree.io/f/mwkdpylk" method="post" id="contacto-s">
         <div class="inputs-contacto-s">
             <div id="nombrecontainer-s">
                 <label class="nombrelabel-s" for="nombre">Nombre <span class="obligatorio-s">*</span></label>
@@ -87,7 +130,7 @@
             </div>
             
             <div class="mensaje-s">
-                <label class="send-label-s" for="send">Mensaje <span class="obligatorio-s">*</span></label>
+                <label class="send-label-s" for="send">Descripcion del Producto <span class="obligatorio-s">*</span></label>
                 <input class="mensajeinput-s" type="text" id="send" name="send" required>
             </div>
             
@@ -97,59 +140,68 @@
         </div>
     </div>
 
-        <section class="container-descripcion-Psillones">
-        <div class="container-texto-Psillones">
-            <div class="texto-Psillones1">
-            <p>Presentamos la seccion Personalizable, te damos la opcion para que vos decidas el diseño perfecto para tu jardin.</p>
+        <!-- CARRUSEL -->
 
+        <div class="slide">
+            <div class="slide-inner">
+                <input class="slide-open" type="radio" id="slide-1" 
+                name="slide" aria-hidden="true" hidden="" checked="checked">
+                <div class="slide-item">
+                    <img src="/media/img3.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-2" 
+                name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="/media/img5.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-3" 
+                name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="/media/img5.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-4" 
+                name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="/media/img2.jpg">
+                </div>
+                <input class="slide-open" type="radio" id="slide-5" 
+                name="slide" aria-hidden="true" hidden="">
+                <div class="slide-item">
+                    <img src="/media/img5.jpg">
+                </div>
+
+
+                <label for="slide-5" class="slide-control prev control-1">‹</label>
+                <label for="slide-4" class="slide-control next control-3">›</label>
+                <label for="slide-3" class="slide-control prev control-4">‹</label>
+                <label for="slide-2" class="slide-control next control-1">›</label>
+                <label for="slide-1" class="slide-control prev control-2">‹</label>
+                <label for="slide-5" class="slide-control next control-4">›</label>
+                <label for="slide-4" class="slide-control next control-3">›</label>
+                <label for="slide-4" class="slide-control prev control-5">‹</label>
+                <label for="slide-3" class="slide-control next control-2">›</label>
+                <label for="slide-2" class="slide-control prev control-3">‹</label>
+                <label for="slide-1" class="slide-control next control-5">›</label>
+                <ol class="slide-indicador">
+                    <li>
+                        <label for="slide-1" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-2" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-3" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-4" class="slide-circulo">•</label>
+                    </li>
+                    <li>
+                        <label for="slide-5" class="slide-circulo">•</label>
+                    </li>
+                </ol>
+            </div>
         </div>
-    
-        <div class="texto-Psillones2">
-            <p>
-                Combinala con las <span class= marca-productos>barras y banquetas</span> de los demas modelos de muebles y crea tu jardin soñado!
-                De todas maneras, si no encuentras tu diseño, puedes revisar los nuestros en la seccion de Nuestros Productos.
-            <br>
-            <br>
-                Si necesitas asistencia para saber mas, contactanos a traves de whatsapp <span class= marca-productos>, te ayudaremos con lo que necesites.</span>    </p>
-        </div>
-    </div>
-    <hr class="barra-productos">
-        </section>
-
-    <section id="txtcontainer-productos">
-        <div class="descripcionproductos">
-        <h1 class="titulo-productos">Descubrí los modelos de la seccion personalizada</h1>
-        <p class="text-productos">Las reposeras de jardín hechas de aluminio ofrecen una <span class="listadiseño">gran variedad de modelos</span> para que diseñe el salón de sus sueños.<br><br>
-
-            Todos los modelos cuentan con <span class="listadiseño">aluminio anodizado y un diseño especial</span>, podes encontrarlas en la pagina anterior o personalizar el tuyo!<br><br>
-            <span class="listadiseño">Medidas en la que podes encontrarlo:</span>
-            <br>
-            <br>
-            <ul class="lista-productos">
-            <li>0,87×0,90×0,56</li>
-            <li>0,81×0,90×0,56</li>
-            <li>0,75×0,90×0,56</li>
-            <li>0,75×0,90×0,22</li>
-            <li>2,10×0,90×0,56</li>
-            <li>2,04×0,90×0,56</li>
-        </ul>
-            <p class="encontra-productos">
-            ¡Encontrá todos estos nuevos modelos disponibles en las sucursales de <span class="marca-productos">LEON LIVINGS!</span>
-            </p>
-            <ul class="listafinal-productos">
-                <li><img class="iconoentrega-productos-f" src="../media/iconcorrect.png" alt="icondiseño">Stock para entregas inmediatas</li>
-                <li><img class="iconocuotas-productos-f" src="../media/iconcorrect.png" alt="icondiseño">Cuotas sin interes</li>
-            </ul>
-        </p>    
-    </div>
-
-        <div class="descripcionproductos-images">
-            <img class="imgcontainer-productos" src="../media/reposerapionner.jpg" alt="">
-            <img class="imgcontainer-productos" src="../media/reposerapionner.jpg" alt="">
-            <img class="imgcontainer-productos" src="../media/reposeracocktail.jpg" alt="">
-            <img class="imgcontainer-productos" src="../media/reposeralima.jpg" alt="">
-        </div>
-    </section>
+        
     
             <!-- SOLAPA WHATSAPP AYUDA -->
       
