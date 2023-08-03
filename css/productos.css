@@ -406,7 +406,7 @@ footer .container-copyright{
     .container-solicitar {
         display: grid;
         flex-wrap: wrap;
-        margin: 150px 0px 50px 0px;
+        margin: 0px 0px 50px 0px;
         margin-left: 20%;
         margin-right: 20%;
         align-items: center;
@@ -727,6 +727,12 @@ footer .container-copyright{
         align-items: flex-start;
     }
 
+    /* CARRUSEL LIVINGS */
+
+    #carrusel {
+        padding-top: 80px;
+    }
+
     /* CARRUSEL MESAS */
 
     .slide {
@@ -853,16 +859,8 @@ footer .container-copyright{
         margin-top: 5%;
     }
 
-    .texto-Psillones3 {
-        width: 50%;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        margin-left: 25%;
-    }
-
     .container-solicitar{
-        padding-top: 100px;
+        padding-top: 80px;
     }
 
     .container-solicitar h2{
@@ -885,6 +883,19 @@ footer .container-copyright{
         color: white;
         background-color: rgb(16, 87, 87);
         cursor: pointer;
+    }
+
+    .slide-control {
+        top: 55%;
+    }
+
+    .slide{
+        margin-bottom: 100px;
+    }
+
+    #titulo-sup{
+        text-align: center;
+        margin: 60px 0px 0px 0px;
     }
 
     /* ------------------ MEDIA ---------------- */
@@ -973,8 +984,12 @@ footer .container-copyright{
 
 @media (min-width: 1025px) and (max-width: 1179px){
 
-    /* TITULO INPUTS */
+    /* TITULO - INPUTS */
 
+    .container-solicitar-mesas {
+        margin-left: 14%;
+        margin-right: 14%;
+    }
     .container-solicitar h1{
         font-size: 1.3em;
     }
@@ -991,6 +1006,14 @@ footer .container-copyright{
 }
 
 @media (max-width: 1024px){
+
+    /* TITULO - INPUTS */
+
+    .container-solicitar-mesas {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
     /* MENU HAMBURGESA */
 
     header .container {
@@ -1047,7 +1070,12 @@ footer .container-copyright{
 
 @media (min-width: 920px) and (max-width: 1024px){
 
-    /* TITULO INPUTS */
+    /* TITULO - INPUTS */
+
+    .container-solicitar-mesas {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
 
     .container-solicitar h1{
         font-size: 1.1em;
@@ -1071,11 +1099,22 @@ footer .container-copyright{
         margin-right: 0;
         margin-left: 0;
     }
+
+    /* TITULO CARRUSEL */
+
+    #titulo-sup{
+        font-size: 2em;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 919px){
 
-    /* TITULO INPUTS */
+    /* TITULO - INPUTS */
+
+    .container-solicitar-mesas {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar h1{
         font-size: 1.1em;
@@ -1109,9 +1148,28 @@ footer .container-copyright{
         margin-right: 0;
         margin-left: 0;
     }
+
+    /* TITULO CARRUSEL */
+
+    #titulo-sup{
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 680px){
+    /* TITULO - INPUTS */
+
+    .container-solicitar-mesas {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
+    /* TITULO CARRUSEL */
+
+    #titulo-sup{
+        font-size: 2em;
+    }
+
     /* FIN DE PAGINA */
 
     #findepagina{
@@ -1150,7 +1208,12 @@ footer .container-copyright{
 
 @media (min-width: 680px) and (max-width: 768px){
 
-    /* TITULO INPUTS */
+    /* TITULO - INPUTS */
+
+    .container-solicitar-mesas {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar h1{
         font-size: 1em;
@@ -1183,6 +1246,12 @@ footer .container-copyright{
         margin-top: 5%;
         margin-right: 0;
         margin-left: 0;
+    }
+
+    /* TITULO CARRUSEL */
+
+    #titulo-sup{
+        font-size: 1.6em;
     }
 }
 
@@ -1239,12 +1308,23 @@ footer .container-copyright{
         margin-right: 0;
         margin-left: 0;
     }
+
+    /* TITULO CARRUSEL */
+
+    #titulo-sup{
+        font-size: 1.6em;
+    }
 }
 
 
 @media (min-width: 460px) and (max-width: 510px){
 
-    /* TITULO INPUTS */
+    /* TITULO - INPUTS */
+
+    .container-solicitar-mesas {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar h1{
         font-size: 1em;
@@ -1320,11 +1400,46 @@ footer .container-copyright{
         width: 440px;
         font-size: 18px;
     }
+
+    #findepagina{
+        height: 140vh;
+    }
+
+    .container-findepagina h1{
+        font-size: 1.4em;
+        margin-left: 0%;
+    }
+    
+    .institucional-findepagina,
+    .productos-findepagina,
+    .contacto-findepagina{
+        font-size: 0.8em;
+        width: calc(1);
+    }
+
+    .contacto,
+    .institucional,
+    .locales,
+    .productos{
+        margin-top: 0;
+        margin-left: -10%;
+    }
+
+    /* TITULO CARRUSEL */
+
+    #titulo-sup{
+        font-size: 1.4em;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 440px){
 
-    /* TITULO INPUTS */
+    /* TITULO - INPUTS */
+
+    .container-solicitar-mesas {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar h1{
         font-size: 1em;
@@ -1407,7 +1522,41 @@ footer .container-copyright{
         font-size: 18px;
     }
 
+    /* FIN DE PAGINA */
+
     #findepagina{
-        height: 170vh;
+        height: 140vh;
+    }
+
+    .container-findepagina h1{
+        font-size: 1.4em;
+        margin-left: 0%;
+    }
+    
+    .institucional-findepagina,
+    .productos-findepagina,
+    .contacto-findepagina{
+        font-size: 0.8em;
+        width: calc(1);
+    }
+
+    .contacto,
+    .institucional,
+    .locales,
+    .productos{
+        margin-top: 0;
+        margin-left: -10%;
+    }
+
+    /* COPYRIGHT */
+
+    footer .container-copyright{
+        font-size: 1em;
+    }
+
+    /* TITULO CARRUSEL */
+
+    #titulo-sup{
+        font-size: 1.2em;
     }
 }
