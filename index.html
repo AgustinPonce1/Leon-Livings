@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Descubre una amplia selección de muebles para exterior diseñados para embellecer y maximizar el disfrute de tus espacios al aire libre. Encuentra cómodos sillones, elegantes sillas, prácticas mesas y acogedores conjuntos de exterior para crear el oasis perfecto en tu jardín, terraza o balcón. Nuestros muebles cuentan con materiales duraderos y diseños que combinan estilo y funcionalidad, para que puedas disfrutar de la naturaleza con comodidad y estilo. ¡Explora nuestras colecciones y transforma tu jardin hoy mismo!">
+    <meta name="description"
+        content="Descubre una amplia selección de muebles para exterior diseñados para embellecer y maximizar el disfrute de tus espacios al aire libre. Encuentra cómodos sillones, elegantes sillas, prácticas mesas y acogedores conjuntos de exterior para crear el oasis perfecto en tu jardín, terraza o balcón. Nuestros muebles cuentan con materiales duraderos y diseños que combinan estilo y funcionalidad, para que puedas disfrutar de la naturaleza con comodidad y estilo. ¡Explora nuestras colecciones y transforma tu jardin hoy mismo!">
     <title>Leon Livings™</title>
     <link rel="stylesheet" href="./css/estilos.css">
     <link rel="shortcut icon" href="./media/logosinf.png" type="image/x-icon">
     <script src="js/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
+
 <body>
     <!-- HEADER -->
 
     <header id="main-header">
         <div class="container">
-              
-              <div class="logoinicio">
-                  <a href="./index.html">
-                      <img class="logoinicio" src="./media/logo.jpg" alt="LOGO">
-                  </a>
-              </div>
-              <p class="logo-text">Leon Livings™</p>
-  
+
+            <div class="logoinicio">
+                <a href="./index.html">
+                    <img class="logoinicio" src="./media/logo.jpg" alt="LOGO">
+                </a>
+            </div>
+            <p class="logo-text">Leon Livings™</p>
+
             <nav>
                 <div class="dropdown">
                     <button class="dropbtn">Nuestros Productos ▼</button></a>
                     <div class="dropdown-content">
-                      <a class="dropdown-a" href="./html-extensions/np-jdsillones.html">Muebles para Exterior</a>
-                      <a class="dropdown-a" href="./html-extensions/np-personalizable.html">Personalizable</a>
+                        <a class="dropdown-a" href="./html-extensions/np-jdsillones.html">Muebles para Exterior</a>
+                        <a class="dropdown-a" href="./html-extensions/np-personalizable.html">Personalizable</a>
                     </div>
-                </div>   
+                </div>
                 <a class="sucursales-a" href="./html-extensions/sucursales.html">Sucursales</a>
-                <a class="somos-a" href="./html-extensions/sobrenosotros.html ">Quienes Somos</a>           
+                <a class="somos-a" href="./html-extensions/sobrenosotros.html ">Quienes Somos</a>
                 <a class="contacto-a" href="./html-extensions/contacto.html">Contacto</a>
             </nav>
             <div class="menu-icon">
                 <img src="./media/iconhamburgesa.png" alt="Menú">
             </div>
         </div>
-      </div>
+        </div>
     </header>
 
     <section id="hero">
@@ -48,161 +52,185 @@
 
     <section id="somos-leonlivings">
         <div class="container scroll-effect">
-            <div class="img-container"></div>
+            <!-- TEXTO IZQUIERDA -->
             <div class="texto">
-                <p class="somostxt-1">Somos una empresa emergente en Argentina, comprometida con<br> experiencias al aire libre.</p>
-                <p class="somostxt-2">Nos dedicamos a embellecer tu entorno con productos de calidad excepcional a precios altamente competitivos.
-                    
-                    Con una trayectoria significativa en el mercado nacional, nos hemos destacado en el sector de equipamiento para exteriores, ofreciendo opciones asequibles y accesibles.
-                        
-                    Nos enfocamos en el diseño, producción e instalación de mobiliario para espacios al aire libre.</p>
+                <p class="somostxt-1">Somos una empresa emergente en Argentina, comprometida con<br> experiencias al
+                    aire libre.</p>
                 <div class="button-somos">
                     <a href="html-extensions/sobrenosotros.html">
-                    <button class="somos-button">Conocé mas sobre nosotros</button>
-                </a>
+                        <button class="somos-button">Conocé mas sobre nosotros</button>
+                    </a>
                 </div>
+                <p class="somostxt-2">Nos dedicamos a embellecer tu entorno con productos de calidad excepcional a
+                    precios altamente competitivos.
+
+                    Con una trayectoria significativa en el mercado nacional, nos hemos destacado en el sector de
+                    equipamiento para exteriores, ofreciendo opciones asequibles y accesibles.
+
+                    Nos enfocamos en el diseño, producción e instalación de mobiliario para espacios al aire libre.</p>
             </div>
-        </div>
-    </section>
 
-        <!-- CARRUSEL -->
+            <!-- CARRUSEL -->
 
-        <div class="slide">
-            <div class="slide-inner">
-                <h2 id="titulo-sup">PRODUCTOS LEÓN</h2>
-                <input class="slide-open" type="radio" id="slide-1" 
-                name="slide" aria-hidden="true" hidden="" checked="checked">
-                <div class="slide-item">
-                    <h2 id="titulo">JUEGO DE SILLONES</h2>
-                    <img src="./media/img3.jpg">
+            <div class="slide">
+                <a href="/html-extensions/np-jdsillones.html">
+                <div class="slide-inner">
+                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
+                        checked="checked">
+                    <div class="slide-item">
+                        <h2 id="titulo">JUEGO DE SILLONES</h2>
+                        <img src="./media/img3.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <h2 id="titulo">REPOSERA</h2>
+                        <img src="./media/img5.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <h2 id="titulo">MESITA RATONA</h2>
+                        <img src="./media/img5.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-4" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <h2 id="titulo">SILLON INDIVIDUAL</h2>
+                        <img src="./media/img2.jpg">
+                    </div>
+                    <input class="slide-open" type="radio" id="slide-5" name="slide" aria-hidden="true" hidden="">
+                    <div class="slide-item">
+                        <h2 id="titulo">LIVING MARSELLA</h2>
+                        <img src="./media/img5.jpg">
+                    </div>
+                    <ol class="slide-indicador">
+                        <li>
+                            <label for="slide-1" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-2" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-3" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-4" class="slide-circulo">•</label>
+                        </li>
+                        <li>
+                            <label for="slide-5" class="slide-circulo">•</label>
+                        </li>
+                    </ol>
                 </div>
-                <input class="slide-open" type="radio" id="slide-2" 
-                name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <h2 id="titulo">REPOSERA</h2>
-                    <img src="./media/img5.jpg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-3" 
-                name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <h2 id="titulo">MESITA RATONA</h2>
-                    <img src="./media/img5.jpg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-4" 
-                name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <h2 id="titulo">SILLON INDIVIDUAL</h2>
-                    <img src="./media/img2.jpg">
-                </div>
-                <input class="slide-open" type="radio" id="slide-5" 
-                name="slide" aria-hidden="true" hidden="">
-                <div class="slide-item">
-                    <h2 id="titulo">LIVING MARSELLA</h2>
-                    <img src="./media/img5.jpg">
-                </div>
-
-
-                <label for="slide-5" class="slide-control prev control-1">‹</label>
-                <label for="slide-4" class="slide-control next control-3">›</label>
-                <label for="slide-3" class="slide-control prev control-4">‹</label>
-                <label for="slide-2" class="slide-control next control-1">›</label>
-                <label for="slide-1" class="slide-control prev control-2">‹</label>
-                <label for="slide-5" class="slide-control next control-4">›</label>
-                <label for="slide-4" class="slide-control next control-3">›</label>
-                <label for="slide-4" class="slide-control prev control-5">‹</label>
-                <label for="slide-3" class="slide-control next control-2">›</label>
-                <label for="slide-2" class="slide-control prev control-3">‹</label>
-                <label for="slide-1" class="slide-control next control-5">›</label>
-                <ol class="slide-indicador">
-                    <li>
-                        <label for="slide-1" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-2" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-3" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-4" class="slide-circulo">•</label>
-                    </li>
-                    <li>
-                        <label for="slide-5" class="slide-circulo">•</label>
-                    </li>
-                </ol>
+            </a>
             </div>
-        </div>
+        </section>
+    <script>
+
+    /* CARRUSEL AUTOMATICO */
+
+    document.addEventListener("DOMContentLoaded", function () {
+    function autoSlide() {
+        var slides = document.querySelectorAll(".slide-item");
+        var slideCirculos = document.querySelectorAll(".slide-circulo"); // Seleccionamos los puntos
+        var currentIndex = 0;
+
+        function showSlide(index) {
+            slides.forEach(function (slide, i) {
+                slide.style.opacity = i === index ? "1" : "0";
+            });
+
+            // Marcamos el punto activo
+            slideCirculos.forEach(function (circulo, i) {
+                circulo.classList.toggle("active", i === index);
+            });
+        }
+
+        showSlide(currentIndex);
+
+        setInterval(function () {
+            currentIndex = (currentIndex + 1) % slides.length;
+            showSlide(currentIndex);
+        }, 5000); // Cambiar la diapositiva cada 5 segundos (5000 ms)
+    }
+
+    autoSlide();
+    });
+    </script>
 
     <!-- SOLAPA WHATSAPP AYUDA -->
-      
-      <div class="container-botonimagen">
-        <a href="https://api.whatsapp.com/send/?phone=541122786964&text=Hola%2C%20quiero%20hacer%20una%20consulta" class="interactive-button">
+    <section>
+    <div class="container-botonimagen">
+        <a href="https://api.whatsapp.com/send/?phone=541122786964&text=Hola%2C%20quiero%20hacer%20una%20consulta"
+            class="interactive-button">
             <span class="button-text">¡Habla con un profesional! <span class="flechawsp">⮞</span></span>
-          <img src="./media/botonwsp.png" alt="Botón">
+            <img src="./media/botonwsp.png" alt="Botón">
         </a>
     </div>
-</section>
+    </section>
 
-   <!-- FOOTER -->
+    <!-- FOOTER -->
 
-   <footer>
-    <section id="findepagina">
-     <div class="container-findepagina">
-         <div class="institucional-findepagina">
-             <h1>Institucional</h1>
-             <div>
-                 <ul class="institucional">
-                   <li><a href="./html-extensions/sobrenosotros.html">Quiénes Somos</a></li>
-                     <li><a href="#">Promociones</a></li>
-                     <li><a href="./html-extensions/contacto.html">Contacto</a></li>
-                 </ul>
-                 <div class="divisor">
-                     <hr>
-                 </div>
-                 <div>
-                     <h1>Locales</h1>
-                     <ul class="locales">
-                         <li><a href="https://www.google.com.ar/maps/place/Cdad.+Jardin+Lomas+de+Palomar,+Provincia+de+Buenos+Aires/@-34.6046688,-58.6045142,13.5z/data=!4m6!3m5!1s0x95bcb9ab4a5771b3:0x690cbb88f054e680!8m2!3d-34.5962102!4d-58.5913678!16s%2Fm%2F03hmlh0?entry=ttu" target="_blank">Ciudad Jardin</a></li>
-                         <li><a href="https://www.google.com.ar/maps/place/Cdad.+Jardin+Lomas+de+Palomar,+Provincia+de+Buenos+Aires/@-34.6046688,-58.6045142,13.5z/data=!4m6!3m5!1s0x95bcb9ab4a5771b3:0x690cbb88f054e680!8m2!3d-34.5962102!4d-58.5913678!16s%2Fm%2F03hmlh0?entry=ttu" target="_blank">Palomar</a></li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-             
-             <div class="productos-findepagina">
-                 <h1>Productos</h1>
-                 <ul class="productos">
-                     <li><a href="./html-extensions/np-jdsillones.html">Juego de Sillones Exterior</a></li>
-                     <li><a href="./html-extensions/np-jdsillones.html">Mesita Ratona</a></li>
-                     <li><a href="./html-extensions/np-jdsillones.html">Reposera</a></li>
-                     <li><a href="./html-extensions/np-jdsillones.html">Sillon Individual</a></li>
-                     <li><a href="./html-extensions/np-jdsillones.html">Sillon Doble</a></li>
-                     <li><a href="./html-extensions/np-jdsillones.html">Sillon Triple</a></li>
-                     <li><a href="#">Personalizable</a></li>
-                 </ul>
-             </div>
-             <div class="contacto-findepagina">
-                 <h1>Contacto</h1>
-                 <ul class="contacto">
-                     <li><a href="./html-extensions/contacto.html">🏠︎ Asesoramiento Online</a></li>
-                     <li><a href="#">☎ 0800 - 184 - 59253</a></li>
-                     <li><a href="mailto:mail@leonlivings.es">✉ mail@leonlivings.es</a></li>
-                     <li><a href="https://api.whatsapp.com/send/?phone=541122786964&text=Hola%2C%20quiero%20hacer%20una%20consulta">🗨 Escribinos por Whatsapp</a></li>
-                     <li><a href="./html-extensions/sucursales.html">🏁 Visita nuestro Local</a></li>
-                 </ul>
-                 <div class="divisor2">
-                     <hr>
-                 </div>
-             </div>
-         </div>
-     </section>
-         <div class="container-copyright">
-             <p>&copy; LEON LIVINGS | 2023</p>
-         </div>
- </footer>
+    <footer>
+        <section id="findepagina">
+            <div class="container-findepagina">
+                <div class="institucional-findepagina">
+                    <h1>Institucional</h1>
+                    <div>
+                        <ul class="institucional">
+                            <li><a href="./html-extensions/sobrenosotros.html">Quiénes Somos</a></li>
+                            <li><a href="#">Promociones</a></li>
+                            <li><a href="./html-extensions/contacto.html">Contacto</a></li>
+                        </ul>
+                        <div class="divisor">
+                            <hr>
+                        </div>
+                        <div>
+                            <h1>Locales</h1>
+                            <ul class="locales">
+                                <li><a href="https://www.google.com.ar/maps/place/Cdad.+Jardin+Lomas+de+Palomar,+Provincia+de+Buenos+Aires/@-34.6046688,-58.6045142,13.5z/data=!4m6!3m5!1s0x95bcb9ab4a5771b3:0x690cbb88f054e680!8m2!3d-34.5962102!4d-58.5913678!16s%2Fm%2F03hmlh0?entry=ttu"
+                                        target="_blank">Ciudad Jardin</a></li>
+                                <li><a href="https://www.google.com.ar/maps/place/Cdad.+Jardin+Lomas+de+Palomar,+Provincia+de+Buenos+Aires/@-34.6046688,-58.6045142,13.5z/data=!4m6!3m5!1s0x95bcb9ab4a5771b3:0x690cbb88f054e680!8m2!3d-34.5962102!4d-58.5913678!16s%2Fm%2F03hmlh0?entry=ttu"
+                                        target="_blank">Palomar</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="productos-findepagina">
+                    <h1>Productos</h1>
+                    <ul class="productos">
+                        <li><a href="./html-extensions/np-jdsillones.html">Juego de Sillones Exterior</a></li>
+                        <li><a href="./html-extensions/np-jdsillones.html">Mesita Ratona</a></li>
+                        <li><a href="./html-extensions/np-jdsillones.html">Reposera</a></li>
+                        <li><a href="./html-extensions/np-jdsillones.html">Sillon Individual</a></li>
+                        <li><a href="./html-extensions/np-jdsillones.html">Sillon Doble</a></li>
+                        <li><a href="./html-extensions/np-jdsillones.html">Sillon Triple</a></li>
+                        <li><a href="#">Personalizable</a></li>
+                    </ul>
+                </div>
+                <div class="contacto-findepagina">
+                    <h1>Contacto</h1>
+                    <ul class="contacto">
+                        <li><a href="./html-extensions/contacto.html">🏠︎ Asesoramiento Online</a></li>
+                        <li><a href="#">☎ 0800 - 184 - 59253</a></li>
+                        <li><a href="mailto:mail@leonlivings.es">✉ mail@leonlivings.es</a></li>
+                        <li><a
+                                href="https://api.whatsapp.com/send/?phone=541122786964&text=Hola%2C%20quiero%20hacer%20una%20consulta">🗨
+                                Escribinos por Whatsapp</a></li>
+                        <li><a href="./html-extensions/sucursales.html">🏁 Visita nuestro Local</a></li>
+                    </ul>
+                    <div class="divisor2">
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="container-copyright">
+            <p>&copy; LEON LIVINGS | 2023</p>
+        </div>
+    </footer>
 
 
-<!-- ------------------------------------ -->
+    <!-- ------------------------------------ -->
 
 </body>
+
 </html>

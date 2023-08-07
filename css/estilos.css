@@ -255,38 +255,33 @@ footer .container-copyright{
         margin-top: 0;
     }
 
-    /* SOMOS LEONLIVINGS */
-
-    #somos-leonlivings .container{
-        text-align: center;
-        padding: 200px 12px;
-        display: inline-block;
+    #somos-leonlivings .container {
+        padding: 140px 24px 140px 48px;
         line-height: 1;
-    }
-
-    .somostxt-1{
-        font-size: 30px;
-        font-style: inherit;
-        font-weight: inherit;
-    }
-
-    .somostxt-2{
-        width: 80%;
-        margin-left: 10%;
-        font-size: 22px;
-        font-weight: 100;
-        font-style: inherit;
-        font-weight: inherit;
-    }
-
-    /* SECCION SOMOS LEON LIVINGS */
-
-    #somos-leonlivings .container{
+        justify-content: space-between;
         display: flex;
-        justify-content: space-evenly;
+        align-items: flex-start;
     }
-
-    .somos-button{
+    
+    .somostxt-1 {
+        font-size: 30px;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+    }
+    
+    .somostxt-2 {
+        width: 50%;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 0.5px;
+        line-height: 1.2;
+    }
+    
+    /* SECCION SOMOS LEON LIVINGS */
+    
+    .somos-button {
         font-size: 1.2em;
         font-weight: 400;
         padding: 10px 40px;
@@ -296,41 +291,23 @@ footer .container-copyright{
         color: white;
         background-color: rgb(16, 87, 87);
     }
-
-    .somos-button:hover{
+    
+    .somos-button:hover {
         background-color: rgb(15, 114, 114);
         cursor: pointer;
     }
-
-    #somos-leonlivings .texto{
+    
+    #somos-leonlivings .texto {
         width: 50%;
         max-width: 600px;
-        text-align: center;
-        padding-left: 30px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    #somos-leonlivings h2{
-        margin-top: 0px;
-        font-size: 50px;
-        font-weight: 600;
+        padding-left: 0px;
+        /* display: inline-block; */ /* Comentado o eliminado */
     }
 
     /* BOTON NOSOTROS */   
 
     #somos-leonlivings .nosotros{
         padding: 8px 0px;
-    }
-
-    #somos-leonlivings .img-container{
-        background-image: url("../media/equipo.jpg");
-        background-size: cover;
-        background-position: center center;
-        height: 400px;
-        width: 800px;
-        border-radius: 80px;
     }
 
     /* SECCION NUESTROS PRODUCTOS */
@@ -484,13 +461,13 @@ footer .container-copyright{
         margin-top: 26px;
         display: flex;
         justify-content: center;
-        background-color: black;
         user-select: none;
         height: 100%;
-        width: 100%;
+        width: 50%; /* Agregado */
+        overflow: hidden; /* Agregado */
     }
 
-    .slide:hover{
+    .slide:hover {
         cursor: pointer;
     }
 
@@ -510,49 +487,17 @@ footer .container-copyright{
         width: 100%;
     }
 
+    .slide-item {
+        flex: 0 0 100%;
+        opacity: 0;
+        transition: opacity 0.8s ease-in-out; /* Agregamos la transición de desvanecimiento */
+    }
+
     .slide-item img {
-        float: right;
+        float: left;
         height: auto;
         padding: 100px 0px 100px 0px;
         width: 100%;
-    }
-
-    .slide-control {
-        background: rgba(77, 73, 73, 0.28);
-        border-radius: 50%;
-        color: #fff;
-        cursor: pointer;
-        display: none;
-        font-size: 40px;
-        height: 40px;
-        line-height: 35px;
-        position: absolute;
-        top: 60%;
-        cursor: pointer;    
-        text-align: center;
-        width: 40px;
-        z-index: 10;
-    }
-
-    .slide-control.prev {
-        left: 2%;
-    }
-
-    .slide-control.next {
-        right: 2%;
-    }
-
-    .slide-control:hover {
-        background: rgba(0, 0, 0, 0.8);
-        color: #aaaaaa;
-     }
-
-    #slide-1:checked ~ .control-1,
-    #slide-2:checked ~ .control-2,
-    #slide-3:checked ~ .control-3,
-    #slide-4:checked ~ .control-4,
-    #slide-5:checked ~ .control-5 {
-        display: block;
     }
 
     /* CIRCULO DE POSICION */
@@ -585,40 +530,22 @@ footer .container-copyright{
         color: #aaaaaa;
     }
 
-    #slide-1:checked ~ .control-1 ~ .slide-indicador 
-        li:nth-child(1) .slide-circulo,
-    #slide-2:checked ~ .control-2 ~ .slide-indicador 
-          li:nth-child(2) .slide-circulo,
-    #slide-3:checked ~ .control-3 ~ .slide-indicador 
-        li:nth-child(3) .slide-circulo,
-    #slide-4:checked ~ .control-4 ~ .slide-indicador 
-        li:nth-child(4) .slide-circulo,
-    #slide-5:checked ~ .control-5 ~ .slide-indicador 
-        li:nth-child(5) .slide-circulo {
-        color: #fff;
-    }
-
-    #titulo-sup{
-        display: flex;
-        justify-content: center;
-        padding: 0px 0 0 0;
-        color: #fff;
-        margin: 60px;
-        font-size: 54px;
-        font-weight: 600;
-    }
-
     #titulo {
         width: 100%;
         position: absolute;
         text-align: center;
         font-size: 38px;
-        color: rgba(255, 255, 255, 1);
+        color: rgb(11, 9, 9);
         font-family: 'Open Sans', sans-serif;
         z-index: 1;
         text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
             -1px 0px 2px rgba(255, 255, 255, 0);
     }
+
+    .slide-circulo.active {
+        color: #050404;
+    }
+
 
     /* -- WEB SECCION SUCURSALES -- */
 
@@ -1218,6 +1145,28 @@ footer .container-copyright{
         font-weight: 600; /* DETALLE: PONIENDO EN BOLD, NEGRITA AFECTANDO EL GROSOR, EN 600, NO AFECTA */
     }
 
+    /* -------------------------- MENU PAGINAS ----------------------- */
+
+    #menu-paginas{
+        margin-left: 20%;
+    }
+
+    #menu-paginas a{
+        text-decoration: none;
+    }
+
+    #menu-paginas p{
+        color: black;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .menu-display{
+        color: #3d7b94;
+        font-weight: 600;
+        font-size: 12px;
+    }
+
     /* ---------------------------- PRUEBAS -------------------------------- */
     
 /* RESPONSIVE A 1920px */
@@ -1274,6 +1223,7 @@ footer .container-copyright{
           
     .container-images{
         font-size: 42px;
+        color: #54595F;
     }
           
     .image-container img {
