@@ -339,7 +339,7 @@ footer .container-copyright{
 }
     /* WEB SECCION PRODUCTOS POR SELECCION */
 
-    #hero-np-productos{
+    #hero-np-livingluit{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -349,10 +349,17 @@ footer .container-copyright{
             rgba(61, 60, 60, 0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../media/img3.jpg");
+        ,url("../media/livingluit/herolivingluit.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
+    }
+
+    #hero-np-productos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
     }
     
     #hero-np-productos h1 {
@@ -401,6 +408,30 @@ footer .container-copyright{
 
     /* ----------------------- SECCION LIVINGS ----------------------- */
 
+    /* BOTON PEDIR PRODUCTO */
+
+    .boton-livings{
+        margin-top: -80px;
+        text-align: center;
+    }
+
+    .solicitar-button-living{
+        background-color: greenyellow;
+        height: 40px;
+        border-radius: 10px;
+        font-size: 14px;
+        padding: 8px 10px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: rgb(16, 87, 87);
+        cursor: pointer;
+        font-weight: 400;
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 0.8px;
+        line-height: 1.6; 
+    }
+
     /* INPUTS-SILLONES */
 
     .container-solicitar {
@@ -435,8 +466,8 @@ footer .container-copyright{
     
     .inputs-contacto-s{
         display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Cuatro columnas en cuadrícula, muy util */
-        grid-gap: 10px; /* Espacio entre las fotos */
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10px; 
         width: 100%;
     }
           
@@ -649,7 +680,7 @@ footer .container-copyright{
         grid-template-columns: repeat(2, 1fr); /* Cuatro columnas en cuadrícula, muy util */
         grid-gap: 10px; /* Espacio entre las fotos */
         justify-items: center; /* Centrado H */
-        margin-left: 5%;
+        margin-left: 0%;
         margin-top: 10%;
     }
 
@@ -717,7 +748,7 @@ footer .container-copyright{
     .container-descripcion-Psillones-mesas{
         text-align: center;
         width: 100%;
-        margin-top: 5%;
+        margin-top: 0%;
     }
             
     #txtcontainer-productos-mesas{
@@ -786,8 +817,6 @@ footer .container-copyright{
         text-align: center;
         width: 40px;
         z-index: 10;
-        padding-left: 5%;
-        left: 84%;
     }
     
     .slide-control.prev {
@@ -795,7 +824,7 @@ footer .container-copyright{
     }
     
     .slide-control.next {
-        right: 2%;
+        right: 4%;
     }
     
     #slide-1:checked ~ .control-1,
@@ -901,7 +930,7 @@ footer .container-copyright{
     /* -------------------------- MENU PAGINAS ----------------------- */
 
     #menu-paginas{
-        margin-left: 20%;
+        margin-left: 16%;
     }
 
     #menu-paginas a{
@@ -1011,6 +1040,11 @@ footer .container-copyright{
 
     /* TITULO - INPUTS */
 
+    .container-solicitar {
+        margin-left: 14%;
+        margin-right: 14%;
+    }
+
     .container-solicitar-mesas {
         margin-left: 14%;
         margin-right: 14%;
@@ -1033,6 +1067,11 @@ footer .container-copyright{
 @media (max-width: 1024px){
 
     /* TITULO - INPUTS */
+
+    .container-solicitar {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
 
     .container-solicitar-mesas {
         margin-left: 12%;
@@ -1091,11 +1130,23 @@ footer .container-copyright{
     footer .container-copyright{
         font-size: 1em;
     }
+
+    /* MENU PAGINAS */
+
+    #menu-paginas{
+        margin-left: 10%;
+    }
+
 }
 
 @media (min-width: 920px) and (max-width: 1024px){
 
     /* TITULO - INPUTS */
+
+    .container-solicitar {
+        margin-left: 12%;
+        margin-right: 12%;
+    }
 
     .container-solicitar-mesas {
         margin-left: 12%;
@@ -1135,6 +1186,11 @@ footer .container-copyright{
 @media (min-width: 769px) and (max-width: 919px){
 
     /* TITULO - INPUTS */
+
+    .container-solicitar {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar-mesas {
         margin-left: 8%;
@@ -1184,6 +1240,11 @@ footer .container-copyright{
 @media (max-width: 680px){
     /* TITULO - INPUTS */
 
+    .container-solicitar {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+
     .container-solicitar-mesas {
         margin-left: 8%;
         margin-right: 8%;
@@ -1229,11 +1290,38 @@ footer .container-copyright{
     footer .container-copyright{
         font-size: 1em;
     }
+
+    /* MENU PAGINAS */
+
+    #menu-paginas{
+        margin-left: 10%;
+    }
+
+    #menu-paginas a{
+        font-size: 10px;
+    }
+
+    #menu-paginas p{
+        font-size: 10px;
+    }
+
+    .menu-display{
+        font-size: 10px;
+    }
+
+    .desapear{
+        display: none;
+    }
 }
 
 @media (min-width: 680px) and (max-width: 768px){
 
     /* TITULO - INPUTS */
+
+    .container-solicitar {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar-mesas {
         margin-left: 8%;
@@ -1345,6 +1433,11 @@ footer .container-copyright{
 @media (min-width: 460px) and (max-width: 510px){
 
     /* TITULO - INPUTS */
+
+    .container-solicitar {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar-mesas {
         margin-left: 8%;
@@ -1460,6 +1553,11 @@ footer .container-copyright{
 @media (min-width: 320px) and (max-width: 440px){
 
     /* TITULO - INPUTS */
+
+    .container-solicitar {
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .container-solicitar-mesas {
         margin-left: 8%;
