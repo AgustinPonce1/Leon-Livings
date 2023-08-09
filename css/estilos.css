@@ -228,8 +228,8 @@ footer .container-copyright{
         height: 100vh;
         background-image: linear-gradient(
             0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2)
         )
         ,url("../media/img4.jpg");
         background-repeat: no-repeat;
@@ -548,106 +548,6 @@ footer .container-copyright{
         color: #050404;
     }
 
-
-    /* -- WEB SECCION SUCURSALES -- */
-
-    .container-videos{
-        display: flex;
-        width: 100%;
-        height: 100vh;
-    }
-
-    .container-videos:hover{
-        cursor: pointer;
-    }
-      
-    .video {
-        position: relative;
-        flex-basis: 50%;
-        height: 100%;
-        overflow: hidden;
-    }
-      
-    .video video {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-      
-    .titulo-cj {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 17px;
-        transition: font-size 0.3s ease;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 19px;
-    }
-
-    .titulo-cj h2{
-        margin-bottom: -15px;
-    }
-
-    .ubi-cj{
-        margin-left: 2px;
-    }
-
-    .boton-cj{
-        color: #fff;
-        font-size: 40px;
-        border: 1px solid white;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        margin-top: -10px;
-    }
-
-    .titulo-palomar {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: #fff;
-        font-size: 17px;
-        transition: font-size 0.3s ease;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 19px;
-    }
-
-    .titulo-palomar h2{
-        margin-bottom: -15px;
-    }
-
-    .ubi-palomar{
-        margin-left: 2px;
-    }
-
-    .boton-palomar{
-        color: #fff;
-        font-size: 40px;
-        border: 1px solid white;
-        border-radius: 50%;
-        width: 40px;
-        height: 40px;
-        line-height: 40px;
-        text-align: center;
-        margin-bottom: 0px;
-        margin-top: -10px;
-        margin-left: 0;
-        margin-right: 0;
-    }
-
     /* WEB SECCION CONTACTO */
 
     #hero-contacto{
@@ -659,8 +559,8 @@ footer .container-copyright{
         height: 100vh;
         background-image: linear-gradient(
             0deg,
-            rgba(61, 60, 60, 0.5),
-            rgba(0,0,0,0.5)
+            rgba(61, 60, 60, 0.3),
+            rgba(0,0,0,0.3)
         )
         ,url("../media/hero-contacto.jpg");
         background-repeat: no-repeat;
@@ -1004,8 +904,8 @@ footer .container-copyright{
         height: 100vh;
         background-image: linear-gradient(
             0deg,
-            rgba(0,0,0,0.5),
-            rgba(0,0,0,0.5)
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
         )
         ,url("../media/img3.jpg");
         background-repeat: no-repeat;
@@ -1319,6 +1219,109 @@ footer .container-copyright{
         cursor: pointer;
     }
 
+    /* PAGINA -- MATERIALES */
+
+    #hero-materiales{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(0,0,0,0.3),
+            rgba(0,0,0,0.3)
+        )
+        ,url("../media/materiales.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    .materiales-title {
+        font-size: 4em;
+        color: #FFFFFF;
+    }
+
+    .materials-section {
+        background-color: #f7f7f7;
+        padding: 4rem 0;
+    }
+      
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 1rem;
+    }
+      
+    .section-title {
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 500; 
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 0.8px; 
+        line-height: 1.6; 
+        margin-bottom: 2rem;
+    }
+      
+    .material-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+        font-weight: 500; 
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 0.8px; 
+        line-height: 1.6; 
+    }
+      
+    .material-description {
+        font-size: 1rem;
+        color: #666;
+        font-weight: 500; 
+        font-family: "Helvetica Neue", Arial, sans-serif;
+        letter-spacing: 0.8px; 
+        line-height: 1.6; 
+    }
+
+    .material {
+        position: relative;
+        margin-bottom: 2rem;
+        border: 1px solid #bab7b7;
+        border-radius: 5px;
+        overflow: hidden;
+        display: flex;
+    }
+      
+    .material-content {
+        flex: 1;
+        padding: 2rem;
+        background-color: rgba(255, 255, 255, 0.9);
+    }
+      
+    .material-title {
+        margin-top: 0;
+    }
+      
+    .material-description {
+        margin-bottom: 0;
+    }
+    
+    .material-image {
+        width: 400px;
+        flex-shrink: 0;
+        background-color: #f7f7f7; 
+        display: flex;
+        align-items: center; 
+        justify-content: center; 
+    }
+      
+    .material-image img {
+        display: block;
+        width: 100%;
+        height: auto;
+        border-radius: 0 5px 5px 0;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
     /* ---------------------------- PRUEBAS -------------------------------- */
     
 /* RESPONSIVE A 1920px */
@@ -1423,24 +1426,6 @@ footer .container-copyright{
         bottom: 0px;
     }
 
-    /* TITULO SECCION SUCURSALES */
-
-    .titulo-cj {
-        font-size: 16px;
-    }
-
-    .titulo-palomar {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 18px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 18px;
-    }
-
     /* HERO  SECCION SOBRE NOSOTROS */
 
     .hero-sobrenosotros-titulo {
@@ -1522,24 +1507,6 @@ footer .container-copyright{
     .arrow-down-contacto{
         width: 80px;
         bottom: 0px;
-    }
-
-    /* TITULO SECCION SUCURSALES */
-
-    .titulo-cj {
-        font-size: 16px;
-    }
-
-    .titulo-palomar {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 18px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 18px;
     }
 
     /* HERO  SECCION SOBRE NOSOTROS */
@@ -1680,31 +1647,6 @@ footer .container-copyright{
 
     .arrow-down-contacto{
         width: 80px;
-    }
-
-    /* TITULO SECCION SUCURSALES */
-
-    .titulo-cj {
-        font-size: 12px;
-    }
-
-    .titulo-palomar {
-        font-size: 12px;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 14px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 14px;
-    }
-
-    .container-videos{
-        display: flex;
-        width: 100%;
-        height: 200vh;
-        flex-direction: column;
     }
 
     /* HERO  SECCION SOBRE NOSOTROS */
@@ -2021,32 +1963,6 @@ footer .container-copyright{
         bottom: 0px;
     }
 
-    /* TITULO SECCION SUCURSALES */
-
-    .titulo-cj {
-        font-size: 18px;
-    }
-
-    .titulo-palomar {
-        font-size: 18px;
-        padding-bottom: 40px;
-    }
-
-    .container-videos{
-        display: flex;
-        height: 200vh;
-        flex-direction: column;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 20px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 20px;
-    }  
-    
-
     /* HERO  SECCION SOBRE NOSOTROS */
 
     .hero-sobrenosotros-titulo {
@@ -2247,13 +2163,6 @@ footer .container-copyright{
 }
 
 @media (min-width: 624px) and (max-width: 672px){
-
-    /* SECCION SUCURSALES */
-
-    .container-videos{
-        height: 100vh;
-        flex-direction: column;
-    }
 
     /* HERO */
 
@@ -2487,48 +2396,11 @@ footer .container-copyright{
         display: none;
     }
 
-    /* -- WEB SECCION SUCURSALES -- */
-
-    .container-videos{
-        height: 200vh;
-    }
-      
-    .titulo-cj {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 18px;
-    }
-
-    .boton-cj{
-        font-size: 30px;
-    }
-
-    .titulo-palomar {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 18px;
-    }
-
-    .boton-palomar{
-        font-size: 30px;
-    }
-
 }
 
 /* RESPONSIVE A 460px - 560px */
 
 @media (min-width: 460px) and (max-width: 560px){
-
-    /* SECCION SUCURSALES */
-
-    .container-videos{
-        height: 100vh;
-        flex-direction: column;
-    }
 
     /* HERO */
 
@@ -2765,46 +2637,9 @@ footer .container-copyright{
         display: none;
     }
 
-    /* -- WEB SECCION SUCURSALES -- */
-
-    .container-videos{
-        height: 200vh;
-    }
-      
-    .titulo-cj {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 18px;
-    }
-
-    .boton-cj{
-        font-size: 30px;
-    }
-
-    .titulo-palomar {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 18px;
-    }
-
-    .boton-palomar{
-        font-size: 30px;
-    }
-
 }
 
 @media (min-width: 380px) and (max-width: 440px){
-
-    /* SECCION SUCURSALES */
-
-    .container-videos{
-        height: 100vh;
-        flex-direction: column;
-    }
 
     /* TEXTO PAGINA PRINCIPAL */
     
@@ -3009,36 +2844,6 @@ footer .container-copyright{
 
     .flechawsp{
         display: none;
-    }
-
-    /* -- WEB SECCION SUCURSALES -- */
-
-    .container-videos{
-        height: 200vh;
-    }
-      
-    .titulo-cj {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 18px;
-    }
-
-    .boton-cj{
-        font-size: 30px;
-    }
-
-    .titulo-palomar {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 18px;
-    }
-
-    .boton-palomar{
-        font-size: 30px;
     }
 
 }
@@ -3287,36 +3092,6 @@ footer .container-copyright{
 
     .flechawsp{
         display: none;
-    }
-
-    /* -- WEB SECCION SUCURSALES -- */
-
-    .container-videos{
-        height: 200vh;
-    }
-      
-    .titulo-cj {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-cj {
-        font-size: 18px;
-    }
-
-    .boton-cj{
-        font-size: 30px;
-    }
-
-    .titulo-palomar {
-        font-size: 16px;
-    }
-
-    .video:hover .titulo-palomar {
-        font-size: 18px;
-    }
-
-    .boton-palomar{
-        font-size: 30px;
     }
 
 }
