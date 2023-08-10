@@ -1117,15 +1117,15 @@ footer .container-copyright{
     }
 
     .aluminio {
-        background-image: url('/media/materiales/aluminio.jpg');
+        background-image: url('../media/materiales/aluminio.jpg');
     }
       
     .tela {
-        background-image: url('/media/materiales/telanautica.jpg');
+        background-image: url('../media/materiales/telanautica.jpg');
     }
       
     .deck {
-        background-image: url('/media/materiales/wpc.jpg');
+        background-image: url('../media/materiales/wpc.jpg');
     }
 
     #materiales-principal a{
@@ -1160,7 +1160,7 @@ footer .container-copyright{
 
     #unete-principal {
         position: relative;
-        background-image: url('/media/hero-contacto.jpg');
+        background-image: url('../media/hero-contacto.jpg');
         background-repeat: no-repeat;
         background-size: cover;
         background-attachment: fixed;
@@ -1297,10 +1297,6 @@ footer .container-copyright{
         background-color: rgba(255, 255, 255, 0.9);
     }
       
-    .material-title {
-        margin-top: 0;
-    }
-      
     .material-description {
         margin-bottom: 0;
     }
@@ -1317,7 +1313,7 @@ footer .container-copyright{
     .material-image img {
         display: block;
         width: 100%;
-        height: auto;
+        height: 60vh;
         border-radius: 0 5px 5px 0;
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     }
@@ -1405,6 +1401,12 @@ footer .container-copyright{
     .image-sillones img {
         width: 400px;
     }
+
+    /* SECCION PAG MATERIALES */
+
+    .br-materials {
+        display: none;
+    }
     
 }
 
@@ -1489,6 +1491,13 @@ footer .container-copyright{
     .image-sillones img {
         width: 320px;
     }
+
+    /* PAGINA MATERIALES */
+
+    .material-image img {
+        width: 100%;
+        height: 85vh;
+    }
 }
 
 /* RESPONSIVE A 1280px */
@@ -1571,6 +1580,13 @@ footer .container-copyright{
           
     .image-sillones img {
         width: 320px;
+    }
+
+    /* PAGINA MATERIALES */
+
+    .material-image img {
+        width: 100%;
+        height: 90vh;
     }
 
 }
@@ -1766,6 +1782,13 @@ footer .container-copyright{
     .unete-button {
         font-size: 0.8em;
     }
+
+    /* PAGINA MATERIALES */
+
+    .material-image img {
+        width: 100%;
+        height: 100vh;
+    }
 }
 
 @media (max-width: 960px){
@@ -1815,24 +1838,22 @@ footer .container-copyright{
 
     /* MATERIAL LISTA RESPONSIVE */
 
-    .material {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-    }
-    
-    .material-content {
-        margin-bottom: 1.5rem;
-    }
-    
     .material-image {
-        margin-top: 0.5rem;
-        margin-bottom: 1rem;
-    }
-    
-    .material-image img {
-        width: 100%; /* Ocupa el ancho máximo del contenedor */
+        max-width: 100%;
+        width: 300px;
         height: auto;
+    }
+
+    .materials-span {
+        display: none;
+    }
+
+    .br-materials {
+        display: block;
+    }
+
+    .materiales-title {
+        font-size: 3rem;
     }
 
 }
@@ -1924,9 +1945,9 @@ footer .container-copyright{
         width: 33%;
     }
 
-        .button-materiales {
-            font-size: 0.8em;
-        }
+    .button-materiales {
+        font-size: 0.8em;
+    }
 
     /* SECCION UNETE PAG PRINCIPAL */
 
@@ -2183,6 +2204,31 @@ footer .container-copyright{
     .unete-button {
         font-size: 0.8em;
     }
+
+    /* MATERIAL LISTA RESPONSIVE */
+
+    .material {
+        flex-direction: column; 
+    }
+    
+    .material-content,
+    .material-image {
+        width: 100%;
+    }
+    
+    .material-image img {
+        width: 100%;
+        max-height: 180px;
+    }
+    
+    .materials-span {
+        display: none;
+    }
+
+    .materiales-title {
+        font-size: 2.6rem;
+    }
+
 }
 
 @media (min-width: 624px) and (max-width: 672px){
@@ -2867,6 +2913,22 @@ footer .container-copyright{
 
     .flechawsp{
         display: none;
+    }
+
+    /* PAGINA SECCION MATERIALES */
+
+    .material {
+        flex-direction: column; 
+    }
+    
+    .material-content,
+    .material-image {
+        width: 100%;
+    }
+    
+    .material-image img {
+        width: 100%;
+        max-height: 180px;
     }
 
 }
