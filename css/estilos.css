@@ -2175,7 +2175,7 @@ align-items: flex-end;
 
     #unete-principal {
         position: relative;
-        height: 45vh;
+        height: 35vh;
     }
 
     .unete-title {
@@ -2215,1012 +2215,1012 @@ align-items: flex-end;
         font-size: 2.6rem;
     }
 
-/* FOOTER - MOBILE */
+    /* FOOTER - MOBILE */
 
-#footer-mobile {
-    display: flex;
-    background-color: #636364;
-    height: 16vh;
-    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
-    align-items: center;
-    justify-content: space-around;
-    position: relative; /* Agregar posición relativa al contenedor padre */
-    z-index: 2;
-}
+    #footer-mobile {
+        display: flex;
+        background-color: #636364;
+        height: 16vh;
+        box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: space-around;
+        position: relative; /* Agregar posición relativa al contenedor padre */
+        z-index: 2;
+    }
 
-.title-footermobile {
-    padding-top: 3%;
-    text-align: center;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 500;
-    margin: 0;
-}
+    .title-footermobile {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 500;
+        margin: 0;
+    }
 
-.footer-icons {
-    display: flex;
-    align-items: center;
-    margin-right: 20px;
-}
+    .footer-icons {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
 
-.footer-icons a {
-    margin-left: 10px;
-    text-decoration: none;
-}
+    .footer-icons a {
+        margin-left: 10px;
+        text-decoration: none;
+    }
 
-.contacto-footermobile {
-    text-align: center;
-    font-size: 20px;
-    color: #ffffff;
-    font-weight: 500;
-    margin: 0;
-}
+    .contacto-footermobile {
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 500;
+        margin: 0;
+    }
 
-.footer-icons img {
-    width: 25px;
-}
+    .footer-icons img {
+        width: 25px;
+    }
 
-/* COPYRIGHT */
+    /* COPYRIGHT */
 
-#footer-mobile .container-copyright-mobile {
-    position: absolute;
-    bottom: -10px; 
-    right: 10px;
-    font-size: 0.6em;
-    margin: 0;
-    padding: 0px;
-    color: rgb(250, 250, 250);
-    text-align: center;
-}
+    #footer-mobile .container-copyright-mobile {
+        position: absolute;
+        bottom: -10px; 
+        right: 10px;
+        font-size: 0.6em;
+        margin: 0;
+        padding: 0px;
+        color: rgb(250, 250, 250);
+        text-align: center;
+    }
 
 }
 
 @media (min-width: 624px) and (max-width: 672px){
 
-/* HERO */
+    /* HERO */
 
-.arrow-down {
-    width: 80px;
-    bottom: 20px;
-}
+    .arrow-down {
+        width: 80px;
+        bottom: 20px;
+    }
 
-#hero{
-    background-position: left;
-}
+    #hero{
+        background-position: left;
+    }
 
-.hero-titulo{
-    font-size: 4em;
-}
+    .hero-titulo{
+        font-size: 4em;
+    }
 
-#hero h4{
-    font-size: 2em;
-}
+    #hero h4{
+        font-size: 2em;
+    }
 
-/* CARRUSEL TITULOS */
+    /* CARRUSEL TITULOS */
 
-#titulo-sup{
-    margin: 40px;
-    font-size: 40px;
-}
+    #titulo-sup{
+        margin: 40px;
+        font-size: 40px;
+    }
 
-#titulo {
-    width: 100%;
-    font-size: 24px;
-}
+    #titulo {
+        width: 100%;
+        font-size: 24px;
+    }
 
-/* FLECHA SECCION CONTACTO */
+    /* FLECHA SECCION CONTACTO */
 
-.arrow-down-contacto{
-    width: 60px;
-    bottom: 0px;
-}
+    .arrow-down-contacto{
+        width: 60px;
+        bottom: 0px;
+    }
 
-/* WEB SECCION CONTACTO */
+    /* WEB SECCION CONTACTO */
 
-#hero-contacto{
-    height: 100vh;
-    background-position: left;
-}
+    #hero-contacto{
+        height: 100vh;
+        background-position: left;
+    }
 
-#hero-contacto h1 {
-    font-size: 40px;
-}
+    #hero-contacto h1 {
+        font-size: 40px;
+    }
+        
+    #hero-contacto h4{
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+
+    /* HERO SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 40px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 80px;
+        bottom: 60px;
+    }
+
+    .historia-container h1{
+        font-size: 18px;
+    }
+
+    .texto-historia1 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .texto-historia2 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+    #hero-np h1 {
+        font-size: 44px;
+    }
+        
+    #hero-np h4{
+        font-size: 22px;
+    }
+
+    .listahero{
+        margin-left: 0;
+    }
+
+    .listahero li{
+        font-size: 16px;
+    }
+
+    .iconoentrega,
+    .iconoresistentes,
+    .iconomateriales{
+        width: 45px;
+        margin-left: 9%;
+    }
+
+    .iconodiseños{
+        width: 30px;
+        margin-left: 9%;
+    }
+
+    /* CONTENEDOR DE IMAGENES */
+
+    .container-productos-jgsillones {
+        max-width: 620px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+        
+    .container-images{
+        font-size: 32px;
+        color: #505459;
+    }
+        
+    .image-row {
+        flex-direction: column;
+    }
+        
+    .image-container img {
+        width: 580px;
+        height: 520px;
+    }
+
+    .image-title {
+        font-size: 60px;
+        margin: 200px 0px 10px 120px;
+    }
+
+    .image-titlepuff{
+        font-size: 60px;
+        margin: 200px 0px 10px 120px;
+    }
+
+    .image-titlepersonalizable{
+        font-size: 60px;
+        margin: 200px 0px 10px 100px;
+    }
+
+    .seccion-sillones {
+        max-width: 420px;
+        margin-top: 80px;
+    }
+
+    .seccions-title{
+        text-align: left;
+        margin-left: -55px;
+    }
+        
+    .image-sillones-cont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+        
+    .image-sillones img {
+        width: 520px;
+    }
+
+    #somos-leonlivings .container {
+        padding: 20px 0px 20px 20px;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .somostxt-1 {
+        text-align: left;
+        width: 100%;    
+    }
+
+    .somostxt-2 {
+        width: 100%;
+        text-align: left;
+        padding-top: 40px;
+    }
+
+    .button-somos{
+        text-align: left;
+    }
+
+    #somos-leonlivings .texto {
+        width: 100%;
+        max-width: 440px;
+        padding-left: 0px;
+    }
+
+    .slide-item img {
+        float: left;
+        height: auto;
+        padding: 100px 0px 100px 0px;
+        width: 100%;
+    }
+
+    .slide {
+        margin-top: 0px;
+        height: 100%;
+        width: 80%; /* Agregado */
+    }
+
+    /* SOLAPA WHATSAPP 600PX */
     
-#hero-contacto h4{
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 0;
-}
+    .button-text {
+        font-size: 18px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+        padding: 8px 8px;
+        margin-right: 10px;
+    }
 
+    .interactive-button img {
+        width: 70px;
+    }
 
-/* HERO SECCION SOBRE NOSOTROS */
-
-.hero-sobrenosotros-titulo {
-    font-size: 40px;
-}
-
-.arrow-down-sobrenosotros {
-    width: 80px;
-    bottom: 60px;
-}
-
-.historia-container h1{
-    font-size: 18px;
-}
-
-.texto-historia1 {
-    font-size: 12px;
-    width: 300px;
-}
-
-.texto-historia2 {
-    font-size: 12px;
-    width: 300px;
-}
-
-/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-
-#hero-np h1 {
-    font-size: 44px;
-}
-    
-#hero-np h4{
-    font-size: 22px;
-}
-
-.listahero{
-    margin-left: 0;
-}
-
-.listahero li{
-    font-size: 16px;
-}
-
-.iconoentrega,
-.iconoresistentes,
-.iconomateriales{
-    width: 45px;
-    margin-left: 9%;
-}
-
-.iconodiseños{
-    width: 30px;
-    margin-left: 9%;
-}
-
-/* CONTENEDOR DE IMAGENES */
-
-.container-productos-jgsillones {
-    max-width: 620px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 80px;
-    min-height: 100vh;
-}
-      
-.container-images{
-    font-size: 32px;
-    color: #505459;
-}
-      
-.image-row {
-    flex-direction: column;
-}
-      
-.image-container img {
-    width: 580px;
-    height: 520px;
-}
-
-.image-title {
-    font-size: 60px;
-    margin: 200px 0px 10px 120px;
-}
-
-.image-titlepuff{
-    font-size: 60px;
-    margin: 200px 0px 10px 120px;
-}
-
-.image-titlepersonalizable{
-    font-size: 60px;
-    margin: 200px 0px 10px 100px;
-}
-
-.seccion-sillones {
-    max-width: 420px;
-    margin-top: 80px;
-}
-
-.seccions-title{
-    text-align: left;
-    margin-left: -55px;
-}
-      
-.image-sillones-cont {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-      
-.image-sillones img {
-    width: 520px;
-}
-
-#somos-leonlivings .container {
-    padding: 20px 0px 20px 20px;
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-.somostxt-1 {
-    text-align: left;
-    width: 100%;    
-}
-
-.somostxt-2 {
-    width: 100%;
-    text-align: left;
-    padding-top: 40px;
-}
-
-.button-somos{
-    text-align: left;
-}
-
-#somos-leonlivings .texto {
-    width: 100%;
-    max-width: 440px;
-    padding-left: 0px;
-}
-
-.slide-item img {
-    float: left;
-    height: auto;
-    padding: 100px 0px 100px 0px;
-    width: 100%;
-}
-
-.slide {
-    margin-top: 0px;
-    height: 100%;
-    width: 80%; /* Agregado */
-}
-
-/* SOLAPA WHATSAPP 600PX */
-  
-.button-text {
-    font-size: 18px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-    padding: 8px 8px;
-    margin-right: 10px;
-}
-
-.interactive-button img {
-    width: 70px;
-}
-
-.flechawsp{
-    display: none;
-}
+    .flechawsp{
+        display: none;
+    }
 
 }
 
-/* RESPONSIVE A 460px - 560px */
+    /* RESPONSIVE A 460px - 560px */
 
 @media (min-width: 460px) and (max-width: 560px){
 
-/* HERO */
+    /* HERO */
 
-.arrow-down {
-    width: 80px;
-    bottom: 40px;
-}
+    .arrow-down {
+        width: 80px;
+        bottom: 40px;
+    }
 
-#hero{
-    background-position: left;
-}
+    #hero{
+        background-position: left;
+    }
 
-.hero-titulo{
-    font-size: 4em;
-}
+    .hero-titulo{
+        font-size: 4em;
+    }
 
-#hero h4{
-    font-size: 2em;
-}
+    #hero h4{
+        font-size: 2em;
+    }
 
-/* CARRUSEL TITULOS */
+    /* CARRUSEL TITULOS */
 
-#titulo-sup{
-    margin: 40px;
-    font-size: 30px;
-}
+    #titulo-sup{
+        margin: 40px;
+        font-size: 30px;
+    }
 
-#titulo {
-    width: 100%;
-    font-size: 24px;
-}
+    #titulo {
+        width: 100%;
+        font-size: 24px;
+    }
 
-/* FLECHA SECCION CONTACTO */
+    /* FLECHA SECCION CONTACTO */
 
-.arrow-down-contacto{
-    width: 60px;
-    bottom: 0px;
-}
+    .arrow-down-contacto{
+        width: 60px;
+        bottom: 0px;
+    }
 
-/* WEB SECCION CONTACTO */
+    /* WEB SECCION CONTACTO */
 
-#hero-contacto{
-    height: 100vh;
-    background-position: left;
-}
+    #hero-contacto{
+        height: 100vh;
+        background-position: left;
+    }
 
-#hero-contacto h1 {
-    font-size: 40px;
-}
+    #hero-contacto h1 {
+        font-size: 40px;
+    }
+        
+    #hero-contacto h4{
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+
+    /* HERO SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 40px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 80px;
+        bottom: 80px;
+    }
+
+    .historia-container h1{
+        font-size: 18px;
+    }
+
+    .texto-historia1 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .texto-historia2 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+    #hero-np h1 {
+        font-size: 44px;
+    }
+        
+    #hero-np h4{
+        font-size: 18px;
+    }
+
+    .listahero{
+        margin-left: 0;
+    }
+
+    .listahero li{
+        font-size: 16px;
+    }
+
+    .iconoentrega,
+    .iconoresistentes,
+    .iconomateriales{
+        width: 45px;
+        margin-left: 8%;
+    }
+
+    .iconodiseños{
+        width: 30px;
+        margin-left: 8%;
+    }
+
+    /* CONTENEDOR DE IMAGENES */
+
+    .container-productos-jgsillones {
+        max-width: 520px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+        
+    .container-images{
+        font-size: 32px;
+        color: #505459;
+    }
+        
+    .image-row {
+        flex-direction: column;
+    }
+        
+    .image-container img {
+        width: 480px;
+        height: 480px;
+    }
+
+    .image-title {
+        margin: 100px 0px 10px 20px;
+    }
+
+    .image-titlepuff{
+        margin: 100px 0px 0px 20px;
+    }
+
+    .image-titlepersonalizable{
+        margin: 100px 0px 0px 20px;
+    }
+
+    .seccion-sillones {
+        max-width: 485px;
+        margin-top: 80px;
+    }
+
+    .seccions-title{
+        text-align: left;
+        padding-left: 20px;
+    }
+        
+    .image-sillones-cont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+        
+    .image-sillones img {
+        width: 440px;
+    }
+
+    .tituloimagen{
+        text-decoration: none;
+    }
+
+    /* TEXTO PAGINA PRINCIPAL */
+
+    #somos-leonlivings .container {
+        padding: 20px 0px 20px 20px;
+        line-height: 1;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+
+    .somostxt-1 {
+        text-align: left;
+        width: 100%;    
+    }
+
+    .somostxt-2 {
+        width: 100%;
+        text-align: left;
+        padding-top: 40px;
+    }
+
+    .button-somos{
+        text-align: left;
+    }
+
+    #somos-leonlivings .texto {
+        width: 100%;
+        max-width: 440px;
+        padding-left: 0px;
+    }
+
+    .slide-item img {
+        float: left;
+        height: auto;
+        padding: 100px 0px 100px 0px;
+        width: 100%;
+    }
+
+    .slide {
+        margin-top: 0px;
+        height: 100%;
+        width: 90%; /* Agregado */
+    }
+
+    /* SOLAPA WHATSAPP 500PX */
     
-#hero-contacto h4{
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 0;
-}
+    .button-text {
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+        padding: 6px 6px;
+        margin-right: 6px;
+    }
 
+    .interactive-button img {
+        width: 50px;
+    }
 
-/* HERO SECCION SOBRE NOSOTROS */
-
-.hero-sobrenosotros-titulo {
-    font-size: 40px;
-}
-
-.arrow-down-sobrenosotros {
-    width: 80px;
-    bottom: 80px;
-}
-
-.historia-container h1{
-    font-size: 18px;
-}
-
-.texto-historia1 {
-    font-size: 12px;
-    width: 300px;
-}
-
-.texto-historia2 {
-    font-size: 12px;
-    width: 300px;
-}
-
-/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-
-#hero-np h1 {
-    font-size: 44px;
-}
-    
-#hero-np h4{
-    font-size: 18px;
-}
-
-.listahero{
-    margin-left: 0;
-}
-
-.listahero li{
-    font-size: 16px;
-}
-
-.iconoentrega,
-.iconoresistentes,
-.iconomateriales{
-    width: 45px;
-    margin-left: 8%;
-}
-
-.iconodiseños{
-    width: 30px;
-    margin-left: 8%;
-}
-
-/* CONTENEDOR DE IMAGENES */
-
-.container-productos-jgsillones {
-    max-width: 520px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 80px;
-    min-height: 100vh;
-}
-      
-.container-images{
-    font-size: 32px;
-    color: #505459;
-}
-      
-.image-row {
-    flex-direction: column;
-}
-      
-.image-container img {
-    width: 480px;
-    height: 480px;
-}
-
-.image-title {
-    margin: 100px 0px 10px 20px;
-}
-
-.image-titlepuff{
-    margin: 100px 0px 0px 20px;
-}
-
-.image-titlepersonalizable{
-    margin: 100px 0px 0px 20px;
-}
-
-.seccion-sillones {
-    max-width: 485px;
-    margin-top: 80px;
-}
-
-.seccions-title{
-    text-align: left;
-    padding-left: 20px;
-}
-      
-.image-sillones-cont {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-      
-.image-sillones img {
-    width: 440px;
-}
-
-.tituloimagen{
-    text-decoration: none;
-}
-
-/* TEXTO PAGINA PRINCIPAL */
-
-#somos-leonlivings .container {
-    padding: 20px 0px 20px 20px;
-    line-height: 1;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-}
-
-.somostxt-1 {
-    text-align: left;
-    width: 100%;    
-}
-
-.somostxt-2 {
-    width: 100%;
-    text-align: left;
-    padding-top: 40px;
-}
-
-.button-somos{
-    text-align: left;
-}
-
-#somos-leonlivings .texto {
-    width: 100%;
-    max-width: 440px;
-    padding-left: 0px;
-}
-
-.slide-item img {
-    float: left;
-    height: auto;
-    padding: 100px 0px 100px 0px;
-    width: 100%;
-}
-
-.slide {
-    margin-top: 0px;
-    height: 100%;
-    width: 90%; /* Agregado */
-}
-
-/* SOLAPA WHATSAPP 500PX */
-  
-.button-text {
-    font-size: 14px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-    padding: 6px 6px;
-    margin-right: 6px;
-}
-
-.interactive-button img {
-    width: 50px;
-}
-
-.flechawsp{
-    display: none;
-}
+    .flechawsp{
+        display: none;
+    }
 
 }
 
 @media (min-width: 380px) and (max-width: 440px){
 
-/* TEXTO PAGINA PRINCIPAL */
+    /* TEXTO PAGINA PRINCIPAL */
 
-.button-somos{
-    text-align: left;
-    width: 300px;
-}
+    .button-somos{
+        text-align: left;
+        width: 300px;
+    }
 
-#somos-leonlivings .texto {
-    max-width: 400px;
-}
+    #somos-leonlivings .texto {
+        max-width: 400px;
+    }
 
-.somos-button {
-    font-size: 1em;
-    padding: 10px 20px;
-    border-radius: 8px;
-}
+    .somos-button {
+        font-size: 1em;
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
 
-/* HERO */
+    /* HERO */
 
-.arrow-down {
-    width: 80px;
-    bottom: 20px;
-}
+    .arrow-down {
+        width: 80px;
+        bottom: 20px;
+    }
 
-#hero{
-    background-position: left;
-}
+    #hero{
+        background-position: left;
+    }
 
-.hero-titulo{
-    font-size: 3em;
-}
+    .hero-titulo{
+        font-size: 3em;
+    }
 
-#hero h4{
-    font-size: 1.6em;
-}
+    #hero h4{
+        font-size: 1.6em;
+    }
 
-/* CARRUSEL TITULOS */
+    /* CARRUSEL TITULOS */
 
-#titulo-sup{
-    margin: 40px;
-    font-size: 30px;
-}
+    #titulo-sup{
+        margin: 40px;
+        font-size: 30px;
+    }
 
-#titulo {
-    width: 100%;
-    font-size: 24px;
-}
+    #titulo {
+        width: 100%;
+        font-size: 24px;
+    }
 
-/* FLECHA SECCION CONTACTO */
+    /* FLECHA SECCION CONTACTO */
 
-.arrow-down-contacto{
-    width: 60px;
-    bottom: 0px;
-}
+    .arrow-down-contacto{
+        width: 60px;
+        bottom: 0px;
+    }
 
-/* WEB SECCION CONTACTO */
+    /* WEB SECCION CONTACTO */
 
-#hero-contacto{
-    height: 100vh;
-    background-position: left;
-}
+    #hero-contacto{
+        height: 100vh;
+        background-position: left;
+    }
 
-#hero-contacto h1 {
-    font-size: 40px;
-}
+    #hero-contacto h1 {
+        font-size: 40px;
+    }
+        
+    #hero-contacto h4{
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+    /* HERO SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 40px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 80px;
+        bottom: 60px;
+    }
+
+    .historia-container h1{
+        font-size: 18px;
+    }
+
+    .texto-historia1 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .texto-historia2 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+    #hero-np h1 {
+        font-size: 44px;
+    }
+        
+    #hero-np h4{
+        font-size: 22px;
+    }
+
+    .listahero{
+        margin-left: 0;
+    }
+
+    .listahero li{
+        font-size: 16px;
+    }
+
+    .iconoentrega,
+    .iconoresistentes,
+    .iconomateriales{
+        width: 45px;
+        margin-left: 9%;
+    }
+
+    .iconodiseños{
+        width: 30px;
+        margin-left: 9%;
+    }
+
+    /* CONTENEDOR DE IMAGENES */
+
+    .container-productos-jgsillones {
+        max-width: 420px;
+        margin: 0 auto;
+        padding: 25px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+        
+    .container-images{
+        font-size: 32px;
+        color: #505459;
+    }
+        
+    .image-row {
+        flex-direction: column;
+    }
+        
+    .image-container img {
+        width: 335px;
+        height: 320px;
+    }
+
+    .image-title {
+        font-size: 42px;
+        margin: 120px 0px 10px 80px;
+    }
+
+    .image-titlepuff{
+        font-size: 42px;
+        margin: 120px 0px 10px 80px;
+    }
+
+    .image-titlepersonalizable{
+        font-size: 42px;
+        margin: 120px 0px 10px 20px;
+    }
+
+    .seccion-sillones {
+        max-width: 215px;
+        margin-top: 80px;
+    }
+
+    .seccions-title{
+        text-align: left;
+        margin-left: -55px;
+    }
+        
+    .image-sillones-cont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+        
+    .image-sillones img {
+        width: 320px;
+    }
+
+    /* SOLAPA WHATSAPP 400PX */
     
-#hero-contacto h4{
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 0;
-}
+    .button-text {
+        font-size: 18px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+        padding: 8px 8px;
+        margin-right: 10px;
+    }
 
-/* HERO SECCION SOBRE NOSOTROS */
+    .interactive-button img {
+        width: 70px;
+    }
 
-.hero-sobrenosotros-titulo {
-    font-size: 40px;
-}
+    .flechawsp{
+        display: none;
+    }
 
-.arrow-down-sobrenosotros {
-    width: 80px;
-    bottom: 60px;
-}
+    /* PAGINA SECCION MATERIALES */
 
-.historia-container h1{
-    font-size: 18px;
-}
+    .material {
+        flex-direction: column; 
+    }
 
-.texto-historia1 {
-    font-size: 12px;
-    width: 300px;
-}
+    .material-content,
+    .material-image {
+        width: 100%;
+    }
 
-.texto-historia2 {
-    font-size: 12px;
-    width: 300px;
-}
-
-/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-
-#hero-np h1 {
-    font-size: 44px;
-}
-    
-#hero-np h4{
-    font-size: 22px;
-}
-
-.listahero{
-    margin-left: 0;
-}
-
-.listahero li{
-    font-size: 16px;
-}
-
-.iconoentrega,
-.iconoresistentes,
-.iconomateriales{
-    width: 45px;
-    margin-left: 9%;
-}
-
-.iconodiseños{
-    width: 30px;
-    margin-left: 9%;
-}
-
-/* CONTENEDOR DE IMAGENES */
-
-.container-productos-jgsillones {
-    max-width: 420px;
-    margin: 0 auto;
-    padding: 25px;
-    margin-top: 80px;
-    min-height: 100vh;
-}
-      
-.container-images{
-    font-size: 32px;
-    color: #505459;
-}
-      
-.image-row {
-    flex-direction: column;
-}
-      
-.image-container img {
-    width: 335px;
-    height: 320px;
-}
-
-.image-title {
-    font-size: 42px;
-    margin: 120px 0px 10px 80px;
-}
-
-.image-titlepuff{
-    font-size: 42px;
-    margin: 120px 0px 10px 80px;
-}
-
-.image-titlepersonalizable{
-    font-size: 42px;
-    margin: 120px 0px 10px 20px;
-}
-
-.seccion-sillones {
-    max-width: 215px;
-    margin-top: 80px;
-}
-
-.seccions-title{
-    text-align: left;
-    margin-left: -55px;
-}
-      
-.image-sillones-cont {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-      
-.image-sillones img {
-    width: 320px;
-}
-
-/* SOLAPA WHATSAPP 400PX */
-  
-.button-text {
-    font-size: 18px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-    padding: 8px 8px;
-    margin-right: 10px;
-}
-
-.interactive-button img {
-    width: 70px;
-}
-
-.flechawsp{
-    display: none;
-}
-
-/* PAGINA SECCION MATERIALES */
-
-.material {
-    flex-direction: column; 
-}
-
-.material-content,
-.material-image {
-    width: 100%;
-}
-
-.material-image img {
-    width: 100%;
-    max-height: 180px;
-}
+    .material-image img {
+        width: 100%;
+        max-height: 180px;
+    }
 
 }
 
-/* RESPONSIVE A 460px - 560px */
+    /* RESPONSIVE A 460px - 560px */
 
-/* RESPONSIVE A 320px */
+    /* RESPONSIVE A 320px */
 
 @media (min-width: 320px) and (max-width: 330px){
 
-.container-videos{
-    height: 100vh;
-    flex-direction: column;
-}
+    .container-videos{
+        height: 100vh;
+        flex-direction: column;
+    }
 
-/* SOMOS LEON LIVINGS CONTAINER */
+    /* SOMOS LEON LIVINGS CONTAINER */
 
-.somostxt-1{
-    font-size: 28px;
-}
+    .somostxt-1{
+        font-size: 28px;
+    }
 
-.somostxt-2{
-    font-size: 18px;
-    font-weight: 100;
-}
+    .somostxt-2{
+        font-size: 18px;
+        font-weight: 100;
+    }
 
-/* HERO */
+    /* HERO */
 
-.arrow-down {
-    width: 40px;
-    bottom: 0px;
-}
+    .arrow-down {
+        width: 40px;
+        bottom: 0px;
+    }
 
-#hero{
-    background-position: left;
-}
+    #hero{
+        background-position: left;
+    }
 
-.hero-titulo{
-    font-size: 2em;
-}
+    .hero-titulo{
+        font-size: 2em;
+    }
 
-#hero h4{
-    font-size: 1em;
-}
+    #hero h4{
+        font-size: 1em;
+    }
 
-/* CARRUSEL TITULOS */
+    /* CARRUSEL TITULOS */
 
-#titulo-sup{
-    margin: 20px;
-    font-size: 20px;
-}
+    #titulo-sup{
+        margin: 20px;
+        font-size: 20px;
+    }
 
-#titulo {
-    width: 100%;
-    font-size: 14px;
-}
+    #titulo {
+        width: 100%;
+        font-size: 14px;
+    }
 
-/* FLECHA SECCION CONTACTO */
+    /* FLECHA SECCION CONTACTO */
 
-.arrow-down-contacto{
-    width: 60px;
-    bottom: 0px;
-}
+    .arrow-down-contacto{
+        width: 60px;
+        bottom: 0px;
+    }
 
-/* WEB SECCION CONTACTO */
+    /* WEB SECCION CONTACTO */
 
-#hero-contacto{
-    height: 100vh;
-    background-position: left;
-}
+    #hero-contacto{
+        height: 100vh;
+        background-position: left;
+    }
 
-#hero-contacto h1 {
-    font-size: 40px;
-}
+    #hero-contacto h1 {
+        font-size: 40px;
+    }
+        
+    #hero-contacto h4{
+        color: #FFFFFF;
+        font-size: 15px;
+        font-weight: 400;
+        margin-top: 0;
+    }
+
+
+    /* HERO SECCION SOBRE NOSOTROS */
+
+    .hero-sobrenosotros-titulo {
+        font-size: 40px;
+    }
+
+    .arrow-down-sobrenosotros {
+        width: 80px;
+        bottom: 80px;
+    }
+
+    .historia-container h1{
+        font-size: 18px;
+    }
+
+    .texto-historia1 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    .texto-historia2 {
+        font-size: 12px;
+        width: 300px;
+    }
+
+    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+    #hero-np h1 {
+        font-size: 35px;
+    }
+        
+    #hero-np h4{
+        font-size: 15px;
+    }
+
+    .listahero{
+        margin-left: 0;
+    }
+
+    .listahero li{
+        font-size: 12px;
+    }
+
+    .iconoentrega,
+    .iconoresistentes,
+    .iconomateriales{
+        width: 35px;
+    }
+
+    .iconodiseños{
+        width: 20px;
+    }
+
+    /* CONTENEDOR DE IMAGENES */
+
+    .container-productos-jgsillones {
+        max-width: 320px;
+        margin: 0 auto;
+        padding: 20px;
+        margin-top: 80px;
+        min-height: 100vh;
+    }
+        
+    .container-images{
+        font-size: 32px;
+        color: #505459;
+    }
+        
+    .image-row {
+        flex-direction: column;
+    }
+        
+    .image-container img {
+        width: 280px;
+        height: 280px;
+    }
+
+    .image-title {
+        margin: 100px 0px 10px 20px;
+    }
+
+    .image-titlepuff{
+        margin: 100px 0px 0px 20px;
+    }
+
+    .image-titlepersonalizable{
+        margin: 100px 0px 0px 20px;
+    }
+
+    .seccion-sillones {
+        max-width: 320px;
+        margin-top: 80px;
+    }
+
+    .seccions-title{
+        text-align: left;
+        padding-left: 20px;
+    }
+        
+    .image-sillones-cont {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+        
+    .image-sillones img {
+        width: 280px;
+    }
+
+    /* SECCION SOMOS LEON LIVINGS */
+
+    #somos-leonlivings .container{
+        padding: 100px 12px;
+        display: flex;
+        flex-direction: column;
+        line-height: 1;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .somostxt-1{
+        font-size: 14px;
+    }
+
+    .somostxt-2{
+        font-size: 12px;
+    }
+
+    #somos-leonlivings .img-container{
+        height: 150px;
+        width: 200px;
+        border-radius: 30px;
+    }
+
+    .somos-button{
+        font-size: 0.6em;
+        padding: 4px 10px;
+        border-radius: 54px;
+        border: 2px solid rgba(0, 0, 0, 0.5);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+        color: white;
+        background-color: rgb(16, 87, 87);
+    }
+
+    #somos-leonlivings .texto{
+        padding-left: 0px;
+    }
+
+    /* SOLAPA WHATSAPP 320PX */
     
-#hero-contacto h4{
-    color: #FFFFFF;
-    font-size: 15px;
-    font-weight: 400;
-    margin-top: 0;
-}
+    .button-text {
+        font-size: 14px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+        padding: 6px 6px;
+        margin-right: 6px;
+    }
 
+    .interactive-button img {
+        width: 50px;
+    }
 
-/* HERO SECCION SOBRE NOSOTROS */
-
-.hero-sobrenosotros-titulo {
-    font-size: 40px;
-}
-
-.arrow-down-sobrenosotros {
-    width: 80px;
-    bottom: 80px;
-}
-
-.historia-container h1{
-    font-size: 18px;
-}
-
-.texto-historia1 {
-    font-size: 12px;
-    width: 300px;
-}
-
-.texto-historia2 {
-    font-size: 12px;
-    width: 300px;
-}
-
-/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-
-#hero-np h1 {
-    font-size: 35px;
-}
-    
-#hero-np h4{
-    font-size: 15px;
-}
-
-.listahero{
-    margin-left: 0;
-}
-
-.listahero li{
-    font-size: 12px;
-}
-
-.iconoentrega,
-.iconoresistentes,
-.iconomateriales{
-    width: 35px;
-}
-
-.iconodiseños{
-    width: 20px;
-}
-
-/* CONTENEDOR DE IMAGENES */
-
-.container-productos-jgsillones {
-    max-width: 320px;
-    margin: 0 auto;
-    padding: 20px;
-    margin-top: 80px;
-    min-height: 100vh;
-}
-      
-.container-images{
-    font-size: 32px;
-    color: #505459;
-}
-      
-.image-row {
-    flex-direction: column;
-}
-      
-.image-container img {
-    width: 280px;
-    height: 280px;
-}
-
-.image-title {
-    margin: 100px 0px 10px 20px;
-}
-
-.image-titlepuff{
-    margin: 100px 0px 0px 20px;
-}
-
-.image-titlepersonalizable{
-    margin: 100px 0px 0px 20px;
-}
-
-.seccion-sillones {
-    max-width: 320px;
-    margin-top: 80px;
-}
-
-.seccions-title{
-    text-align: left;
-    padding-left: 20px;
-}
-      
-.image-sillones-cont {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-}
-      
-.image-sillones img {
-    width: 280px;
-}
-
-/* SECCION SOMOS LEON LIVINGS */
-
-#somos-leonlivings .container{
-    padding: 100px 12px;
-    display: flex;
-    flex-direction: column;
-    line-height: 1;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-
-.somostxt-1{
-    font-size: 14px;
-}
-
-.somostxt-2{
-    font-size: 12px;
-}
-
-#somos-leonlivings .img-container{
-    height: 150px;
-    width: 200px;
-    border-radius: 30px;
-}
-
-.somos-button{
-    font-size: 0.6em;
-    padding: 4px 10px;
-    border-radius: 54px;
-    border: 2px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    color: white;
-    background-color: rgb(16, 87, 87);
-}
-
-#somos-leonlivings .texto{
-    padding-left: 0px;
-}
-
-/* SOLAPA WHATSAPP 320PX */
-  
-.button-text {
-    font-size: 14px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-    padding: 6px 6px;
-    margin-right: 6px;
-}
-
-.interactive-button img {
-    width: 50px;
-}
-
-.flechawsp{
-    display: none;
-}
+    .flechawsp{
+        display: none;
+    }
 
 }

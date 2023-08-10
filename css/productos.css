@@ -337,6 +337,7 @@ footer .container-copyright{
 .dropdown.active .dropdown-content {
     display: block;
 }
+
     /* WEB SECCION PRODUCTOS POR SELECCION */
 
     #hero-np-livingluit{
@@ -350,6 +351,22 @@ footer .container-copyright{
             rgba(0,0,0,0.5)
         )
         ,url("../media/livingluit/herolivingluit.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #hero-np-productos{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(61, 60, 60, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/img5.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -952,6 +969,12 @@ footer .container-copyright{
         font-size: 12px;
     }
 
+    /* FOOTER - MOBILE */
+
+    #footer-mobile{
+        display: none;
+    }
+
     /* ------------------ MEDIA ---------------- */
 
 @media (min-width: 1920px) and (max-width: 2600px){
@@ -1311,6 +1334,64 @@ footer .container-copyright{
 
     .desapear{
         display: none;
+    }
+
+    /* FOOTER - MOBILE */
+
+    #footer-mobile {
+        display: flex;
+        background-color: #636364;
+        height: 16vh;
+        box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+        align-items: center;
+        justify-content: space-around;
+        position: relative; /* Agregar posición relativa al contenedor padre */
+        z-index: 2;
+    }
+
+    .title-footermobile {
+        padding-top: 3%;
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .footer-icons {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+    }
+
+    .footer-icons a {
+        margin-left: 10px;
+        text-decoration: none;
+    }
+
+    .contacto-footermobile {
+        text-align: center;
+        font-size: 20px;
+        color: #ffffff;
+        font-weight: 500;
+        margin: 0;
+    }
+
+    .footer-icons img {
+        width: 25px;
+    }
+
+    /* COPYRIGHT */
+
+    #footer-mobile .container-copyright-mobile {
+        position: absolute;
+        bottom: -10px; 
+        right: 10px;
+        font-size: 0.6em;
+        margin: 0;
+        padding: 0px;
+        color: rgb(250, 250, 250);
+        text-align: center;
     }
 }
 
