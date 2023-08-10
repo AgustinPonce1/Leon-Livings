@@ -1,1639 +1,1645 @@
-    *{
-        box-sizing: border-box;
-    }
+*{
+    box-sizing: border-box;
+}
 
-    *::selection{
-        color: #ffffff;
-        background-color: #0170b9; /* ESTE SERA EL COLOR QUE APARECERA AL SELECCIONAR */
-    }
+*::selection{
+    color: #ffffff;
+    background-color: #0170b9; /* ESTE SERA EL COLOR QUE APARECERA AL SELECCIONAR */
+}
 
-    html{
-        scroll-behavior: smooth;
-    }
+html{
+    scroll-behavior: smooth;
+}
 
-    body{   
-        font-family: 'Roboto', sans-serif;
-        margin: 0;
-    }
+body{   
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
 
-    h2{ font-size: 2.7em;}
-    h3{ font-size: 2em;}
-    h4{ font-size: 5em;}
-    p{ font-size: 1.25em;}
-    ul{ list-style: none;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+h4{ font-size: 5em;}
+p{ font-size: 1.25em;}
+ul{ list-style: none;}
 
 /* HEADER */
 
 header{
-    background-color: white;
-    opacity: 2;
-    position: fixed;
-    width: 100%;
-    transition: height 0.3s ease-in-out;
-    z-index: 999;
+background-color: white;
+opacity: 2;
+position: fixed;
+width: 100%;
+transition: height 0.3s ease-in-out;
+z-index: 999;
 }
 
 .container{
-    max-width: 1400px;
-    margin: auto;
+max-width: 1400px;
+margin: auto;
 }
 
 header .logo-text{
-    margin: 0;
-    font-weight: 600;
-    color: black;
-    font-size: 1.4em;
-    margin-right: auto;
-    padding-left: 10px;
+margin: 0;
+font-weight: 600;
+color: black;
+font-size: 1.4em;
+margin-right: auto;
+padding-left: 10px;
 }
 
 header .nav{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    flex-direction: row;
-    padding-bottom: 25px;
+display: flex;
+flex-direction: column;
+text-align: center;
+flex-direction: row;
+padding-bottom: 25px;
 }
 
 header .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+padding: 10px 20px;
 }
 
 header .logoinicio {
-    width: 50px;
-    border-radius: 15px;
+width: 50px;
+border-radius: 15px;
 }
 
 .menu-icon {
-    display: none;
+display: none;
 }
 
 .menu-icon img {
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
+width: 30px;
+height: 30px;
+cursor: pointer;
 }
 
 .logobuscador{
-    width: 30px;
-    border-radius: 15px;
-    margin-right: 80px;
+width: 30px;
+border-radius: 15px;
+margin-right: 80px;
 }
 
 /* <A> DEL HEADER */
 
 .dropdown-a{
-    font-style: inherit;
-    font-size: 1em;
-    font-weight: 500;
+font-style: inherit;
+font-size: 1em;
+font-weight: 500;
 }
 
 .dropdown-a :hover{
-    background-color: aqua;
+background-color: aqua;
 }
 
 .sucursales-a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
+padding: 5px 12px;
+text-decoration: none;
+font-weight: bold;
+color: black;
+text-transform: uppercase;
 }
 
 .sucursales-a:hover{
-    color: darkslategrey;
+color: darkslategrey;
 }
 
 .contacto-a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
+padding: 5px 12px;
+text-decoration: none;
+font-weight: bold;
+color: black;
+text-transform: uppercase;
 }
 
 .contacto-a:hover{
-    color: darkslategrey;
+color: darkslategrey;
 }
 
 .somos-a{
-    padding: 5px 12px;
-    text-decoration: none;
-    font-weight: bold;
-    color: black;
-    text-transform: uppercase;
+padding: 5px 12px;
+text-decoration: none;
+font-weight: bold;
+color: black;
+text-transform: uppercase;
 }
 
 .somos-a:hover{
-    color: darkslategrey;
+color: darkslategrey;
 }
 
 /* FIN DE PAGINA */
 
 #findepagina{
-    display: flex;
-    flex-direction: column;
-    background-color: rgb(30, 30, 30);
-    color: white;
-    height: 80vh;
-    background-image: linear-gradient(
-        0deg,
-        rgba(0,0,0,0.5),
-        rgba(0,0,0,0.5)
-    )
-    ,url("../media/findepagina.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position-y: bottom;
-    justify-content: center;
+display: flex;
+flex-direction: column;
+background-color: rgb(30, 30, 30);
+color: white;
+height: 80vh;
+background-image: linear-gradient(
+    0deg,
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)
+)
+,url("../media/findepagina.jpg");
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-position-y: bottom;
+justify-content: center;
 }
 
 .container-findepagina {
-    display: flex;
-    flex-wrap: wrap; /* Permite envolver los elementos en líneas adicionales */
-    align-items: flex-start; /* Alinea los elementos en la parte superior */
-    text-align: center;
+display: flex;
+flex-wrap: wrap; /* Permite envolver los elementos en líneas adicionales */
+align-items: flex-start; /* Alinea los elementos en la parte superior */
+text-align: center;
 }
 
 .container-findepagina h1{
-    font-size: 1.6em;
-    color: cadetblue;
-    font-weight: 500;
-    margin-bottom: 0;
-    margin-left: 8%;
-    padding-bottom: 0;
+font-size: 1.6em;
+color: cadetblue;
+font-weight: 500;
+margin-bottom: 0;
+margin-left: 8%;
+padding-bottom: 0;
 }
 
 .container-findepagina a{
-    color: #FFFFFF;
-    cursor: pointer;
-    text-decoration: none;
+color: #FFFFFF;
+cursor: pointer;
+text-decoration: none;
 }
 
 .contacto-findepagina a:hover{
-    color: #ccc;
+color: #ccc;
 }
 
 .institucional-findepagina,
 .productos-findepagina,
 .contacto-findepagina{
-    font-size: 1.2em;
-    font-weight: 400;
-    display: inline-block;
-    width: calc(100% / 3.1); /* Divide el ancho en partes iguales */
+font-size: 1.2em;
+font-weight: 400;
+display: inline-block;
+width: calc(100% / 3.1); /* Divide el ancho en partes iguales */
 }
 
 .contacto li,
 .institucional li,
 .productos li,
 .locales li{
-    padding-top: 10px;
+padding-top: 10px;
 }
 
 .divisor,
 .divisor2{
-    margin-left: 30%;
-    width: 50%;
+margin-left: 30%;
+width: 50%;
 }
 
 /* COPYRIGHT */
 
 footer .container-copyright{
-    font-size: 1em;
-    margin: 0;
-    padding: 0px;
-    color: rgb(100, 100, 100);
+font-size: 1em;
+margin: 0;
+padding: 0px;
+color: rgb(100, 100, 100);
 }
 
 footer .container-copyright{
-    height: 0;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
+height: 0;
+display: flex;
+justify-content: center;
+align-items: flex-end;
 }
 
-    /* HERO */
+/* HERO */
 
-    #hero{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        height: 100vh;
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.2),
-            rgba(0,0,0,0.2)
-        )
-        ,url("../media/img4.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.2),
+        rgba(0,0,0,0.2)
+    )
+    ,url("../media/img4.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
 
-    .hero-titulo{
-        color: #FFFFFF;
-        font-weight: 300;
-        letter-spacing: 0px;
-        margin-bottom: 0;
-    }
-    
-    .hero-titulo{
-        font-size: 8em;
-    }
+.hero-titulo{
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+}
 
-    #hero h4{
-        color: #FFFFFF;
-        font-size: 3em;
-        font-weight: 400;
-        margin-top: 0;
-    }
+.hero-titulo{
+    font-size: 8em;
+}
 
-    #somos-leonlivings .container {
-        padding: 140px 24px 0px 48px;
-        line-height: 1;
-        justify-content: space-between;
-        display: flex;
-        align-items: flex-start;
-    }
-    
-    .somostxt-1 {
-        font-size: 30px;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.5px;
-        line-height: 1.2;
-    }
-    
-    .somostxt-2 {
-        width: 60%;
-        font-size: 18px; 
-        font-weight: 400; 
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1.6; 
-    }
-    
-    /* SECCION SOMOS LEON LIVINGS */
-    
-    .somos-button {
-        font-size: 1.2em;
-        font-weight: 400;
-        padding: 10px 40px;
-        border-radius: 7px;
-        border: 2px solid rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: white;
-        background-color: rgb(16, 87, 87);
-    }
-    
-    .somos-button:hover {
-        background-color: rgb(15, 114, 114);
-        cursor: pointer;
-    }
-    
-    #somos-leonlivings .texto {
-        width: 50%;
-        max-width: 600px;
-        padding-left: 0px;
-    }
+#hero h4{
+    color: #FFFFFF;
+    font-size: 3em;
+    font-weight: 400;
+    margin-top: 0;
+}
 
-    /* BOTON NOSOTROS */   
+#somos-leonlivings .container {
+    padding: 140px 24px 0px 48px;
+    line-height: 1;
+    justify-content: space-between;
+    display: flex;
+    align-items: flex-start;
+}
 
-    #somos-leonlivings .nosotros{
-        padding: 8px 0px;
-    }
+.somostxt-1 {
+    font-size: 30px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
 
-    /* SECCION NUESTROS PRODUCTOS */
+.somostxt-2 {
+    width: 60%;
+    font-size: 18px; 
+    font-weight: 400; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+}
 
-    #nuestros-productos .productos{
-        display: flex;
-        justify-content: center;
-    }
+/* SECCION SOMOS LEON LIVINGS */
 
-    #nuestros-productos p{
-        display: block;
-        margin-bottom: 30px;
-    }
+.somos-button {
+    font-size: 1.2em;
+    font-weight: 400;
+    padding: 10px 40px;
+    border-radius: 7px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(16, 87, 87);
+}
 
-    #nuestros-productos h2{
-        font-size: 4em;
-    }
+.somos-button:hover {
+    background-color: rgb(15, 114, 114);
+    cursor: pointer;
+}
 
-    #nuestros-productos h3{
-        margin-top: 0;
-    }
+#somos-leonlivings .texto {
+    width: 50%;
+    max-width: 600px;
+    padding-left: 0px;
+}
 
-    #nuestros-productos .carta{
-        padding: 50px;
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-    }
+/* BOTON NOSOTROS */   
 
-    /* SOLAPA WHATSAPP */
-      
-    .interactive-button {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        display: flex;
-        align-items: center;
-        z-index: 3;
-    }
-      
-    .button-text {
-        font-size: 14px;
-        fill: var(--e-global-color-primary );
-        color: var(--e-global-color-primary );
-        background-color: var(--e-global-color-e724fab );
-        border-radius: 12px;
-        box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-        padding: 8px 8px;
-        color: black;
-        background-color: rgb(245, 255, 255);
-        margin-right: 10px;
-    }
+#somos-leonlivings .nosotros{
+    padding: 8px 0px;
+}
 
-    .container-botonimagen a{
-        text-decoration: none;
-    }
-      
-    .interactive-button img {
-        width: 60px;
-        height: auto;
-    }
-      
-    .interactive-button:hover .button-text {
-        background-color: #ddd;
-        transform: scale(1.1);
-    }
-    
-    .search-icon:hover{
-        cursor: pointer;
-    
-    }
+/* SECCION NUESTROS PRODUCTOS */
 
-    /* ANIMACION TEXTO QUIENES SOMOS */
+#nuestros-productos .productos{
+    display: flex;
+    justify-content: center;
+}
 
-    .scroll-effect {
-        position: relative;
-        z-index: 1;
-        opacity: 0;
-        transform: translateY(100px);
-        transition: opacity 1s ease, transform 1s ease;
-    }
-      
-    .scroll-effect.active {
-        opacity: 1;
-        transform: translateY(0);
-    }
-      
+#nuestros-productos p{
+    display: block;
+    margin-bottom: 30px;
+}
+
+#nuestros-productos h2{
+    font-size: 4em;
+}
+
+#nuestros-productos h3{
+    margin-top: 0;
+}
+
+#nuestros-productos .carta{
+    padding: 50px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* SOLAPA WHATSAPP */
+  
+.interactive-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+}
+  
+.button-text {
+    font-size: 14px;
+    fill: var(--e-global-color-primary );
+    color: var(--e-global-color-primary );
+    background-color: var(--e-global-color-e724fab );
+    border-radius: 12px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    padding: 8px 8px;
+    color: black;
+    background-color: rgb(245, 255, 255);
+    margin-right: 10px;
+}
+
+.container-botonimagen a{
+    text-decoration: none;
+}
+  
+.interactive-button img {
+    width: 60px;
+    height: auto;
+}
+  
+.interactive-button:hover .button-text {
+    background-color: #ddd;
+    transform: scale(1.1);
+}
+
+.search-icon:hover{
+    cursor: pointer;
+
+}
+
+/* ANIMACION TEXTO QUIENES SOMOS */
+
+.scroll-effect {
+    position: relative;
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+  
+.scroll-effect.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+  
 @keyframes fade-in {
-        0% {
-          opacity: 0;
-        }
-        100% {
-          opacity: 1;
-        }
+    0% {
+      opacity: 0;
     }
+    100% {
+      opacity: 1;
+    }
+}
 
-    .dropbtn {
-        border: none;
-        cursor: pointer;
-        padding: 5px 12px;
-        text-decoration: none;
-        font-weight: bold;
-        color: black;
-        text-transform: uppercase;
-        font-size: 1em;
-        background-color: #FFFFFF;
-    }
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-transform: uppercase;
+    font-size: 1em;
+    background-color: #FFFFFF;
+}
 
-    .dropbtn:hover{
-            color: darkslategrey;
-    }
-      
-    .dropdown {
-        position: relative;
-        display: inline-block;
-    }
-      
-    .dropdown-content {
-        display: none;
-        position: absolute;
-        background-color: #f9f9f9;
-        min-width: 220px;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-        z-index: 1;
-        margin-left: 12px;
-    }
+.dropbtn:hover{
+        color: darkslategrey;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 220px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin-left: 12px;
+}
 
-    .dropdown-content a {
-        color: black;
-        padding: 12px 12px 14px 32px;
-        text-decoration: none;
-        display: block;
-    }
-      
-    .dropdown-content a:hover {
-        background-color: #54595F;
-        color: #f9f9f9;
-        transition: background-color 0.4s ease;
-    }
+.dropdown-content a {
+    color: black;
+    padding: 12px 12px 14px 32px;
+    text-decoration: none;
+    display: block;
+}
+  
+.dropdown-content a:hover {
+    background-color: #54595F;
+    color: #f9f9f9;
+    transition: background-color 0.4s ease;
+}
+
+.dropdown-content {
+    display: none;
+}
+  
+.dropdown.active .dropdown-content {
+    display: block;
+}
+
+/* CARRUSEL */
+
+.slide {
+    position: relative;
+    margin-top: 26px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+    height: 100%;
+    width: 50%; /* Agregado */
+    overflow: hidden; /* Agregado */
+}
+
+.slide:hover {
+    cursor: pointer;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+}
+
+.slide-open:checked + .slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    width: 100%;
+}
+
+.slide-item {
+    flex: 0 0 100%;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out; /* Agregamos la transición de desvanecimiento */
+}
+
+.slide-item img {
+    float: left;
+    height: auto;
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+}
+
+/* CIRCULO DE POSICION */
+
+.slide-indicador {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
     
-    .dropdown-content {
-        display: none;
-    }
-      
-    .dropdown.active .dropdown-content {
-        display: block;
-    }
-
-    /* CARRUSEL */
-
-    .slide {
-        position: relative;
-        margin-top: 26px;
-        display: flex;
-        justify-content: center;
-        user-select: none;
-        height: 100%;
-        width: 50%; /* Agregado */
-        overflow: hidden; /* Agregado */
-    }
-
-    .slide:hover {
-        cursor: pointer;
-    }
-
-    .slide-inner {
-        position: relative;
-        overflow: hidden;
-    }
-
-    .slide-open:checked + .slide-item {
-        position: static;
-        opacity: 100;
-    }
-
-    .slide-item {
-        position: absolute;
-        opacity: 0;
-        width: 100%;
-    }
-
-    .slide-item {
-        flex: 0 0 100%;
-        opacity: 0;
-        transition: opacity 0.8s ease-in-out; /* Agregamos la transición de desvanecimiento */
-    }
-
-    .slide-item img {
-        float: left;
-        height: auto;
-        padding: 100px 0px 100px 0px;
-        width: 100%;
-    }
-
-    /* CIRCULO DE POSICION */
-
-    .slide-indicador {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        position: absolute;
-        bottom: 45px;
-        left: 0;
-        right: 0;
-        text-align: center;
-        z-index: 10;
-    }
-
-    .slide-indicador li {
-        display: inline-block;
-        margin: 0 5px;
-    }
-        
-    .slide-circulo {
-        color: #828282;
-        cursor: pointer;
-        display: block;
-        font-size: 55px;
-    }
-
-    .slide-circulo:hover {
-        color: #aaaaaa;
-    }
-
-    #titulo {
-        width: 100%;
-        position: absolute;
-        text-align: center;
-        color: rgb(11, 9, 9);
-        z-index: 1;
-        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
-            -1px 0px 2px rgba(255, 255, 255, 0);
-        font-size: 30px;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.5px;
-        line-height: 1.2;
-        font-weight: 500;
-    }
-
-    .slide-circulo.active {
-        color: #050404;
-    }
-
-    /* WEB SECCION CONTACTO */
-
-    #hero-contacto{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        height: 100vh;
-        background-image: linear-gradient(
-            0deg,
-            rgba(61, 60, 60, 0.3),
-            rgba(0,0,0,0.3)
-        )
-        ,url("../media/hero-contacto.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    #hero-contacto h1 {
-        color: #FFFFFF;
-        font-weight: 300;
-        letter-spacing: 0px;
-        margin-bottom: 0;
-        font-size: 60px;
-    }
-    
-    #hero-contacto h4{
-        color: #FFFFFF;
-        font-size: 25px;
-        font-weight: 400;
-        margin-top: 0;
-    }
-
-    /* INPUTS  ------------------  REPARADO */
-
-    .container-solicitar {
-        display: grid;
-        flex-wrap: wrap;
-        margin: 150px 0px;
-        margin-left: 30%;
-        margin-right: 30%;
-        align-items: center;
-    }
-      
-    .container-solicitar h1 {
-        font-size: 30px;
-        font-weight: 600;
-        color: #54595F;
-    }
-
-    .inputs-contacto{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr); /* Cuatro columnas en cuadrícula, muy util */
-        grid-gap: 10px; /* Espacio entre las fotos */
-        width: 100%;
-    }
-      
-    .nombreinput,
-    .apellidoinput,
-    .emailinput,
-    .telefonoinput {
-        display: grid;
-        border: 2px solid rgb(154, 152, 152);
-        user-select: none;
-        width: 100%;
-        height: 30px;
-        margin-top: 8px;
-    }
-
-    .nombrelabel,
-    .apellidolabel,
-    .emaillabel,
-    .telefonolabel {
-        color: #34343B;
-        font-weight: bold;
-        font-size: 16px;
-    }
-    
-    .mensaje{
-        display: flex;
-        flex-direction: column;
-        margin-top: 25px;
-    }
-
-    .send-label{
-        color: #34343B;
-        font-weight: bold;
-        font-size: 16px;
-    }
-
-    .mensajeinput{
-        border: 2px solid rgb(154, 152, 152);
-        user-select: none;
-        margin: 10px 0px;
-        width: 100%;
-        padding: 10px 0px 125px 0px;
-        margin-top: 8px;
-    }
-
-    .enviarmensaje-container{
-        margin-top: 10px;
-    }
-
-    .enviarmensaje{
-        color: rgb(70, 70, 70);
-        font-size: 14px;
-        cursor: pointer;
-        border: 2px solid rgb(132, 130, 130);
-        padding: 8px;
-        font-weight: 100;
-    }
-
-    .enviarmensaje:hover{
-        background-color: rgb(223, 221, 221);
-    }
-
-    .masinfo-container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 22px;
-    }
-
-    .masinfo-container a{
-        text-decoration: none;
-    }
-    
-    .masinfo{
-        font-size: 20px;
-        font-weight: 550;
-        color: #15868A;
-    }
-
-    .masinfo:hover{
-        cursor: pointer;
-    }
-
-    .lineacontacto{
-        width: 100%;
-        color: #1bb6bb;
-    }
-
-    .nombreinput,
-    .apellidoinput,
-    .emailinput,
-    .telefonoinput,
-    .mensajeinput {
-        color: rgb(49, 47, 47);
-        padding-left: 10px;
-        font-size: 14px;
-        font-weight: 300;
-    }
-
-    .obligatorio{
-        color: red;
-        font-size: 14px;
-    }
-
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-
-    #hero-np{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        height: 100vh;
-        background-image: linear-gradient(
-            0deg,
-            rgba(61, 60, 60, 0.5),
-            rgba(0,0,0,0.5)
-        )
-        ,url("../media/hero-np.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    #hero-np h1 {
-        color: #FFFFFF;
-        letter-spacing: 0px;
-        margin-bottom: 0;
-        font-family: "Poppins", Sans-serif;
-        font-size: 95px;
-        font-weight: bold;
-        letter-spacing: -2.7px;
-        margin-left: 15%;
-
-    }
-    
-    #hero-np h4{
-        color: #FFFFFF;
-        font-size: 2.8rem;
-        font-weight: 550;
-        margin-top: 0;
-        margin-left: 15.3%;
-        margin-bottom: 0;
-    }
-
-    .listahero{
-        color: #FFFFFF;
-        margin-left: 13%;
-        user-select: none; 
-    }
-
-    .listahero li{
-        padding: 10px;
-        font-size: 20px;
-        font-style: inherit;
-        font-weight: inherit;
-        vertical-align: baseline;
-        display: flex;
-        align-items: center;
-    }
-
-    .iconoentrega,
-    .iconoresistentes,
-    .iconomateriales{
-        width: 40px;
-        padding-right: 10px;
-    }
-
-    .iconodiseños{
-        width: 25px;
-        margin-right: 15px;
-    }
-
-    /* CONTENEDOR DE IMAGENES */
-
-    .container-productos-jgsillones {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-      
-    .container-images{
-        font-size: 40px;
-        text-align: center;
-    }
-      
-    .image-row {
-        display: flex;
-        justify-content: center;
-    }
-      
-    .image-container img {
-        display: block;
-        width: 350px;
-        height: 350px;
-        transition: filter 0.3s;
-        filter: brightness(70%);
-    }
-
-    .image-container:hover img {
-        cursor: pointer;
-        filter: brightness(60%);
-    }
-
-    .image-title {
-        font-size: 35px;
-        position: absolute;
-        margin: 100px 0px 10px 80px;
-        color: white;
-        font-weight: bold;
-        z-index: 1;
-        user-select: none;
-    }
-
-    .image-title:hover{
-        cursor: pointer;
-    }
-
-    .image-titlepuff{
-        font-size: 35px;
-        position: absolute;
-        margin: 100px 0px 0px 100px;
-        color: white;
-        font-weight: bold;
-        z-index: 1;
-    }
-
-    .image-titlepersonalizable{
-      font-size: 35px;
-      position: absolute;
-      margin: 100px 0px 0px 50px;
-      color: white;
-      font-weight: bold;
-      z-index: 1;
-    }
-
-    .seccion-sillones {
-        max-width: 1035px;
-        margin: 100px auto;
-        margin-top: 60px;
-        padding-top: 100px;
-    }
-
-    .seccions-title{
-        color: #54595F;
-        font-family: "Poppins", Sans-serif;
-        font-weight: 600;
-        font-size: 31px;
-    }
-      
-    .image-sillones-cont {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-    }
-      
-    .image-sillones {
-        margin: 20px 10px;
-    }
-
-    .image-sillones a{
-        text-decoration: none; /* Elimina el subrayado */
-    }
-      
-    .image-sillones img {
-        width: 330px;
-    }
-
-    .image-sillones:hover{
-        cursor: pointer;
-    }
-      
-    .tituloimagen{
-        font-size: 22px;    
-        margin: 0;
-        padding: 20px 0 0 0;
-        color: black;
-        text-decoration: none;
-    }
-
-    .image-sillones .infoimagen{
-        font-size: 18px;    
-        margin: 0;
-        padding: 20px 0;
-        color: rgb(98, 97, 97);
-        text-decoration: underline;
-    }
-
-    /* WEB SECCION SOBRE NOSOTROS */
-
-    #hero-sobrenosotros{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        flex-direction: column;
-        height: 100vh;
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
-        )
-        ,url("../media/img3.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-      
-      .arrow-down {
-        position: absolute;
-        bottom: 0px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 80px;
-        height: 200px;
-        background-image: url("../media/iconflecha.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        color: #FFFFFF;
-        background-color: transparent;
-        animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
-        opacity: 0;
-    }
-
-    .arrow-down-contacto {
-        position: absolute;
-        bottom: 200px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px;
-        height: 160px;
-        background-image: url("../media/iconflecha.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        color: #FFFFFF;
-        background-color: transparent;
-        animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
-        opacity: 0;
-    }
-
-    .arrow-down-sobrenosotros{
-        position: absolute;
-        bottom: 10px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100px;
-        height: 160px;
-        background-image: url("../media/iconflecha.png");
-        background-size: contain;
-        background-repeat: no-repeat;
-        color: #FFFFFF;
-        background-color: transparent;
-        animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
-        opacity: 0;
-    }
-    
-    @keyframes arrowAppear {
-      0% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-    
-    @keyframes arrowMove {
-      0% {
-        transform: translate(-50%, 0);
-      }
-      100% {
-        transform: translate(-50%, 20px);
-      }
-    }
-    
-    
-    .hero-sobrenosotros-titulo {
-        font-family: "Montserrat", Sans-serif;
-        font-size: 120px;
-        color: #FFFFFF;
-        font-weight: 100;
-        letter-spacing: 0px;
-        margin-bottom: 0;
-    }
-
-    .historia-container{
-        text-align: center;
-        flex-direction: column;
-    }
-
-    .historia-container h1{
-        margin-top: 80px;
-        margin-bottom: 40px;
-        font-family: "Montserrat", Sans-serif;
-        font-size: 30px;
-        font-weight: 600;
-        justify-content: center;
-        text-align: center;
-        text-decoration: underline;
-        color: #000;
-        line-height: 1.5;
-        letter-spacing: 1px;
-    }
-
-    .container-texto{
-        padding-bottom: 80px;
-    }
-
-    .texto-historia1 {
-        color: #000;
-        display: inline-block;
-        padding-right: 10px;
-        font-family: "Montserrat", Sans-serif;
-        font-size: 13.5px;
-        font-weight: 300;
-        word-wrap: break-word;
-        width: 580px;
-        vertical-align: top; /* ALINEA EL PRIMER TEXTO EN LA PARTE SUPERIOR */
-        text-align: left;
-        line-height: 1.5;
-        letter-spacing: 1px;
-    }
-
-    .texto-historia2 {
-        color: #000;
-        display: inline-block;
-        padding-right: 10px;
-        font-family: "Montserrat", Sans-serif;
-        font-size: 13.5px;
-        font-weight: 300;
-        word-wrap: break-word;
-        width: 580px;
-        vertical-align: top; /* ALINEA EL PRIMER TEXTO EN LA PARTE SUPERIOR */
-        text-align: left;
-        line-height: 1.5;
-        letter-spacing: 1px;
-    }
-
-    .negrita-historia{
-        font-family: "Montserrat", Sans-serif;
-        font-weight: 600; /* DETALLE: PONIENDO EN BOLD, NEGRITA AFECTANDO EL GROSOR, EN 600, NO AFECTA */
-    }
-
-    /* -------------------------- MENU PAGINAS ----------------------- */
-
-    #menu-paginas{
-        margin-left: 20%;
-    }
-
-    #menu-paginas a{
-        text-decoration: none;
-    }
-
-    #menu-paginas p{
-        color: black;
-        font-weight: 500;
-        font-size: 12px;
-    }
-
-    .menu-display{
-        color: #3d7b94;
-        font-weight: 600;
-        font-size: 12px;
-    }
-
-    /* MATERIALES PAGINA PRINCIPAL */
-
-    #materiales-principal{
-        position: relative;
-        margin-bottom: 100px;
-        user-select: none;
-    }
-
-    .materiales-principal-title {
-        width: 100%;
-        font-size: 18px; 
-        font-weight: 400; 
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1.6; 
-        text-align: center;
-    }
-
-    .materiales{
-        flex-basis: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-        margin-right: 20px; /* Ajusta el margen derecho según desees */
-    }
-
-    .materiales p{
-        width: 100%;
-        color: #fff;
-        font-size: 20px; 
-        font-weight: 200; 
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1.6; 
-        text-align: center;
-        padding-top: 2%;
-    }
-
-    .material-image {
-        width: 20%;
-        height: 80px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        margin-right: 0px;
-    }
-
-    .aluminio {
-        background-image: url('../media/materiales/aluminio.jpg');
-    }
-      
-    .tela {
-        background-image: url('../media/materiales/telanautica.jpg');
-    }
-      
-    .deck {
-        background-image: url('../media/materiales/wpc.jpg');
-    }
-
-    #materiales-principal a{
-        text-decoration: none;
-    }
-
-    .button-materiales {
-        margin-bottom: 10px;
-        text-align: center;
-    }
-
-    .materiales-button {
-        font-size: 1em;
-        font-weight: 400;
-        padding: 10px 20px;
-        border: 2px solid rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: white;
-        background-color: rgb(216, 184, 142);
-    }
-    
-    .materiales-button:hover {
-        background-color: rgb(186, 152, 108);
-        cursor: pointer;
-    }
-
-    .hr-materiales {
-        width: 70%;
-    }
-
-    /* SECCION UNETE PAG PRINCIPAL */
-
-    #unete-principal {
-        position: relative;
-        background-image: url('../media/hero-contacto.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-attachment: fixed;
-        background-position: bottom;
-        width: 100%;
-        height: 45vh;
-        margin-bottom: 100px;
-    }
-
-    #unete-principal a{
-        text-decoration: none;
-    }
-
-    .unete-title {
-        font-size: xx-large;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1; 
-        font-weight: 600;
-        color: #FFFFFF;
-        text-align: center;
-        white-space: nowrap;
-        padding-top: 3%;
-        margin: 0;
-    }
-    
-    .unete-subtitle {
-        font-size: xx-large;
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1.6; 
-        font-weight: 100;
-        color: #FFFFFF;
-        text-align: center;
-        margin: 0;
-    }
-
-    .unete-button {
-        position: absolute;
-        bottom: 10px;
-        right: 10px;
-    }
-
-    .unete-button {
-        font-size: 1em;
-        font-weight: 400;
-        padding: 10px 20px;
-        border: 2px solid rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: white;
-        background-color: rgb(216, 184, 142);
-    }
-    
-    .unete-button:hover {
-        background-color: rgb(186, 152, 108);
-        cursor: pointer;
-    }
-
-    /* PAGINA -- MATERIALES */
-
-    #hero-materiales{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        height: 100vh;
-        background-image: linear-gradient(
-            0deg,
-            rgba(0,0,0,0.3),
-            rgba(0,0,0,0.3)
-        )
-        ,url("../media/materiales.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center center;
-    }
-
-    .materiales-title {
-        font-size: 4em;
-        color: #FFFFFF;
-    }
-
-    .materials-section {
-        background-color: #f7f7f7;
-        padding: 4rem 0;
-    }
-      
-    .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 0 1rem;
-    }
-      
-    .section-title {
-        font-size: 2rem;
-        text-align: center;
-        font-weight: 500; 
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1.6; 
-        margin-bottom: 2rem;
-    }
-      
-    .material-title {
-        font-size: 1.5rem;
-        margin-bottom: 1rem;
-        font-weight: 500; 
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1.6; 
-    }
-      
-    .material-description {
-        font-size: 1rem;
-        color: #666;
-        font-weight: 500; 
-        font-family: "Helvetica Neue", Arial, sans-serif;
-        letter-spacing: 0.8px; 
-        line-height: 1.6; 
-    }
-
-    .material {
-        position: relative;
-        margin-bottom: 2rem;
-        border: 1px solid #bab7b7;
-        border-radius: 5px;
-        overflow: hidden;
-        display: flex;
-    }
-      
-    .material-content {
-        flex: 1;
-        padding: 2rem;
-        background-color: rgba(255, 255, 255, 0.9);
-    }
-      
-    .material-description {
-        margin-bottom: 0;
-    }
-    
-    .material-image {
-        width: 400px;
-        flex-shrink: 0;
-        background-color: #f7f7f7; 
-        display: flex;
-        align-items: center; 
-        justify-content: center; 
-    }
-      
-    .material-image img {
-        display: block;
-        width: 100%;
-        height: 60vh;
-        border-radius: 0 5px 5px 0;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-    /* ---------------------------- PRUEBAS -------------------------------- */
-    
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 55px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#titulo {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    color: rgb(11, 9, 9);
+    z-index: 1;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.33), 
+        -1px 0px 2px rgba(255, 255, 255, 0);
+    font-size: 30px;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+    font-weight: 500;
+}
+
+.slide-circulo.active {
+    color: #050404;
+}
+
+/* WEB SECCION CONTACTO */
+
+#hero-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(61, 60, 60, 0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("../media/hero-contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero-contacto h1 {
+    color: #FFFFFF;
+    font-weight: 300;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    font-size: 60px;
+}
+
+#hero-contacto h4{
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* INPUTS  ------------------  REPARADO */
+
+.container-solicitar {
+    display: grid;
+    flex-wrap: wrap;
+    margin: 150px 0px;
+    margin-left: 30%;
+    margin-right: 30%;
+    align-items: center;
+}
+  
+.container-solicitar h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #54595F;
+}
+
+.inputs-contacto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Cuatro columnas en cuadrícula, muy util */
+    grid-gap: 10px; /* Espacio entre las fotos */
+    width: 100%;
+}
+  
+.nombreinput,
+.apellidoinput,
+.emailinput,
+.telefonoinput {
+    display: grid;
+    border: 2px solid rgb(154, 152, 152);
+    user-select: none;
+    width: 100%;
+    height: 30px;
+    margin-top: 8px;
+}
+
+.nombrelabel,
+.apellidolabel,
+.emaillabel,
+.telefonolabel {
+    color: #34343B;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mensaje{
+    display: flex;
+    flex-direction: column;
+    margin-top: 25px;
+}
+
+.send-label{
+    color: #34343B;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.mensajeinput{
+    border: 2px solid rgb(154, 152, 152);
+    user-select: none;
+    margin: 10px 0px;
+    width: 100%;
+    padding: 10px 0px 125px 0px;
+    margin-top: 8px;
+}
+
+.enviarmensaje-container{
+    margin-top: 10px;
+}
+
+.enviarmensaje{
+    color: rgb(70, 70, 70);
+    font-size: 14px;
+    cursor: pointer;
+    border: 2px solid rgb(132, 130, 130);
+    padding: 8px;
+    font-weight: 100;
+}
+
+.enviarmensaje:hover{
+    background-color: rgb(223, 221, 221);
+}
+
+.masinfo-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 22px;
+}
+
+.masinfo-container a{
+    text-decoration: none;
+}
+
+.masinfo{
+    font-size: 20px;
+    font-weight: 550;
+    color: #15868A;
+}
+
+.masinfo:hover{
+    cursor: pointer;
+}
+
+.lineacontacto{
+    width: 100%;
+    color: #1bb6bb;
+}
+
+.nombreinput,
+.apellidoinput,
+.emailinput,
+.telefonoinput,
+.mensajeinput {
+    color: rgb(49, 47, 47);
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: 300;
+}
+
+.obligatorio{
+    color: red;
+    font-size: 14px;
+}
+
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(61, 60, 60, 0.5),
+        rgba(0,0,0,0.5)
+    )
+    ,url("../media/hero-np.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero-np h1 {
+    color: #FFFFFF;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+    font-family: "Poppins", Sans-serif;
+    font-size: 95px;
+    font-weight: bold;
+    letter-spacing: -2.7px;
+    margin-left: 15%;
+
+}
+
+#hero-np h4{
+    color: #FFFFFF;
+    font-size: 2.8rem;
+    font-weight: 550;
+    margin-top: 0;
+    margin-left: 15.3%;
+    margin-bottom: 0;
+}
+
+.listahero{
+    color: #FFFFFF;
+    margin-left: 13%;
+    user-select: none; 
+}
+
+.listahero li{
+    padding: 10px;
+    font-size: 20px;
+    font-style: inherit;
+    font-weight: inherit;
+    vertical-align: baseline;
+    display: flex;
+    align-items: center;
+}
+
+.iconoentrega,
+.iconoresistentes,
+.iconomateriales{
+    width: 40px;
+    padding-right: 10px;
+}
+
+.iconodiseños{
+    width: 25px;
+    margin-right: 15px;
+}
+
+/* CONTENEDOR DE IMAGENES */
+
+.container-productos-jgsillones {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
+  
+.container-images{
+    font-size: 40px;
+    text-align: center;
+}
+  
+.image-row {
+    display: flex;
+    justify-content: center;
+}
+  
+.image-container img {
+    display: block;
+    width: 350px;
+    height: 350px;
+    transition: filter 0.3s;
+    filter: brightness(70%);
+}
+
+.image-container:hover img {
+    cursor: pointer;
+    filter: brightness(60%);
+}
+
+.image-title {
+    font-size: 35px;
+    position: absolute;
+    margin: 100px 0px 10px 80px;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+    user-select: none;
+}
+
+.image-title:hover{
+    cursor: pointer;
+}
+
+.image-titlepuff{
+    font-size: 35px;
+    position: absolute;
+    margin: 100px 0px 0px 100px;
+    color: white;
+    font-weight: bold;
+    z-index: 1;
+}
+
+.image-titlepersonalizable{
+  font-size: 35px;
+  position: absolute;
+  margin: 100px 0px 0px 50px;
+  color: white;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.seccion-sillones {
+    max-width: 1035px;
+    margin: 100px auto;
+    margin-top: 60px;
+    padding-top: 100px;
+}
+
+.seccions-title{
+    color: #54595F;
+    font-family: "Poppins", Sans-serif;
+    font-weight: 600;
+    font-size: 31px;
+}
+  
+.image-sillones-cont {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+.image-sillones {
+    margin: 20px 10px;
+}
+
+.image-sillones a{
+    text-decoration: none; /* Elimina el subrayado */
+}
+  
+.image-sillones img {
+    width: 330px;
+}
+
+.image-sillones:hover{
+    cursor: pointer;
+}
+  
+.tituloimagen{
+    font-size: 22px;    
+    margin: 0;
+    padding: 20px 0 0 0;
+    color: black;
+    text-decoration: none;
+}
+
+.image-sillones .infoimagen{
+    font-size: 18px;    
+    margin: 0;
+    padding: 20px 0;
+    color: rgb(98, 97, 97);
+    text-decoration: underline;
+}
+
+/* WEB SECCION SOBRE NOSOTROS */
+
+#hero-sobrenosotros{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("../media/img3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+  
+  .arrow-down {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 200px;
+    background-image: url("../media/iconflecha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-color: transparent;
+    animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
+    opacity: 0;
+}
+
+.arrow-down-contacto {
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 160px;
+    background-image: url("../media/iconflecha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-color: transparent;
+    animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
+    opacity: 0;
+}
+
+.arrow-down-sobrenosotros{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 160px;
+    background-image: url("../media/iconflecha.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+    background-color: transparent;
+    animation: arrowAppear 1s forwards, arrowMove 2s infinite alternate;
+    opacity: 0;
+}
+
+@keyframes arrowAppear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes arrowMove {
+  0% {
+    transform: translate(-50%, 0);
+  }
+  100% {
+    transform: translate(-50%, 20px);
+  }
+}
+
+
+.hero-sobrenosotros-titulo {
+    font-family: "Montserrat", Sans-serif;
+    font-size: 120px;
+    color: #FFFFFF;
+    font-weight: 100;
+    letter-spacing: 0px;
+    margin-bottom: 0;
+}
+
+.historia-container{
+    text-align: center;
+    flex-direction: column;
+}
+
+.historia-container h1{
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline;
+    color: #000;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.container-texto{
+    padding-bottom: 80px;
+}
+
+.texto-historia1 {
+    color: #000;
+    display: inline-block;
+    padding-right: 10px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 13.5px;
+    font-weight: 300;
+    word-wrap: break-word;
+    width: 580px;
+    vertical-align: top; /* ALINEA EL PRIMER TEXTO EN LA PARTE SUPERIOR */
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.texto-historia2 {
+    color: #000;
+    display: inline-block;
+    padding-right: 10px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 13.5px;
+    font-weight: 300;
+    word-wrap: break-word;
+    width: 580px;
+    vertical-align: top; /* ALINEA EL PRIMER TEXTO EN LA PARTE SUPERIOR */
+    text-align: left;
+    line-height: 1.5;
+    letter-spacing: 1px;
+}
+
+.negrita-historia{
+    font-family: "Montserrat", Sans-serif;
+    font-weight: 600; /* DETALLE: PONIENDO EN BOLD, NEGRITA AFECTANDO EL GROSOR, EN 600, NO AFECTA */
+}
+
+/* -------------------------- MENU PAGINAS ----------------------- */
+
+#menu-paginas{
+    margin-left: 20%;
+}
+
+#menu-paginas a{
+    text-decoration: none;
+}
+
+#menu-paginas p{
+    color: black;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.menu-display{
+    color: #3d7b94;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* MATERIALES PAGINA PRINCIPAL */
+
+#materiales-principal{
+    position: relative;
+    margin-bottom: 100px;
+    user-select: none;
+}
+
+.materiales-principal-title {
+    width: 100%;
+    font-size: 18px; 
+    font-weight: 400; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+    text-align: center;
+}
+
+.materiales{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px; /* Ajusta el margen derecho según desees */
+}
+
+.materiales p{
+    width: 100%;
+    color: #fff;
+    font-size: 20px; 
+    font-weight: 200; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+    text-align: center;
+    padding-top: 2%;
+}
+
+.materials-image {
+    width: 20%;
+    height: 80px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 0px;
+}
+
+.aluminio {
+    background-image: url('../media/materiales/aluminio.jpg');
+}
+  
+.tela {
+    background-image: url('../media/materiales/telanautica.jpg');
+}
+  
+.deck {
+    background-image: url('../media/materiales/wpc.jpg');
+}
+
+#materiales-principal a{
+    text-decoration: none;
+}
+
+.button-materiales {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.materiales-button {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(216, 184, 142);
+}
+
+.materiales-button:hover {
+    background-color: rgb(186, 152, 108);
+    cursor: pointer;
+}
+
+.hr-materiales {
+    width: 70%;
+}
+
+/* SECCION UNETE PAG PRINCIPAL */
+
+#unete-principal {
+    position: relative;
+    background-image: url('../media/hero-contacto.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom;
+    width: 100%;
+    height: 45vh;
+    margin-bottom: 100px;
+}
+
+#unete-principal a{
+    text-decoration: none;
+}
+
+.unete-title {
+    font-size: xx-large;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1; 
+    font-weight: 600;
+    color: #FFFFFF;
+    text-align: center;
+    white-space: nowrap;
+    padding-top: 3%;
+    margin: 0;
+}
+
+.unete-subtitle {
+    font-size: xx-large;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+    font-weight: 100;
+    color: #FFFFFF;
+    text-align: center;
+    margin: 0;
+}
+
+.unete-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.unete-button {
+    font-size: 1em;
+    font-weight: 400;
+    padding: 10px 20px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(216, 184, 142);
+}
+
+.unete-button:hover {
+    background-color: rgb(186, 152, 108);
+    cursor: pointer;
+}
+
+/* PAGINA -- MATERIALES */
+
+#hero-materiales{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    background-image: linear-gradient(
+        0deg,
+        rgba(0,0,0,0.3),
+        rgba(0,0,0,0.3)
+    )
+    ,url("../media/materiales.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.materiales-title {
+    font-size: 4em;
+    color: #FFFFFF;
+}
+
+.materials-section {
+    background-color: #f7f7f7;
+    padding: 4rem 0;
+}
+  
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+  
+.section-title {
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 500; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+    margin-bottom: 2rem;
+}
+  
+.material-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    font-weight: 500; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+}
+  
+.material-description {
+    font-size: 1rem;
+    color: #666;
+    font-weight: 500; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+}
+
+.material {
+    position: relative;
+    margin-bottom: 2rem;
+    border: 1px solid #bab7b7;
+    border-radius: 5px;
+    overflow: hidden;
+    display: flex;
+}
+  
+.material-content {
+    flex: 1;
+    padding: 2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+  
+.material-description {
+    margin-bottom: 0;
+}
+
+.material-image {
+    width: 400px;
+    flex-shrink: 0;
+    background-color: #f7f7f7; 
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+  
+.material-image img {
+    display: block;
+    width: 100%;
+    height: 35vh;
+    border-radius: 0 5px 5px 0;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* FOOTER - MOBILE */
+
+#footer-mobile{
+    display: none;
+}
+
+/* ---------------------------- PRUEBAS -------------------------------- */
+
 /* RESPONSIVE A 1920px */
 
 @media (max-width: 1920px){
 
-    /* FLECHA INDEX */
+/* FLECHA INDEX */
 
-    .arrow-down {
-        width: 100px;
-        bottom: 40px;
-    }
+.arrow-down {
+    width: 100px;
+    bottom: 40px;
+}
 
-    /* FLECHA SECCION CONTACTO */
+/* FLECHA SECCION CONTACTO */
 
-    .arrow-down-contacto{
-        width: 80px;
-    }
+.arrow-down-contacto{
+    width: 80px;
+}
 
-    /* HERO  SECCION SOBRE NOSOTROS */
+/* HERO  SECCION SOBRE NOSOTROS */
 
-    .hero-sobrenosotros-titulo {
-        font-size: 80px;
-    }
+.hero-sobrenosotros-titulo {
+    font-size: 80px;
+}
 
-    .arrow-down-sobrenosotros {
-        width: 100px;
-        bottom: 100px;
-    }
+.arrow-down-sobrenosotros {
+    width: 100px;
+    bottom: 100px;
+}
 
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 80px;
+}
     
-    #hero-np h1 {
-        font-size: 80px;
-    }
-        
-    #hero-np h4{
-        font-size: 2.2rem;
-    }
-    
-    .listahero{
-           margin-left: 13%;
-    }
-    
-    /* CONTENEDOR DE IMAGENES */
-    
-    .container-productos-jgsillones {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-          
-    .container-images{
-        font-size: 42px;
-        color: #54595F;
-    }
-          
-    .image-container img {
-        width: 420px;
-        height: 420px;
-    }
-    
-    .image-title,
-    .image-titlepuff {
-        font-size: 48px;
-        margin: 200px 0px 0px 100px;
-    }
-    
-    .image-titlepersonalizable{
-      font-size: 48px;
-      margin: 200px 0px 0px 60px;
-    }
-    
-    .seccion-sillones {
-        max-width: 1245px;
-        margin: 100px auto;
-    }
-          
-    .image-sillones img {
-        width: 400px;
-    }
+#hero-np h4{
+    font-size: 2.2rem;
+}
 
-    /* SECCION PAG MATERIALES */
+.listahero{
+       margin-left: 13%;
+}
 
-    .br-materials {
-        display: none;
-    }
-    
+/* CONTENEDOR DE IMAGENES */
+
+.container-productos-jgsillones {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
+      
+.container-images{
+    font-size: 42px;
+    color: #54595F;
+}
+      
+.image-container img {
+    width: 420px;
+    height: 420px;
+}
+
+.image-title,
+.image-titlepuff {
+    font-size: 48px;
+    margin: 200px 0px 0px 100px;
+}
+
+.image-titlepersonalizable{
+  font-size: 48px;
+  margin: 200px 0px 0px 60px;
+}
+
+.seccion-sillones {
+    max-width: 1245px;
+    margin: 100px auto;
+}
+      
+.image-sillones img {
+    width: 400px;
+}
+
+/* SECCION PAG MATERIALES */
+
+.br-materials {
+    display: none;
+}
+
 }
 
 /* RESPONSIVE A 1440px */
 
 @media (max-width: 1440px){
 
-    /* HERO */
+/* HERO */
 
-    .arrow-down {
-        width: 100px;
-        bottom: 80px;
-    }
+.arrow-down {
+    width: 100px;
+    bottom: 80px;
+}
 
-    /* FLECHA SECCION CONTACTO */
+/* FLECHA SECCION CONTACTO */
 
-    .arrow-down-contacto{
-        width: 80px;
-        bottom: 0px;
-    }
+.arrow-down-contacto{
+    width: 80px;
+    bottom: 0px;
+}
 
-    /* HERO  SECCION SOBRE NOSOTROS */
+/* HERO  SECCION SOBRE NOSOTROS */
 
-    .hero-sobrenosotros-titulo {
-        font-size: 80px;
-    }
+.hero-sobrenosotros-titulo {
+    font-size: 80px;
+}
 
-    .arrow-down-sobrenosotros {
-        width: 100px;
-        bottom: 100px;
-    }
+.arrow-down-sobrenosotros {
+    width: 100px;
+    bottom: 100px;
+}
 
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 80px;
+}
     
-    #hero-np h1 {
-        font-size: 80px;
-    }
-        
-    #hero-np h4{
-        font-size: 2.2rem;
-    }
-    
-    .listahero{
-           margin-left: 12%;
-    }
-    
-    /* CONTENEDOR DE IMAGENES */
-    
-    .container-productos-jgsillones {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-          
-    .container-images{
-        font-size: 36px;
-    }
-          
-    .image-container img {
-        width: 340px;
-        height: 340px;
-    }
-    
-    .image-title,
-    .image-titlepuff {
-        font-size: 36px;
-        margin: 140px 0px 0px 100px;
-    }
-    
-    .image-titlepersonalizable{
-      font-size: 36px;
-      margin: 140px 0px 0px 50px;
-    }
-    
-    .seccion-sillones {
-        max-width: 1005px;
-        margin: 100px auto;
-    }
-          
-    .image-sillones img {
-        width: 320px;
-    }
+#hero-np h4{
+    font-size: 2.2rem;
+}
 
-    /* PAGINA MATERIALES */
+.listahero{
+       margin-left: 12%;
+}
 
-    .material-image img {
-        width: 100%;
-        height: 85vh;
-    }
+/* CONTENEDOR DE IMAGENES */
+
+.container-productos-jgsillones {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
+      
+.container-images{
+    font-size: 36px;
+}
+      
+.image-container img {
+    width: 340px;
+    height: 340px;
+}
+
+.image-title,
+.image-titlepuff {
+    font-size: 36px;
+    margin: 140px 0px 0px 100px;
+}
+
+.image-titlepersonalizable{
+  font-size: 36px;
+  margin: 140px 0px 0px 50px;
+}
+
+.seccion-sillones {
+    max-width: 1005px;
+    margin: 100px auto;
+}
+      
+.image-sillones img {
+    width: 320px;
+}
+
+/* PAGINA MATERIALES */
+
+.material-image img {
+    width: 100%;
+    height: 85vh;
+}
 }
 
 /* RESPONSIVE A 1280px */
 
 @media (max-width: 1280px) and (min-width: 1260px){
 
-    /* HERO */
+/* HERO */
 
-    .arrow-down {
-        width: 100px;
-        bottom: -40px;
-    }
+.arrow-down {
+    width: 100px;
+    bottom: -40px;
+}
 
-    /* FLECHA SECCION CONTACTO */
+/* FLECHA SECCION CONTACTO */
 
-    .arrow-down-contacto{
-        width: 80px;
-        bottom: 0px;
-    }
+.arrow-down-contacto{
+    width: 80px;
+    bottom: 0px;
+}
 
-    /* HERO  SECCION SOBRE NOSOTROS */
+/* HERO  SECCION SOBRE NOSOTROS */
 
-    .hero-sobrenosotros-titulo {
-        font-size: 80px;
-    }
+.hero-sobrenosotros-titulo {
+    font-size: 80px;
+}
 
-    .arrow-down-sobrenosotros {
-        width: 100px;
-        bottom: 0px;
-    }
+.arrow-down-sobrenosotros {
+    width: 100px;
+    bottom: 0px;
+}
 
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 80px;
+}
     
-    #hero-np h1 {
-        font-size: 80px;
-    }
-        
-    #hero-np h4{
-        font-size: 2.2rem;
-    }
-    
-    .listahero{
-           margin-left: 12%;
-    }
-    
-    /* CONTENEDOR DE IMAGENES */
-    
-    .container-productos-jgsillones {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-          
-    .container-images{
-        font-size: 36px;
-    }
-          
-    .image-container img {
-        width: 340px;
-        height: 340px;
-    }
-    
-    .image-title,
-    .image-titlepuff {
-        font-size: 36px;
-        margin: 140px 0px 0px 100px;
-    }
-    
-    .image-titlepersonalizable{
-      font-size: 36px;
-      margin: 140px 0px 0px 50px;
-    }
-    
-    .seccion-sillones {
-        max-width: 1005px;
-        margin: 100px auto;
-    }
-          
-    .image-sillones img {
-        width: 320px;
-    }
+#hero-np h4{
+    font-size: 2.2rem;
+}
 
-    /* PAGINA MATERIALES */
+.listahero{
+       margin-left: 12%;
+}
 
-    .material-image img {
-        width: 100%;
-        height: 90vh;
-    }
+/* CONTENEDOR DE IMAGENES */
+
+.container-productos-jgsillones {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
+      
+.container-images{
+    font-size: 36px;
+}
+      
+.image-container img {
+    width: 340px;
+    height: 340px;
+}
+
+.image-title,
+.image-titlepuff {
+    font-size: 36px;
+    margin: 140px 0px 0px 100px;
+}
+
+.image-titlepersonalizable{
+  font-size: 36px;
+  margin: 140px 0px 0px 50px;
+}
+
+.seccion-sillones {
+    max-width: 1005px;
+    margin: 100px auto;
+}
+      
+.image-sillones img {
+    width: 320px;
+}
+
+/* PAGINA MATERIALES */
+
+.material-image img {
+    width: 100%;
+    height: 90vh;
+}
 
 }
 
 @media (max-width: 1032px){
 
-    /* INPUTS CONTACTO */
+/* INPUTS CONTACTO */
+
+.container-solicitar {
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+/* MENU HAMBURGESA */
+
+header .container {
+    flex-wrap: wrap;
+}
     
-    .container-solicitar {
-        margin-left: 8%;
-        margin-right: 8%;
-    }
+header nav {
+    flex-wrap: wrap;
+    overflow: hidden;
+    max-height: 0;
+    order: 3;
+    width: 100%;
+}
 
-    /* MENU HAMBURGESA */
-
-    header .container {
-        flex-wrap: wrap;
-    }
-        
-    header nav {
-        flex-wrap: wrap;
-        overflow: hidden;
-        max-height: 0;
-        order: 3;
-        width: 100%;
-    }
-
-    header.show-nav nav {
-        max-height: 500px;
-        display: flex;
-        flex-direction: column; 
-        opacity: 1;
-    }
-        
-    .menu-icon {
-        display: block;
-        order: 2;
-        text-align: right;
-    }
-        
-    .menu-icon img {
-        display: block;
-    }
-        
-    .logobuscador{
-        display: none;
-    }
+header.show-nav nav {
+    max-height: 500px;
+    display: flex;
+    flex-direction: column; 
+    opacity: 1;
+}
+    
+.menu-icon {
+    display: block;
+    order: 2;
+    text-align: right;
+}
+    
+.menu-icon img {
+    display: block;
+}
+    
+.logobuscador{
+    display: none;
+}
 
 }
 
@@ -1641,220 +1647,220 @@ footer .container-copyright{
 
 @media (max-width: 1024px) and (min-width: 1014px){
 
-    /* SOMOS LEON LIVINGS CONTAINER */
+/* SOMOS LEON LIVINGS CONTAINER */
 
-    .somostxt-1{
-        font-size: 28px;
-    }
+.somostxt-1{
+    font-size: 28px;
+}
+
+.somostxt-2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* HERO */
+
+.arrow-down {
+    width: 100px;
+    bottom: 80px;
+}
+
+/* FLECHA SECCION CONTACTO */
+
+.arrow-down-contacto{
+    width: 80px;
+}
+
+/* HERO  SECCION SOBRE NOSOTROS */
+
+.hero-sobrenosotros-titulo {
+    font-size: 80px;
+}
+
+.arrow-down-sobrenosotros {
+    width: 100px;
+    bottom: 100px;
+}
+
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 65px;
+}
     
-    .somostxt-2{
-        font-size: 18px;
-        font-weight: 100;
-    }
+#hero-np h4{
+    font-size: 2.2rem;
+}
 
-    /* HERO */
+.listahero{
+    margin-left: 10.5%;
+}
 
-    .arrow-down {
-        width: 100px;
-        bottom: 80px;
-    }
+/* CONTENEDOR DE IMAGENES */
 
-    /* FLECHA SECCION CONTACTO */
+.container-productos-jgsillones {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+    margin-bottom: -100px;
+}
+      
+.container-images{
+    font-size: 32px;
+}
+      
+.image-container img {
+    width: 280px;
+    height: 280px;
+}
 
-    .arrow-down-contacto{
-        width: 80px;
-    }
+.image-title,
+.image-titlepuff {
+    font-size: 32px;
+    margin: 140px 0px 0px 60px;
+}
 
-    /* HERO  SECCION SOBRE NOSOTROS */
+.image-titlepersonalizable{
+  font-size: 32px;
+  margin: 140px 0px 0px 30px;
+}
 
-    .hero-sobrenosotros-titulo {
-        font-size: 80px;
-    }
+.seccion-sillones {
+    max-width: 825px;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+      
+.image-sillones img {
+    width: 260px;
+}
 
-    .arrow-down-sobrenosotros {
-        width: 100px;
-        bottom: 100px;
-    }
+/* FIN DE PAGINA */
 
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-    
-    #hero-np h1 {
-        font-size: 65px;
-    }
-        
-    #hero-np h4{
-        font-size: 2.2rem;
-    }
-    
-    .listahero{
-        margin-left: 10.5%;
-    }
-    
-    /* CONTENEDOR DE IMAGENES */
-    
-    .container-productos-jgsillones {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-        margin-bottom: -100px;
-    }
-          
-    .container-images{
-        font-size: 32px;
-    }
-          
-    .image-container img {
-        width: 280px;
-        height: 280px;
-    }
-    
-    .image-title,
-    .image-titlepuff {
-        font-size: 32px;
-        margin: 140px 0px 0px 60px;
-    }
-    
-    .image-titlepersonalizable{
-      font-size: 32px;
-      margin: 140px 0px 0px 30px;
-    }
-    
-    .seccion-sillones {
-        max-width: 825px;
-        margin: 0px auto;
-        margin-bottom: 100px;
-    }
-          
-    .image-sillones img {
-        width: 260px;
-    }
+.container-findepagina h1{
+    font-size: 1.4em;
+}
 
-    /* FIN DE PAGINA */
+.institucional-findepagina,
+.productos-findepagina,
+.contacto-findepagina{
+    font-size: 1.2em;
+}
 
-    .container-findepagina h1{
-        font-size: 1.4em;
-    }
-    
-    .institucional-findepagina,
-    .productos-findepagina,
-    .contacto-findepagina{
-        font-size: 1.2em;
-    }
-    
-    /* COPYRIGHT */
-    
-    footer .container-copyright{
-        font-size: 1em;
-    }
+/* COPYRIGHT */
 
-    /* MATERIALES PAGINA PRINCIPAL */
+footer .container-copyright{
+    font-size: 1em;
+}
 
-    #materiales-principal{
-        position: relative;
-        margin-bottom: 80px;
-        user-select: none;
-    }
+/* MATERIALES PAGINA PRINCIPAL */
 
-    .material-image {
-        width: 30%;
-    }
+#materiales-principal{
+    position: relative;
+    margin-bottom: 80px;
+    user-select: none;
+}
 
-    .button-materiales {
-        font-size: 0.8em;
-    }
+.materials-image {
+    width: 30%;
+}
 
-    /* SECCION UNETE PAG PRINCIPAL */
+.button-materiales {
+    font-size: 0.8em;
+}
 
-    #unete-principal {
-        height: 45vh;
-    }
+/* SECCION UNETE PAG PRINCIPAL */
 
-    .unete-title {
-        font-size: x-large;
-    }
-    
-    .unete-subtitle {
-        font-size: x-large;
-    }
+#unete-principal {
+    height: 45vh;
+}
 
-    .unete-button {
-        font-size: 0.8em;
-    }
+.unete-title {
+    font-size: x-large;
+}
 
-    /* PAGINA MATERIALES */
+.unete-subtitle {
+    font-size: x-large;
+}
 
-    .material-image img {
-        width: 100%;
-        height: 100vh;
-    }
+.unete-button {
+    font-size: 0.8em;
+}
+
+/* PAGINA MATERIALES */
+
+.material-image img {
+    width: 100%;
+    height: 100vh;
+}
 }
 
 @media (max-width: 960px){
 
-    #somos-leonlivings .container {
-        padding: 20px 0px 20px 20px;
-        line-height: 1;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    
-    .somostxt-1 {
-        text-align: left;
-        width: 100%;    
-    }
-    
-    .somostxt-2 {
-        width: 100%;
-        text-align: left;
-        padding-top: 40px;
-    }
+#somos-leonlivings .container {
+    padding: 20px 0px 20px 20px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
 
-    .button-somos{
-        text-align: left;
-    }
+.somostxt-1 {
+    text-align: left;
+    width: 100%;    
+}
 
-    #somos-leonlivings .texto {
-        width: 100%;
-        max-width: 440px;
-        padding-left: 0px;
-    }
+.somostxt-2 {
+    width: 100%;
+    text-align: left;
+    padding-top: 40px;
+}
 
-    .slide-item img {
-        float: left;
-        height: auto;
-        padding: 100px 0px 100px 0px;
-        width: 100%;
-    }
+.button-somos{
+    text-align: left;
+}
 
-    .slide {
-        margin-top: 0px;
-        height: 100%;
-        width: 80%; /* Agregado */
-    }
+#somos-leonlivings .texto {
+    width: 100%;
+    max-width: 440px;
+    padding-left: 0px;
+}
 
-    /* MATERIAL LISTA RESPONSIVE */
+.slide-item img {
+    float: left;
+    height: auto;
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+}
 
-    .material-image {
-        max-width: 100%;
-        width: 300px;
-        height: auto;
-    }
+.slide {
+    margin-top: 0px;
+    height: 100%;
+    width: 80%; /* Agregado */
+}
 
-    .materials-span {
-        display: none;
-    }
+/* MATERIAL LISTA RESPONSIVE */
 
-    .br-materials {
-        display: block;
-    }
+.material-image {
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+}
 
-    .materiales-title {
-        font-size: 3rem;
-    }
+.materials-span {
+    display: none;
+}
+
+.br-materials {
+    display: block;
+}
+
+.materiales-title {
+    font-size: 3rem;
+}
 
 }
 
@@ -1862,608 +1868,600 @@ footer .container-copyright{
 
 @media (max-width: 950px) and (min-width: 800px){
 
-    #hero{
-        background-position: left;
-    }
+#hero{
+    background-position: left;
+}
 
-    .arrow-down {
-        bottom: -80px;
-    }
+.arrow-down {
+    bottom: -80px;
+}
 
-    /* HERO SOBRE NOSOTROS */
+/* HERO SOBRE NOSOTROS */
 
-    .hero-sobrenosotros-titulo {
-        font-size: 80px;
-    }
+.hero-sobrenosotros-titulo {
+    font-size: 80px;
+}
 
-    .arrow-down-sobrenosotros {
-        bottom: 20px;
-    }
+.arrow-down-sobrenosotros {
+    bottom: 20px;
+}
 
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 60px;
+}
     
-    #hero-np h1 {
-        font-size: 60px;
-    }
-        
-    #hero-np h4{
-        font-size: 2.2rem;
-    }
-    
-    .listahero{
-           margin-left: 10%;
-    }
-    
-    /* CONTENEDOR DE IMAGENES */
-    
-    .container-productos-jgsillones {
-        max-width: 1000px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-        margin-bottom: -220px;
-    }
-          
-    .container-images{
-        font-size: 34px;
-    }
-          
-    .image-container img {
-        width: 280px;
-        height: 280px;
-    }
-    
-    .image-title,
-    .image-titlepuff {
-        font-size: 30px;
-    }
-    
-    .image-titlepersonalizable{
-      font-size: 30px;
-      margin: 100px 0px 0px 30px;
-    }
-    
-    .seccion-sillones {
-        max-width: 880px;
-        margin: 100px auto;
-    }
-          
-    .image-sillones img {
-        width: 280px;
-    }
+#hero-np h4{
+    font-size: 2.2rem;
+}
 
-    /* MATERIALES PAGINA PRINCIPAL */
+.listahero{
+       margin-left: 10%;
+}
 
-    #materiales-principal{
-        position: relative;
-        margin-bottom: 80px;
-        user-select: none;
-    }
+/* CONTENEDOR DE IMAGENES */
 
-    .material-image {
-        width: 33%;
-    }
+.container-productos-jgsillones {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+    margin-bottom: -220px;
+}
+      
+.container-images{
+    font-size: 34px;
+}
+      
+.image-container img {
+    width: 280px;
+    height: 280px;
+}
 
-    .button-materiales {
-        font-size: 0.8em;
-    }
+.image-title,
+.image-titlepuff {
+    font-size: 30px;
+}
 
-    /* SECCION UNETE PAG PRINCIPAL */
+.image-titlepersonalizable{
+  font-size: 30px;
+  margin: 100px 0px 0px 30px;
+}
 
-    .unete-title {
-        font-size: x-large;
-    }
-    
-    .unete-subtitle {
-        font-size: x-large;
-    }
+.seccion-sillones {
+    max-width: 880px;
+    margin: 100px auto;
+}
+      
+.image-sillones img {
+    width: 280px;
+}
 
-    .unete-button {
-        font-size: 0.8em;
-    }
-    
+/* MATERIALES PAGINA PRINCIPAL */
+
+#materiales-principal{
+    position: relative;
+    margin-bottom: 80px;
+    user-select: none;
+}
+
+.materials-image {
+    width: 33%;
+}
+
+.button-materiales {
+    font-size: 0.8em;
+}
+
+/* SECCION UNETE PAG PRINCIPAL */
+
+.unete-title {
+    font-size: x-large;
+}
+
+.unete-subtitle {
+    font-size: x-large;
+}
+
+.unete-button {
+    font-size: 0.8em;
+}
+
 }
 
 /* RESPONSIVE A 768px */
 
 @media (max-width: 768px) and (min-width: 720px){
 
-    /* SOMOS LEON LIVINGS CONTAINER */
+/* SOMOS LEON LIVINGS CONTAINER */
 
-    .somostxt-1{
-        font-size: 32px;
-    }
+.somostxt-1{
+    font-size: 32px;
+}
+
+.somostxt-2{
+    font-size: 22px;
+}
+
+#somos-leonlivings .container{
+    flex-direction: column;
+    align-items: center;
+}
+
+#somos-leonlivings .img-container{
+    height: 300px;
+    width: 600px;
+}
+
+/* HERO */
+
+.arrow-down {
+    width: 100px;
+    bottom: 0px;
+}
+
+#hero{
+    background-position: left;
+}
+
+/* FLECHA SECCION CONTACTO */
+
+.arrow-down-contacto{
+    width: 60px;
+    bottom: 0px;
+}
+
+/* HERO  SECCION SOBRE NOSOTROS */
+
+.hero-sobrenosotros-titulo {
+    font-size: 80px;
+}
+
+.arrow-down-sobrenosotros {
+    width: 100px;
+    bottom: 80px;
+}
+
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 65px;
+}
     
-    .somostxt-2{
-        font-size: 22px;
-    }
+#hero-np h4{
+    font-size: 2.2rem;
+}
 
-    #somos-leonlivings .container{
-        flex-direction: column;
-        align-items: center;
-    }
+.listahero{
+    margin-left: 10.5%;
+}
 
-    #somos-leonlivings .img-container{
-        height: 300px;
-        width: 600px;
-    }
+/* CONTENEDOR DE IMAGENES */
 
-    /* HERO */
+.container-productos-jgsillones {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+    margin-bottom: 0px;
+}
+      
+.container-images{
+    font-size: 32px;
+}
+      
+.image-container img {
+    width: 260px;
+    height: 260px;
+}
 
-    .arrow-down {
-        width: 100px;
-        bottom: 0px;
-    }
+.image-title,
+.image-titlepuff {
+    font-size: 30px;
+    margin: 140px 0px 0px 60px;
+}
 
-    #hero{
-        background-position: left;
-    }
+.image-titlepersonalizable{
+  font-size: 30px;
+  margin: 140px 0px 0px 30px;
+}
 
-    /* FLECHA SECCION CONTACTO */
+.seccion-sillones {
+    max-width: 765px;
+    margin: 0px auto;
+    margin-bottom: 100px;
+}
+      
+.image-sillones img {
+    width: 240px;
+}
 
-    .arrow-down-contacto{
-        width: 60px;
-        bottom: 0px;
-    }
+/* WSP */
 
-    /* HERO  SECCION SOBRE NOSOTROS */
+.flechawsp{
+    display: none;
+}
 
-    .hero-sobrenosotros-titulo {
-        font-size: 80px;
-    }
+/* MATERIALES PAGINA PRINCIPAL */
 
-    .arrow-down-sobrenosotros {
-        width: 100px;
-        bottom: 80px;
-    }
+#materiales-principal{
+    position: relative;
+    margin-bottom: 80px;
+    user-select: none;
+}
 
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-    
-    #hero-np h1 {
-        font-size: 65px;
-    }
-        
-    #hero-np h4{
-        font-size: 2.2rem;
-    }
-    
-    .listahero{
-        margin-left: 10.5%;
-    }
-    
-    /* CONTENEDOR DE IMAGENES */
-    
-    .container-productos-jgsillones {
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-        margin-bottom: 0px;
-    }
-          
-    .container-images{
-        font-size: 32px;
-    }
-          
-    .image-container img {
-        width: 260px;
-        height: 260px;
-    }
-    
-    .image-title,
-    .image-titlepuff {
-        font-size: 30px;
-        margin: 140px 0px 0px 60px;
-    }
-    
-    .image-titlepersonalizable{
-      font-size: 30px;
-      margin: 140px 0px 0px 30px;
-    }
-    
-    .seccion-sillones {
-        max-width: 765px;
-        margin: 0px auto;
-        margin-bottom: 100px;
-    }
-          
-    .image-sillones img {
-        width: 240px;
-    }
+.material-image {
+    width: 40%;
+}
 
-    /* WSP */
+.button-materiales {
+    font-size: 0.8em;
+}
 
-    .flechawsp{
-        display: none;
-    }
+/* SECCION UNETE PAG PRINCIPAL */
 
-    /* MATERIALES PAGINA PRINCIPAL */
+#unete-principal {
+    height: 45vh;
+}
 
-    #materiales-principal{
-        position: relative;
-        margin-bottom: 80px;
-        user-select: none;
-    }
+.unete-title {
+    font-size: x-large;
+}
 
-    .material-image {
-        width: 40%;
-    }
+.unete-subtitle {
+    font-size: x-large;
+}
 
-    .button-materiales {
-        font-size: 0.8em;
-    }
-
-    /* SECCION UNETE PAG PRINCIPAL */
-
-    #unete-principal {
-        height: 45vh;
-    }
-
-    .unete-title {
-        font-size: x-large;
-    }
-    
-    .unete-subtitle {
-        font-size: x-large;
-    }
-
-    .unete-button {
-        font-size: 0.8em;
-    }
+.unete-button {
+    font-size: 0.8em;
+}
 }
 
 @media (max-width: 680px){
-    /* FIN DE PAGINA */
+/* FIN DE PAGINA */
 
-    #findepagina{
-        height: 150vh;
-    }
+#findepagina{
+    display: none;
+}
 
-    .container-findepagina {
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
+footer .container-copyright{
+    display: none;
+}
 
-    .container-findepagina h1{
-        font-size: 1.2em;
-    }
+/* MATERIALES PAGINA PRINCIPAL */
 
-    .divisor,
-    .divisor2{
-        width: 50%;
-        margin-left: 28%;
-    }
+#materiales-principal{
+    position: relative;
+    margin-bottom: 100px;
+    user-select: none;
+}
 
-    .institucional-findepagina,
-    .productos-findepagina,
-    .contacto-findepagina{
-        font-size: 1em;
-        width: calc(100% / 1); /* Divide el ancho en partes iguales */
-    }
+.materiales-principal-title {
+    font-size: 16px; 
+}
 
-    /* COPYRIGHT */
+.materiales{
+    flex-basis: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
 
-    footer .container-copyright{
-        font-size: 0.8em;
-        margin-left: 5%;
-    }
+.materiales p{
+    padding-top: 6%;
+    font-size: 14px; 
+}
 
-    /* MATERIALES PAGINA PRINCIPAL */
+.materials-image {
+    width: 30%;
+}
 
-    #materiales-principal{
-        position: relative;
-        margin-bottom: 100px;
-        user-select: none;
-    }
+.materiales-button {
+    font-size: 0.8em;
+}
 
-    .materiales-principal-title {
-        font-size: 16px; 
-    }
+/* SECCION UNETE PAG PRINCIPAL */
 
-    .materiales{
-        flex-basis: 30%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 20px;
-        margin-right: 20px;
-    }
+#unete-principal {
+    position: relative;
+    height: 45vh;
+}
 
-    .materiales p{
-        padding-top: 6%;
-        font-size: 14px; 
-    }
+.unete-title {
+    padding-top: 6%;
+    font-size: large;
+}
 
-    .material-image {
-        width: 30%;
-    }
+.unete-subtitle {
+    font-size: large;
+}
 
-    .materiales-button {
-        font-size: 0.8em;
-    }
+.unete-button {
+    font-size: 0.8em;
+}
 
-    /* SECCION UNETE PAG PRINCIPAL */
+/* MATERIAL LISTA RESPONSIVE */
 
-    #unete-principal {
-        position: relative;
-        height: 45vh;
-    }
+.material {
+    flex-direction: column; 
+}
 
-    .unete-title {
-        padding-top: 6%;
-        font-size: large;
-    }
-    
-    .unete-subtitle {
-        font-size: large;
-    }
+.material-content,
+.material-image {
+    width: 100%;
+}
 
-    .unete-button {
-        font-size: 0.8em;
-    }
+.material-image img {
+    width: 100%;
+    max-height: 180px;
+}
 
-    /* MATERIAL LISTA RESPONSIVE */
+.materials-span {
+    display: none;
+}
 
-    .material {
-        flex-direction: column; 
-    }
-    
-    .material-content,
-    .material-image {
-        width: 100%;
-    }
-    
-    .material-image img {
-        width: 100%;
-        max-height: 180px;
-    }
-    
-    .materials-span {
-        display: none;
-    }
+.materiales-title {
+    font-size: 2.6rem;
+}
 
-    .materiales-title {
-        font-size: 2.6rem;
-    }
+/* FOOTER - MOBILE */
+
+#footer-mobile {
+    display: block;
+    background-color: #636364;
+    height: 16vh;
+    box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.title-footermobile {
+    padding-top: 5%;
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 500;
+}
+
 
 }
 
 @media (min-width: 624px) and (max-width: 672px){
 
-    /* HERO */
+/* HERO */
 
-    .arrow-down {
-        width: 80px;
-        bottom: 20px;
-    }
+.arrow-down {
+    width: 80px;
+    bottom: 20px;
+}
 
-    #hero{
-        background-position: left;
-    }
+#hero{
+    background-position: left;
+}
+
+.hero-titulo{
+    font-size: 4em;
+}
+
+#hero h4{
+    font-size: 2em;
+}
+
+/* CARRUSEL TITULOS */
+
+#titulo-sup{
+    margin: 40px;
+    font-size: 40px;
+}
+
+#titulo {
+    width: 100%;
+    font-size: 24px;
+}
+
+/* FLECHA SECCION CONTACTO */
+
+.arrow-down-contacto{
+    width: 60px;
+    bottom: 0px;
+}
+
+/* WEB SECCION CONTACTO */
+
+#hero-contacto{
+    height: 100vh;
+    background-position: left;
+}
+
+#hero-contacto h1 {
+    font-size: 40px;
+}
     
-    .hero-titulo{
-        font-size: 4em;
-    }
+#hero-contacto h4{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+/* HERO SECCION SOBRE NOSOTROS */
+
+.hero-sobrenosotros-titulo {
+    font-size: 40px;
+}
+
+.arrow-down-sobrenosotros {
+    width: 80px;
+    bottom: 60px;
+}
+
+.historia-container h1{
+    font-size: 18px;
+}
+
+.texto-historia1 {
+    font-size: 12px;
+    width: 300px;
+}
+
+.texto-historia2 {
+    font-size: 12px;
+    width: 300px;
+}
+
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 44px;
+}
     
-    #hero h4{
-        font-size: 2em;
-    }
+#hero-np h4{
+    font-size: 22px;
+}
 
-    /* CARRUSEL TITULOS */
+.listahero{
+    margin-left: 0;
+}
 
-    #titulo-sup{
-        margin: 40px;
-        font-size: 40px;
-    }
+.listahero li{
+    font-size: 16px;
+}
 
-    #titulo {
-        width: 100%;
-        font-size: 24px;
-    }
+.iconoentrega,
+.iconoresistentes,
+.iconomateriales{
+    width: 45px;
+    margin-left: 9%;
+}
 
-    /* FLECHA SECCION CONTACTO */
+.iconodiseños{
+    width: 30px;
+    margin-left: 9%;
+}
 
-    .arrow-down-contacto{
-        width: 60px;
-        bottom: 0px;
-    }
+/* CONTENEDOR DE IMAGENES */
 
-    /* WEB SECCION CONTACTO */
-
-    #hero-contacto{
-        height: 100vh;
-        background-position: left;
-    }
-    
-    #hero-contacto h1 {
-        font-size: 40px;
-    }
-        
-    #hero-contacto h4{
-        color: #FFFFFF;
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: 0;
-    }
-
-
-    /* HERO SECCION SOBRE NOSOTROS */
-
-    .hero-sobrenosotros-titulo {
-        font-size: 40px;
-    }
-
-    .arrow-down-sobrenosotros {
-        width: 80px;
-        bottom: 60px;
-    }
-
-    .historia-container h1{
-        font-size: 18px;
-    }
-
-    .texto-historia1 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    .texto-historia2 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-    
-    #hero-np h1 {
-        font-size: 44px;
-    }
-        
-    #hero-np h4{
-        font-size: 22px;
-    }
-    
-    .listahero{
-        margin-left: 0;
-    }
-
-    .listahero li{
-        font-size: 16px;
-    }
-
-    .iconoentrega,
-    .iconoresistentes,
-    .iconomateriales{
-        width: 45px;
-        margin-left: 9%;
-    }
-
-    .iconodiseños{
-        width: 30px;
-        margin-left: 9%;
-    }
-
-    /* CONTENEDOR DE IMAGENES */
-
-    .container-productos-jgsillones {
-        max-width: 620px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-          
-    .container-images{
-        font-size: 32px;
-        color: #505459;
-    }
-          
-    .image-row {
-        flex-direction: column;
-    }
-          
-    .image-container img {
-        width: 580px;
-        height: 520px;
-    }
-    
-    .image-title {
-        font-size: 60px;
-        margin: 200px 0px 10px 120px;
-    }
-
-    .image-titlepuff{
-        font-size: 60px;
-        margin: 200px 0px 10px 120px;
-    }
-    
-    .image-titlepersonalizable{
-        font-size: 60px;
-        margin: 200px 0px 10px 100px;
-    }
-    
-    .seccion-sillones {
-        max-width: 420px;
-        margin-top: 80px;
-    }
-    
-    .seccions-title{
-        text-align: left;
-        margin-left: -55px;
-    }
-          
-    .image-sillones-cont {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-          
-    .image-sillones img {
-        width: 520px;
-    }
-
-    #somos-leonlivings .container {
-        padding: 20px 0px 20px 20px;
-        line-height: 1;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    
-    .somostxt-1 {
-        text-align: left;
-        width: 100%;    
-    }
-    
-    .somostxt-2 {
-        width: 100%;
-        text-align: left;
-        padding-top: 40px;
-    }
-
-    .button-somos{
-        text-align: left;
-    }
-
-    #somos-leonlivings .texto {
-        width: 100%;
-        max-width: 440px;
-        padding-left: 0px;
-    }
-
-    .slide-item img {
-        float: left;
-        height: auto;
-        padding: 100px 0px 100px 0px;
-        width: 100%;
-    }
-
-    .slide {
-        margin-top: 0px;
-        height: 100%;
-        width: 80%; /* Agregado */
-    }
-
-    /* SOLAPA WHATSAPP 600PX */
+.container-productos-jgsillones {
+    max-width: 620px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
       
-    .button-text {
-        font-size: 18px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-        padding: 8px 8px;
-        margin-right: 10px;
-    }
+.container-images{
+    font-size: 32px;
+    color: #505459;
+}
+      
+.image-row {
+    flex-direction: column;
+}
+      
+.image-container img {
+    width: 580px;
+    height: 520px;
+}
 
-    .interactive-button img {
-        width: 70px;
-    }
+.image-title {
+    font-size: 60px;
+    margin: 200px 0px 10px 120px;
+}
 
-    .flechawsp{
-        display: none;
-    }
+.image-titlepuff{
+    font-size: 60px;
+    margin: 200px 0px 10px 120px;
+}
+
+.image-titlepersonalizable{
+    font-size: 60px;
+    margin: 200px 0px 10px 100px;
+}
+
+.seccion-sillones {
+    max-width: 420px;
+    margin-top: 80px;
+}
+
+.seccions-title{
+    text-align: left;
+    margin-left: -55px;
+}
+      
+.image-sillones-cont {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+      
+.image-sillones img {
+    width: 520px;
+}
+
+#somos-leonlivings .container {
+    padding: 20px 0px 20px 20px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.somostxt-1 {
+    text-align: left;
+    width: 100%;    
+}
+
+.somostxt-2 {
+    width: 100%;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.button-somos{
+    text-align: left;
+}
+
+#somos-leonlivings .texto {
+    width: 100%;
+    max-width: 440px;
+    padding-left: 0px;
+}
+
+.slide-item img {
+    float: left;
+    height: auto;
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+}
+
+.slide {
+    margin-top: 0px;
+    height: 100%;
+    width: 80%; /* Agregado */
+}
+
+/* SOLAPA WHATSAPP 600PX */
+  
+.button-text {
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    padding: 8px 8px;
+    margin-right: 10px;
+}
+
+.interactive-button img {
+    width: 70px;
+}
+
+.flechawsp{
+    display: none;
+}
 
 }
 
@@ -2471,465 +2469,465 @@ footer .container-copyright{
 
 @media (min-width: 460px) and (max-width: 560px){
 
-    /* HERO */
+/* HERO */
 
-    .arrow-down {
-        width: 80px;
-        bottom: 40px;
-    }
+.arrow-down {
+    width: 80px;
+    bottom: 40px;
+}
 
-    #hero{
-        background-position: left;
-    }
+#hero{
+    background-position: left;
+}
+
+.hero-titulo{
+    font-size: 4em;
+}
+
+#hero h4{
+    font-size: 2em;
+}
+
+/* CARRUSEL TITULOS */
+
+#titulo-sup{
+    margin: 40px;
+    font-size: 30px;
+}
+
+#titulo {
+    width: 100%;
+    font-size: 24px;
+}
+
+/* FLECHA SECCION CONTACTO */
+
+.arrow-down-contacto{
+    width: 60px;
+    bottom: 0px;
+}
+
+/* WEB SECCION CONTACTO */
+
+#hero-contacto{
+    height: 100vh;
+    background-position: left;
+}
+
+#hero-contacto h1 {
+    font-size: 40px;
+}
     
-    .hero-titulo{
-        font-size: 4em;
-    }
+#hero-contacto h4{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+
+/* HERO SECCION SOBRE NOSOTROS */
+
+.hero-sobrenosotros-titulo {
+    font-size: 40px;
+}
+
+.arrow-down-sobrenosotros {
+    width: 80px;
+    bottom: 80px;
+}
+
+.historia-container h1{
+    font-size: 18px;
+}
+
+.texto-historia1 {
+    font-size: 12px;
+    width: 300px;
+}
+
+.texto-historia2 {
+    font-size: 12px;
+    width: 300px;
+}
+
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 44px;
+}
     
-    #hero h4{
-        font-size: 2em;
-    }
+#hero-np h4{
+    font-size: 18px;
+}
 
-    /* CARRUSEL TITULOS */
+.listahero{
+    margin-left: 0;
+}
 
-    #titulo-sup{
-        margin: 40px;
-        font-size: 30px;
-    }
+.listahero li{
+    font-size: 16px;
+}
 
-    #titulo {
-        width: 100%;
-        font-size: 24px;
-    }
+.iconoentrega,
+.iconoresistentes,
+.iconomateriales{
+    width: 45px;
+    margin-left: 8%;
+}
 
-    /* FLECHA SECCION CONTACTO */
+.iconodiseños{
+    width: 30px;
+    margin-left: 8%;
+}
 
-    .arrow-down-contacto{
-        width: 60px;
-        bottom: 0px;
-    }
+/* CONTENEDOR DE IMAGENES */
 
-    /* WEB SECCION CONTACTO */
-
-    #hero-contacto{
-        height: 100vh;
-        background-position: left;
-    }
-    
-    #hero-contacto h1 {
-        font-size: 40px;
-    }
-        
-    #hero-contacto h4{
-        color: #FFFFFF;
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: 0;
-    }
-
-
-    /* HERO SECCION SOBRE NOSOTROS */
-
-    .hero-sobrenosotros-titulo {
-        font-size: 40px;
-    }
-
-    .arrow-down-sobrenosotros {
-        width: 80px;
-        bottom: 80px;
-    }
-
-    .historia-container h1{
-        font-size: 18px;
-    }
-
-    .texto-historia1 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    .texto-historia2 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-    
-    #hero-np h1 {
-        font-size: 44px;
-    }
-        
-    #hero-np h4{
-        font-size: 18px;
-    }
-    
-    .listahero{
-        margin-left: 0;
-    }
-
-    .listahero li{
-        font-size: 16px;
-    }
-
-    .iconoentrega,
-    .iconoresistentes,
-    .iconomateriales{
-        width: 45px;
-        margin-left: 8%;
-    }
-
-    .iconodiseños{
-        width: 30px;
-        margin-left: 8%;
-    }
-
-    /* CONTENEDOR DE IMAGENES */
-
-    .container-productos-jgsillones {
-        max-width: 520px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-          
-    .container-images{
-        font-size: 32px;
-        color: #505459;
-    }
-          
-    .image-row {
-        flex-direction: column;
-    }
-          
-    .image-container img {
-        width: 480px;
-        height: 480px;
-    }
-    
-    .image-title {
-        margin: 100px 0px 10px 20px;
-    }
-
-    .image-titlepuff{
-        margin: 100px 0px 0px 20px;
-    }
-    
-    .image-titlepersonalizable{
-        margin: 100px 0px 0px 20px;
-    }
-    
-    .seccion-sillones {
-        max-width: 485px;
-        margin-top: 80px;
-    }
-    
-    .seccions-title{
-        text-align: left;
-        padding-left: 20px;
-    }
-          
-    .image-sillones-cont {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-          
-    .image-sillones img {
-        width: 440px;
-    }
-
-    .tituloimagen{
-        text-decoration: none;
-    }
-
-    /* TEXTO PAGINA PRINCIPAL */
-
-    #somos-leonlivings .container {
-        padding: 20px 0px 20px 20px;
-        line-height: 1;
-        display: flex;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-    
-    .somostxt-1 {
-        text-align: left;
-        width: 100%;    
-    }
-    
-    .somostxt-2 {
-        width: 100%;
-        text-align: left;
-        padding-top: 40px;
-    }
-
-    .button-somos{
-        text-align: left;
-    }
-
-    #somos-leonlivings .texto {
-        width: 100%;
-        max-width: 440px;
-        padding-left: 0px;
-    }
-
-    .slide-item img {
-        float: left;
-        height: auto;
-        padding: 100px 0px 100px 0px;
-        width: 100%;
-    }
-
-    .slide {
-        margin-top: 0px;
-        height: 100%;
-        width: 90%; /* Agregado */
-    }
-
-    /* SOLAPA WHATSAPP 500PX */
+.container-productos-jgsillones {
+    max-width: 520px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
       
-    .button-text {
-        font-size: 14px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-        padding: 6px 6px;
-        margin-right: 6px;
-    }
+.container-images{
+    font-size: 32px;
+    color: #505459;
+}
+      
+.image-row {
+    flex-direction: column;
+}
+      
+.image-container img {
+    width: 480px;
+    height: 480px;
+}
 
-    .interactive-button img {
-        width: 50px;
-    }
+.image-title {
+    margin: 100px 0px 10px 20px;
+}
 
-    .flechawsp{
-        display: none;
-    }
+.image-titlepuff{
+    margin: 100px 0px 0px 20px;
+}
+
+.image-titlepersonalizable{
+    margin: 100px 0px 0px 20px;
+}
+
+.seccion-sillones {
+    max-width: 485px;
+    margin-top: 80px;
+}
+
+.seccions-title{
+    text-align: left;
+    padding-left: 20px;
+}
+      
+.image-sillones-cont {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+      
+.image-sillones img {
+    width: 440px;
+}
+
+.tituloimagen{
+    text-decoration: none;
+}
+
+/* TEXTO PAGINA PRINCIPAL */
+
+#somos-leonlivings .container {
+    padding: 20px 0px 20px 20px;
+    line-height: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.somostxt-1 {
+    text-align: left;
+    width: 100%;    
+}
+
+.somostxt-2 {
+    width: 100%;
+    text-align: left;
+    padding-top: 40px;
+}
+
+.button-somos{
+    text-align: left;
+}
+
+#somos-leonlivings .texto {
+    width: 100%;
+    max-width: 440px;
+    padding-left: 0px;
+}
+
+.slide-item img {
+    float: left;
+    height: auto;
+    padding: 100px 0px 100px 0px;
+    width: 100%;
+}
+
+.slide {
+    margin-top: 0px;
+    height: 100%;
+    width: 90%; /* Agregado */
+}
+
+/* SOLAPA WHATSAPP 500PX */
+  
+.button-text {
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    padding: 6px 6px;
+    margin-right: 6px;
+}
+
+.interactive-button img {
+    width: 50px;
+}
+
+.flechawsp{
+    display: none;
+}
 
 }
 
 @media (min-width: 380px) and (max-width: 440px){
 
-    /* TEXTO PAGINA PRINCIPAL */
+/* TEXTO PAGINA PRINCIPAL */
+
+.button-somos{
+    text-align: left;
+    width: 300px;
+}
+
+#somos-leonlivings .texto {
+    max-width: 400px;
+}
+
+.somos-button {
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 8px;
+}
+
+/* HERO */
+
+.arrow-down {
+    width: 80px;
+    bottom: 20px;
+}
+
+#hero{
+    background-position: left;
+}
+
+.hero-titulo{
+    font-size: 3em;
+}
+
+#hero h4{
+    font-size: 1.6em;
+}
+
+/* CARRUSEL TITULOS */
+
+#titulo-sup{
+    margin: 40px;
+    font-size: 30px;
+}
+
+#titulo {
+    width: 100%;
+    font-size: 24px;
+}
+
+/* FLECHA SECCION CONTACTO */
+
+.arrow-down-contacto{
+    width: 60px;
+    bottom: 0px;
+}
+
+/* WEB SECCION CONTACTO */
+
+#hero-contacto{
+    height: 100vh;
+    background-position: left;
+}
+
+#hero-contacto h1 {
+    font-size: 40px;
+}
     
-    .button-somos{
-        text-align: left;
-        width: 300px;
-    }
+#hero-contacto h4{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0;
+}
+
+/* HERO SECCION SOBRE NOSOTROS */
+
+.hero-sobrenosotros-titulo {
+    font-size: 40px;
+}
+
+.arrow-down-sobrenosotros {
+    width: 80px;
+    bottom: 60px;
+}
+
+.historia-container h1{
+    font-size: 18px;
+}
+
+.texto-historia1 {
+    font-size: 12px;
+    width: 300px;
+}
+
+.texto-historia2 {
+    font-size: 12px;
+    width: 300px;
+}
+
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 44px;
+}
     
-    #somos-leonlivings .texto {
-        max-width: 400px;
-    }
+#hero-np h4{
+    font-size: 22px;
+}
 
-    .somos-button {
-        font-size: 1em;
-        padding: 10px 20px;
-        border-radius: 8px;
-    }
+.listahero{
+    margin-left: 0;
+}
 
-    /* HERO */
+.listahero li{
+    font-size: 16px;
+}
 
-    .arrow-down {
-        width: 80px;
-        bottom: 20px;
-    }
+.iconoentrega,
+.iconoresistentes,
+.iconomateriales{
+    width: 45px;
+    margin-left: 9%;
+}
 
-    #hero{
-        background-position: left;
-    }
-    
-    .hero-titulo{
-        font-size: 3em;
-    }
-    
-    #hero h4{
-        font-size: 1.6em;
-    }
+.iconodiseños{
+    width: 30px;
+    margin-left: 9%;
+}
 
-    /* CARRUSEL TITULOS */
+/* CONTENEDOR DE IMAGENES */
 
-    #titulo-sup{
-        margin: 40px;
-        font-size: 30px;
-    }
-
-    #titulo {
-        width: 100%;
-        font-size: 24px;
-    }
-
-    /* FLECHA SECCION CONTACTO */
-
-    .arrow-down-contacto{
-        width: 60px;
-        bottom: 0px;
-    }
-
-    /* WEB SECCION CONTACTO */
-
-    #hero-contacto{
-        height: 100vh;
-        background-position: left;
-    }
-    
-    #hero-contacto h1 {
-        font-size: 40px;
-    }
-        
-    #hero-contacto h4{
-        color: #FFFFFF;
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: 0;
-    }
-
-    /* HERO SECCION SOBRE NOSOTROS */
-
-    .hero-sobrenosotros-titulo {
-        font-size: 40px;
-    }
-
-    .arrow-down-sobrenosotros {
-        width: 80px;
-        bottom: 60px;
-    }
-
-    .historia-container h1{
-        font-size: 18px;
-    }
-
-    .texto-historia1 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    .texto-historia2 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-    
-    #hero-np h1 {
-        font-size: 44px;
-    }
-        
-    #hero-np h4{
-        font-size: 22px;
-    }
-    
-    .listahero{
-        margin-left: 0;
-    }
-
-    .listahero li{
-        font-size: 16px;
-    }
-
-    .iconoentrega,
-    .iconoresistentes,
-    .iconomateriales{
-        width: 45px;
-        margin-left: 9%;
-    }
-
-    .iconodiseños{
-        width: 30px;
-        margin-left: 9%;
-    }
-
-    /* CONTENEDOR DE IMAGENES */
-
-    .container-productos-jgsillones {
-        max-width: 420px;
-        margin: 0 auto;
-        padding: 25px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-          
-    .container-images{
-        font-size: 32px;
-        color: #505459;
-    }
-          
-    .image-row {
-        flex-direction: column;
-    }
-          
-    .image-container img {
-        width: 335px;
-        height: 320px;
-    }
-    
-    .image-title {
-        font-size: 42px;
-        margin: 120px 0px 10px 80px;
-    }
-
-    .image-titlepuff{
-        font-size: 42px;
-        margin: 120px 0px 10px 80px;
-    }
-    
-    .image-titlepersonalizable{
-        font-size: 42px;
-        margin: 120px 0px 10px 20px;
-    }
-    
-    .seccion-sillones {
-        max-width: 215px;
-        margin-top: 80px;
-    }
-    
-    .seccions-title{
-        text-align: left;
-        margin-left: -55px;
-    }
-          
-    .image-sillones-cont {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-          
-    .image-sillones img {
-        width: 320px;
-    }
-
-    /* SOLAPA WHATSAPP 400PX */
+.container-productos-jgsillones {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 25px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
       
-    .button-text {
-        font-size: 18px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-        padding: 8px 8px;
-        margin-right: 10px;
-    }
+.container-images{
+    font-size: 32px;
+    color: #505459;
+}
+      
+.image-row {
+    flex-direction: column;
+}
+      
+.image-container img {
+    width: 335px;
+    height: 320px;
+}
 
-    .interactive-button img {
-        width: 70px;
-    }
+.image-title {
+    font-size: 42px;
+    margin: 120px 0px 10px 80px;
+}
 
-    .flechawsp{
-        display: none;
-    }
+.image-titlepuff{
+    font-size: 42px;
+    margin: 120px 0px 10px 80px;
+}
 
-    /* PAGINA SECCION MATERIALES */
+.image-titlepersonalizable{
+    font-size: 42px;
+    margin: 120px 0px 10px 20px;
+}
 
-    .material {
-        flex-direction: column; 
-    }
-    
-    .material-content,
-    .material-image {
-        width: 100%;
-    }
-    
-    .material-image img {
-        width: 100%;
-        max-height: 180px;
-    }
+.seccion-sillones {
+    max-width: 215px;
+    margin-top: 80px;
+}
+
+.seccions-title{
+    text-align: left;
+    margin-left: -55px;
+}
+      
+.image-sillones-cont {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+      
+.image-sillones img {
+    width: 320px;
+}
+
+/* SOLAPA WHATSAPP 400PX */
+  
+.button-text {
+    font-size: 18px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    padding: 8px 8px;
+    margin-right: 10px;
+}
+
+.interactive-button img {
+    width: 70px;
+}
+
+.flechawsp{
+    display: none;
+}
+
+/* PAGINA SECCION MATERIALES */
+
+.material {
+    flex-direction: column; 
+}
+
+.material-content,
+.material-image {
+    width: 100%;
+}
+
+.material-image img {
+    width: 100%;
+    max-height: 180px;
+}
 
 }
 
@@ -2939,244 +2937,244 @@ footer .container-copyright{
 
 @media (min-width: 320px) and (max-width: 330px){
 
-    .container-videos{
-        height: 100vh;
-        flex-direction: column;
-    }
+.container-videos{
+    height: 100vh;
+    flex-direction: column;
+}
 
-    /* SOMOS LEON LIVINGS CONTAINER */
+/* SOMOS LEON LIVINGS CONTAINER */
 
-    .somostxt-1{
-        font-size: 28px;
-    }
+.somostxt-1{
+    font-size: 28px;
+}
+
+.somostxt-2{
+    font-size: 18px;
+    font-weight: 100;
+}
+
+/* HERO */
+
+.arrow-down {
+    width: 40px;
+    bottom: 0px;
+}
+
+#hero{
+    background-position: left;
+}
+
+.hero-titulo{
+    font-size: 2em;
+}
+
+#hero h4{
+    font-size: 1em;
+}
+
+/* CARRUSEL TITULOS */
+
+#titulo-sup{
+    margin: 20px;
+    font-size: 20px;
+}
+
+#titulo {
+    width: 100%;
+    font-size: 14px;
+}
+
+/* FLECHA SECCION CONTACTO */
+
+.arrow-down-contacto{
+    width: 60px;
+    bottom: 0px;
+}
+
+/* WEB SECCION CONTACTO */
+
+#hero-contacto{
+    height: 100vh;
+    background-position: left;
+}
+
+#hero-contacto h1 {
+    font-size: 40px;
+}
     
-    .somostxt-2{
-        font-size: 18px;
-        font-weight: 100;
-    }
+#hero-contacto h4{
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: 0;
+}
 
-    /* HERO */
 
-    .arrow-down {
-        width: 40px;
-        bottom: 0px;
-    }
+/* HERO SECCION SOBRE NOSOTROS */
 
-    #hero{
-        background-position: left;
-    }
+.hero-sobrenosotros-titulo {
+    font-size: 40px;
+}
+
+.arrow-down-sobrenosotros {
+    width: 80px;
+    bottom: 80px;
+}
+
+.historia-container h1{
+    font-size: 18px;
+}
+
+.texto-historia1 {
+    font-size: 12px;
+    width: 300px;
+}
+
+.texto-historia2 {
+    font-size: 12px;
+    width: 300px;
+}
+
+/* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
+
+#hero-np h1 {
+    font-size: 35px;
+}
     
-    .hero-titulo{
-        font-size: 2em;
-    }
-    
-    #hero h4{
-        font-size: 1em;
-    }
+#hero-np h4{
+    font-size: 15px;
+}
 
-    /* CARRUSEL TITULOS */
-    
-    #titulo-sup{
-        margin: 20px;
-        font-size: 20px;
-    }
+.listahero{
+    margin-left: 0;
+}
 
-    #titulo {
-        width: 100%;
-        font-size: 14px;
-    }
+.listahero li{
+    font-size: 12px;
+}
 
-    /* FLECHA SECCION CONTACTO */
+.iconoentrega,
+.iconoresistentes,
+.iconomateriales{
+    width: 35px;
+}
 
-    .arrow-down-contacto{
-        width: 60px;
-        bottom: 0px;
-    }
+.iconodiseños{
+    width: 20px;
+}
 
-    /* WEB SECCION CONTACTO */
+/* CONTENEDOR DE IMAGENES */
 
-    #hero-contacto{
-        height: 100vh;
-        background-position: left;
-    }
-    
-    #hero-contacto h1 {
-        font-size: 40px;
-    }
-        
-    #hero-contacto h4{
-        color: #FFFFFF;
-        font-size: 15px;
-        font-weight: 400;
-        margin-top: 0;
-    }
-
-
-    /* HERO SECCION SOBRE NOSOTROS */
-
-    .hero-sobrenosotros-titulo {
-        font-size: 40px;
-    }
-
-    .arrow-down-sobrenosotros {
-        width: 80px;
-        bottom: 80px;
-    }
-
-    .historia-container h1{
-        font-size: 18px;
-    }
-
-    .texto-historia1 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    .texto-historia2 {
-        font-size: 12px;
-        width: 300px;
-    }
-
-    /* WEB SECCION PRODUCTOS-JUEGO DE SILLONES */
-    
-    #hero-np h1 {
-        font-size: 35px;
-    }
-        
-    #hero-np h4{
-        font-size: 15px;
-    }
-    
-    .listahero{
-        margin-left: 0;
-    }
-
-    .listahero li{
-        font-size: 12px;
-    }
-
-    .iconoentrega,
-    .iconoresistentes,
-    .iconomateriales{
-        width: 35px;
-    }
-
-    .iconodiseños{
-        width: 20px;
-    }
-
-    /* CONTENEDOR DE IMAGENES */
-
-    .container-productos-jgsillones {
-        max-width: 320px;
-        margin: 0 auto;
-        padding: 20px;
-        margin-top: 80px;
-        min-height: 100vh;
-    }
-          
-    .container-images{
-        font-size: 32px;
-        color: #505459;
-    }
-          
-    .image-row {
-        flex-direction: column;
-    }
-          
-    .image-container img {
-        width: 280px;
-        height: 280px;
-    }
-    
-    .image-title {
-        margin: 100px 0px 10px 20px;
-    }
-
-    .image-titlepuff{
-        margin: 100px 0px 0px 20px;
-    }
-    
-    .image-titlepersonalizable{
-        margin: 100px 0px 0px 20px;
-    }
-    
-    .seccion-sillones {
-        max-width: 320px;
-        margin-top: 80px;
-    }
-    
-    .seccions-title{
-        text-align: left;
-        padding-left: 20px;
-    }
-          
-    .image-sillones-cont {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-          
-    .image-sillones img {
-        width: 280px;
-    }
-
-    /* SECCION SOMOS LEON LIVINGS */
-
-    #somos-leonlivings .container{
-        padding: 100px 12px;
-        display: flex;
-        flex-direction: column;
-        line-height: 1;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    
-    .somostxt-1{
-        font-size: 14px;
-    }
-    
-    .somostxt-2{
-        font-size: 12px;
-    }
-
-    #somos-leonlivings .img-container{
-        height: 150px;
-        width: 200px;
-        border-radius: 30px;
-    }
-
-    .somos-button{
-        font-size: 0.6em;
-        padding: 4px 10px;
-        border-radius: 54px;
-        border: 2px solid rgba(0, 0, 0, 0.5);
-        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
-        color: white;
-        background-color: rgb(16, 87, 87);
-    }
-
-    #somos-leonlivings .texto{
-        padding-left: 0px;
-    }
-
-    /* SOLAPA WHATSAPP 320PX */
+.container-productos-jgsillones {
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 80px;
+    min-height: 100vh;
+}
       
-    .button-text {
-        font-size: 14px;
-        border-radius: 10px;
-        box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
-        padding: 6px 6px;
-        margin-right: 6px;
-    }
+.container-images{
+    font-size: 32px;
+    color: #505459;
+}
+      
+.image-row {
+    flex-direction: column;
+}
+      
+.image-container img {
+    width: 280px;
+    height: 280px;
+}
 
-    .interactive-button img {
-        width: 50px;
-    }
+.image-title {
+    margin: 100px 0px 10px 20px;
+}
 
-    .flechawsp{
-        display: none;
-    }
+.image-titlepuff{
+    margin: 100px 0px 0px 20px;
+}
+
+.image-titlepersonalizable{
+    margin: 100px 0px 0px 20px;
+}
+
+.seccion-sillones {
+    max-width: 320px;
+    margin-top: 80px;
+}
+
+.seccions-title{
+    text-align: left;
+    padding-left: 20px;
+}
+      
+.image-sillones-cont {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+      
+.image-sillones img {
+    width: 280px;
+}
+
+/* SECCION SOMOS LEON LIVINGS */
+
+#somos-leonlivings .container{
+    padding: 100px 12px;
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.somostxt-1{
+    font-size: 14px;
+}
+
+.somostxt-2{
+    font-size: 12px;
+}
+
+#somos-leonlivings .img-container{
+    height: 150px;
+    width: 200px;
+    border-radius: 30px;
+}
+
+.somos-button{
+    font-size: 0.6em;
+    padding: 4px 10px;
+    border-radius: 54px;
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    background-color: rgb(16, 87, 87);
+}
+
+#somos-leonlivings .texto{
+    padding-left: 0px;
+}
+
+/* SOLAPA WHATSAPP 320PX */
+  
+.button-text {
+    font-size: 14px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 6px 0px rgba(0,0,0,0.5);
+    padding: 6px 6px;
+    margin-right: 6px;
+}
+
+.interactive-button img {
+    width: 50px;
+}
+
+.flechawsp{
+    display: none;
+}
 
 }
