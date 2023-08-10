@@ -342,7 +342,7 @@ align-items: flex-end;
     right: 20px;
     display: flex;
     align-items: center;
-    z-index: 3;
+    z-index: 1;
 }
   
 .button-text {
@@ -2212,20 +2212,36 @@ footer .container-copyright{
 /* FOOTER - MOBILE */
 
 #footer-mobile {
-    display: block;
+    display: flex;
     background-color: #636364;
     height: 16vh;
     box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    justify-content: space-around;
 }
 
 .title-footermobile {
-    padding-top: 5%;
+    padding-top: 3%;
     text-align: center;
     font-size: 20px;
     color: #ffffff;
     font-weight: 500;
+    margin: 0;
 }
 
+.footer-icons {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.footer-icons a {
+    margin-left: 10px;
+}
+
+.footer-icons img {
+    width: 25px;
+}
 
 }
 
