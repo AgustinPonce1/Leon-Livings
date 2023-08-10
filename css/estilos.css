@@ -342,8 +342,8 @@ align-items: flex-end;
   
 .interactive-button {
     position: fixed;
-    bottom: 10px;
-    right: 10px;
+    bottom: 20px;
+    right: 20px;
     display: flex;
     align-items: center;
     z-index: 1;
@@ -1323,11 +1323,61 @@ align-items: flex-end;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+/* FINAL PAGINA MATERIALES */
+
+.container-desc {
+    max-width: 700px;
+    margin: 0 25%;
+    padding: 0px;
+    margin-bottom: 150px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.feature {
+    margin: 0px 0;
+}
+
+.emoji {
+    vertical-align: middle; /* Alinear verticalmente las imágenes con el texto */
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+}
+
+ul {
+    list-style-type: none; /* Quitar viñetas de la lista */
+    padding: 0; 
+}
+
+li {
+    margin-bottom: 10px; 
+    font-size: 17px; 
+    font-weight: 200; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+}
+
+.container-desc p{
+    font-size: 20px; 
+    font-weight: 200; 
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    letter-spacing: 0.8px; 
+    line-height: 1.6; 
+}
+
+.hr-final.mats{
+    width: 80%;
+}
+
 /* FOOTER - MOBILE */
 
 #footer-mobile{
     display: none;
 }
+
 
 /* ---------------------------- PRUEBAS -------------------------------- */
 
@@ -2213,6 +2263,18 @@ align-items: flex-end;
 
     .materiales-title {
         font-size: 2.6rem;
+    }
+
+    /* FINAL PAGINA MATERIALES */
+
+    .container-desc {
+        max-width: 500px;
+        margin: 0 15%;
+        padding: 0px;
+        margin-bottom: 150px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     /* FOOTER - MOBILE */

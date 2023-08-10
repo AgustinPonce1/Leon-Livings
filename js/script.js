@@ -58,27 +58,3 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-// Función para aplicar el margen inferior cuando se llega al final de la página del boton whatsapp
-function applyMarginIfAtBottom() {
-  const interactiveButton = document.querySelector('.interactive-button');
-  if (interactiveButton) {
-      const windowHeight = window.innerHeight;
-      const scrollTop = window.scrollY || document.documentElement.scrollTop;
-      const pageHeight = Math.max(document.body.scrollHeight, document.body.offsetHeight, document.documentElement.clientHeight, document.documentElement.scrollHeight, document.documentElement.offsetHeight);
-
-      const distanceFromBottom = pageHeight - (scrollTop + windowHeight);
-      if (distanceFromBottom < interactiveButton.clientHeight + 10) {
-          interactiveButton.style.marginBottom = `${interactiveButton.clientHeight}px`;
-      } else {
-          interactiveButton.style.marginBottom = '0';
-      }
-  }
-}
-
-// Ejecutar la función cuando se cargue la página y cuando se haga scroll
-window.addEventListener('load', applyMarginIfAtBottom);
-window.addEventListener('scroll', applyMarginIfAtBottom); 
-
-
-
-
