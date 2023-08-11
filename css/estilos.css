@@ -1347,13 +1347,7 @@ align-items: flex-end;
     margin: 0 25%;
     padding: 0px;
     margin-bottom: 150px;
-    background-color: #fff;
     border-radius: 10px;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
-}
-
-.feature {
-    margin: 0px 0;
 }
 
 .emoji {
@@ -1361,6 +1355,10 @@ align-items: flex-end;
     width: 44px;
     height: 44px;
     margin-right: 5px;
+}
+
+.feature-materials {
+    color: #040404d2;
 }
 
 .materials.ul {
@@ -1383,6 +1381,8 @@ align-items: flex-end;
     font-family: "Helvetica Neue", Arial, sans-serif;
     letter-spacing: 0.8px; 
     line-height: 1.6; 
+    margin-left: 40px;
+    color: #040404d2;
 }
 
 .hr-final.mats{
