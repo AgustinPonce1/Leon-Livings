@@ -58,3 +58,11 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
+// JavaScript para activar la animación después de cargar la página
+document.addEventListener("scroll", function() {
+  const scrollPosition = window.scrollY;
+  const materialsSection = document.querySelector(".materials-section");
+  if (scrollPosition > 200) {
+      materialsSection.classList.add("show");
+  }
+});

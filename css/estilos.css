@@ -347,6 +347,8 @@ align-items: flex-end;
     display: flex;
     align-items: center;
     z-index: 1;
+    opacity: 0; /* Elemento oculto inicialmente */
+    animation: fadeIn 2s ease-in-out forwards; /* Animación de aparición */
 }
   
 .button-text {
@@ -376,9 +378,16 @@ align-items: flex-end;
     transform: scale(1.1);
 }
 
-.search-icon:hover{
-    cursor: pointer;
-
+/* Definir la animación de aparición */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translate(0, 10px); /* Desplazamiento hacia abajo */
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0); /* Sin desplazamiento, aparece en su posición */
+    }
 }
 
 /* ANIMACION TEXTO QUIENES SOMOS */
@@ -1237,7 +1246,7 @@ align-items: flex-end;
         rgba(0,0,0,0.3),
         rgba(0,0,0,0.3)
     )
-    ,url("../media/materiales.jpg");
+    ,url("../media/materiales/materiales.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1250,7 +1259,15 @@ align-items: flex-end;
 
 .materials-section {
     background-color: #f7f7f7;
-    padding: 4rem 0;
+    padding: 2rem 0;
+    opacity: 0;
+    transform: translateY(20px); 
+    transition: opacity 2s ease, transform 2s ease; 
+}
+
+.materials-section.show {
+    opacity: 1; 
+    transform: translateY(0); 
 }
   
 .container {
@@ -1346,12 +1363,12 @@ align-items: flex-end;
     margin-right: 5px;
 }
 
-ul {
+.materials.ul {
     list-style-type: none; /* Quitar viñetas de la lista */
     padding: 0; 
 }
 
-li {
+.materials.li {
     margin-bottom: 10px; 
     font-size: 17px; 
     font-weight: 200; 
