@@ -1340,12 +1340,10 @@ align-items: flex-end;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* FINAL PAGINA MATERIALES */
-
 .container-desc {
     max-width: 700px;
     margin: 0 25%;
-    padding: 0px;
+    padding: 0;
     margin-bottom: 150px;
     border-radius: 10px;
 }
@@ -1361,9 +1359,11 @@ align-items: flex-end;
     color: #040404d2;
 }
 
-.materials.ul {
-    list-style-type: none; /* Quitar viñetas de la lista */
-    padding: 0; 
+.container-desc ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 20px 0px 20px 0px; 
+    color: #040404d2; 
 }
 
 .materials.li {
@@ -1373,19 +1373,20 @@ align-items: flex-end;
     font-family: "Helvetica Neue", Arial, sans-serif;
     letter-spacing: 0.8px; 
     line-height: 1.6; 
+    color: #040404d2; 
 }
 
-.container-desc p{
+.container-desc p {
     font-size: 20px; 
     font-weight: 200; 
     font-family: "Helvetica Neue", Arial, sans-serif;
     letter-spacing: 0.8px; 
     line-height: 1.6; 
-    margin-left: 40px;
-    color: #040404d2;
+    margin: 0; 
+    color: #040404d2; 
 }
 
-.hr-final.mats{
+.hr-final.mats {
     width: 80%;
 }
 
@@ -2151,12 +2152,6 @@ align-items: flex-end;
         width: 240px;
     }
 
-    /* WSP */
-
-    .flechawsp{
-        display: none;
-    }
-
     /* MATERIALES PAGINA PRINCIPAL */
 
     #materiales-principal{
@@ -2193,16 +2188,6 @@ align-items: flex-end;
 }
 
 @media (max-width: 680px){
-
-    /* FIN DE PAGINA */
-
-    #findepagina{
-        display: none;
-    }
-
-    footer .container-copyright{
-        display: none;
-    }
 
     /* MATERIALES PAGINA PRINCIPAL */
 
@@ -2296,6 +2281,14 @@ align-items: flex-end;
 
     /* FOOTER - MOBILE */
 
+    #findepagina{
+        display: none;
+    }
+
+    footer .container-copyright{
+        display: none;
+    }
+
     #footer-mobile {
         display: flex;
         background-color: #636364;
@@ -2350,6 +2343,12 @@ align-items: flex-end;
         padding: 0px;
         color: rgb(250, 250, 250);
         text-align: center;
+    }
+
+    /* DISPLAY WHATSAPP */
+
+    .flechawsp {
+        display: none;
     }
 
 }
@@ -2582,10 +2581,6 @@ align-items: flex-end;
 
     .interactive-button img {
         width: 70px;
-    }
-
-    .flechawsp{
-        display: none;
     }
 
 }
@@ -2823,10 +2818,6 @@ align-items: flex-end;
 
     .interactive-button img {
         width: 50px;
-    }
-
-    .flechawsp{
-        display: none;
     }
 
 }
@@ -3296,10 +3287,6 @@ align-items: flex-end;
 
     .interactive-button img {
         width: 50px;
-    }
-
-    .flechawsp{
-        display: none;
     }
 
 }
