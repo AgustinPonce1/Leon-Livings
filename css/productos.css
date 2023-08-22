@@ -353,7 +353,7 @@ footer .container-copyright{
         ,url("../media/livingluit/herolivingluit.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: center bottom;
     }
 
     #hero-np-livingoasis{
@@ -366,10 +366,10 @@ footer .container-copyright{
             rgba(61, 60, 60, 0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../media/livingoasis/IMG_1043.jpg");
+        ,url("../media/livingoasis/hero-oasis.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center bottom;
+        background-position: center center;
     }
 
     #hero-np-livingbali{
@@ -382,7 +382,7 @@ footer .container-copyright{
             rgba(61, 60, 60, 0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../media/livingbali/hero-bali.jpg");
+        ,url("../media/livingbali/hero-bali.jpeg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center top;

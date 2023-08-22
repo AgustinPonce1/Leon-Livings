@@ -734,7 +734,7 @@ align-items: flex-end;
         rgba(61, 60, 60, 0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../media/hero-np.jpg");
+    ,url("../media/hero.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -796,7 +796,7 @@ align-items: flex-end;
     margin: 0 auto;
     padding: 20px;
     margin-top: 80px;
-    min-height: 100vh;
+    min-height: 0vh;
 }
   
 .container-images{
@@ -1458,7 +1458,6 @@ align-items: flex-end;
         margin: 0 auto;
         padding: 20px;
         margin-top: 80px;
-        min-height: 100vh;
     }
         
     .container-images{
