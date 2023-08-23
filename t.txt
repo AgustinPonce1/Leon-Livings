@@ -1,9 +1,0 @@
-pagina principal -- LISTO
-sobre nosotros -- CAMBIAR IMAGEN HERO
-materiales -- CAMBIAR IMAGEN HERO Y EL MENUSITO DE ABAJO DE TODO
-productos -- CAMBIAR IMAGENES Y DISEÑO Y ARMAR SECCIONES SILLONES
-contacto -- CAMBIAR IMAGEN HERO
-pagina LivingLuit -- LISTO
-pagina LivingOasis -- LISTO
-pagina LivingBali -- LISTO
-pagina personalizable -- CAMBIAR IMAGEN HERO Y IMAGENES CARRUSEL

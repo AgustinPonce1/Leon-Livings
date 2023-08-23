@@ -235,7 +235,7 @@ align-items: flex-end;
         rgba(0,0,0,0.2),
         rgba(0,0,0,0.2)
     )
-    ,url("../media/img4.jpg");
+    ,url("../media/hero-principal.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -920,7 +920,7 @@ align-items: flex-end;
         rgba(0,0,0,0.3),
         rgba(0,0,0,0.3)
     )
-    ,url("../media/img3.jpg");
+    ,url("../media/hero-sobrenosotros.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
