@@ -572,8 +572,8 @@ align-items: flex-end;
     height: 100vh;
     background-image: linear-gradient(
         0deg,
-        rgba(61, 60, 60, 0.3),
-        rgba(0,0,0,0.3)
+        rgba(61, 60, 60, 0.4),
+        rgba(0,0,0,0.4)
     )
     ,url("../media/hero-contacto.jpg");
     background-repeat: no-repeat;
@@ -734,7 +734,7 @@ align-items: flex-end;
         rgba(61, 60, 60, 0.5),
         rgba(0,0,0,0.5)
     )
-    ,url("../media/hero.jpg");
+    ,url("../media/hero-productos.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1092,6 +1092,10 @@ align-items: flex-end;
     padding: 20px;
 }
 
+.materials-section a{
+    text-decoration: none;
+}
+
 .materials-title {
     font-size: 28px;
     font-weight: 700;
@@ -1113,7 +1117,7 @@ align-items: flex-end;
     flex: 1;
     min-width: 250px;
     max-width: 300px;
-    height: 180px;
+    height: 100px;
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -1144,7 +1148,7 @@ align-items: flex-end;
 }
 
 .material-card p {
-    margin-bottom: 50px;
+    margin-bottom: 20px;
     padding: 10px 0;
 }
 
@@ -1162,7 +1166,7 @@ align-items: flex-end;
     font-weight: 600;
     padding: 10px 25px;
     border: none;
-    background-color: #FF9800;
+    background-color: rgb(16, 87, 87);
     color: white;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -1170,7 +1174,7 @@ align-items: flex-end;
 }
 
 .custom-button:hover {
-    background-color: #FFB74D;
+    background-color: rgb(15, 114, 114);
 }
 
 .custom-hr {
@@ -1256,7 +1260,7 @@ align-items: flex-end;
         rgba(0,0,0,0.3),
         rgba(0,0,0,0.3)
     )
-    ,url("../media/materiales/materiales.jpg");
+    ,url("../media/materiales/hero-materiales.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -2283,9 +2287,7 @@ align-items: flex-end;
         margin: 0 15%;
         padding: 0px;
         margin-bottom: 150px;
-        background-color: #fff;
         border-radius: 10px;
-        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
     }
 
     /* FOOTER - MOBILE */

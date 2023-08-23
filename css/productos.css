@@ -388,7 +388,7 @@ footer .container-copyright{
         background-position: center top;
     }
 
-    #hero-np-productos{
+    #hero-np-personalizable{
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -398,12 +398,60 @@ footer .container-copyright{
             rgba(61, 60, 60, 0.5),
             rgba(0,0,0,0.5)
         )
-        ,url("../media/img5.jpg");
+        ,url("../media/personalizable/hero-personalizable.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center center;
+        background-position: center top;
     }
 
+    #hero-np-mesabali{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(61, 60, 60, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/mesaoasis/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    #hero-np-mesaluit{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(61, 60, 60, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/mesaluit/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+
+    #hero-np-mesabali{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        height: 100vh;
+        background-image: linear-gradient(
+            0deg,
+            rgba(61, 60, 60, 0.5),
+            rgba(0,0,0,0.5)
+        )
+        ,url("../media/mesabali/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center top;
+    }
+    
     #hero-np-productos{
         display: flex;
         justify-content: center;
