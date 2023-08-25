@@ -235,10 +235,10 @@ align-items: flex-end;
         rgba(0,0,0,0.2),
         rgba(0,0,0,0.2)
     )
-    ,url("../media/hero-principal.jpg");
+    ,url("../media/hero-princi.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: center bottom;
 }
 
 .hero-titulo{
@@ -2838,6 +2838,12 @@ align-items: flex-end;
     .button-text{
         display: none;
     }
+
+    /* IMAGENES HERO EN MOBILE */
+
+    #hero{
+        background-position: center bottom;
+    }
 }
 
 @media (min-width: 380px) and (max-width: 440px){
@@ -2864,10 +2870,6 @@ align-items: flex-end;
     .arrow-down {
         width: 80px;
         bottom: 20px;
-    }
-
-    #hero{
-        background-position: left;
     }
 
     .hero-titulo{
